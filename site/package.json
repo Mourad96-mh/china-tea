@@ -1,0 +1,20 @@
+{
+  "name": "china-tea-group",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "node scripts/build.mjs",
+    "build:direct": "next build",
+    "start": "npx serve out",
+    "images": "node scripts/prepare-images.mjs"
+  },
+  "dependencies": {
+    "next": "15.5.4",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.3"
+  }
+}

@@ -1,0 +1,397 @@
+const es = {
+  meta: {
+    title: "China Tea Group — Té verde de China para Marruecos y África",
+    description:
+      "Exportador de té verde de China: Chunmee 41022, 4011, 9371, 9366 y Gunpowder 3505. Marcas propias, marca blanca (OEM), envasado y exportación desde Zhejiang.",
+  },
+  nav: {
+    home: "Inicio",
+    teas: "Nuestros tés",
+    brands: "Nuestras marcas",
+    pantry: "Despensa",
+    services: "Servicios",
+    ritual: "Cultura del té",
+    about: "Quiénes somos",
+    contact: "Contacto",
+    quote: "Pedir presupuesto",
+    menu: "Menú",
+    close: "Cerrar",
+    language: "Idioma",
+    skip: "Ir al contenido",
+  },
+  topbar: {
+    text: "Exportador de té verde de China · Zhejiang — Hong Kong",
+  },
+  common: {
+    learnMore: "Saber más",
+    viewSheet: "Ver la ficha",
+    discover: "Descubrir",
+    allTeas: "Todos nuestros tés",
+    allBrands: "Todas nuestras marcas",
+    whatsapp: "Escribir por WhatsApp",
+    call: "Llamar",
+    home: "Inicio",
+    grade: "Grado",
+    leaf: "Hoja",
+    liquor: "Licor",
+    aroma: "Aroma",
+    taste: "Sabor",
+    idealFor: "Ideal para",
+    availableIn: "Disponible con nuestras marcas",
+    privateLabelOnly: "Disponible a granel y en marca blanca.",
+    brandTeas: "Grado utilizado",
+    packs: "La gama en caja",
+    family: { chunmee: "Chunmee", gunpowder: "Gunpowder" },
+    phone: "Teléfono / WhatsApp",
+    email: "Correo electrónico",
+    offices: "Nuestras oficinas",
+    photoCredits: "Créditos fotográficos",
+    rights: "Todos los derechos reservados.",
+    legal: "Aviso legal",
+    backHome: "Volver al inicio",
+  },
+  home: {
+    hero: {
+      eyebrow: "Té verde de China · Exportación",
+      title: "Del jardín de té chino",
+      titleAccent: "al vaso de té marroquí",
+      text: "Seleccionamos, envasamos y enviamos los grandes tés verdes de China — Chunmee 41022, 4011, 9371 y Gunpowder 3505 — para importadores y distribuidores del Magreb, África y Europa.",
+      cta: "Descubrir nuestros tés",
+      cta2: "Pedir presupuesto",
+      badge: "Marcas propias y marca blanca",
+    },
+    intro: {
+      eyebrow: "China Tea Group",
+      title: "Un puente entre Zhejiang y las mesas del té con menta",
+      paras: [
+        "Gran parte del té verde que se sirve en Marruecos, Mauritania o Senegal procede de China. Entre el jardín y el vaso hay decisiones clave: el grado, la selección, la mezcla, el envase y la logística.",
+        "China Tea Group reúne todas esas etapas. Desde nuestra sede en Zhejiang, la gran provincia del té verde de exportación, y nuestra oficina de Hong Kong, preparamos tés al gusto de sus clientes y los entregamos listos para vender, con nuestras marcas o con la suya.",
+      ],
+      cta: "Quiénes somos",
+    },
+    stats: [
+      { value: "5", label: "grados de referencia" },
+      { value: "4", label: "marcas propias" },
+      { value: "2", label: "oficinas: Zhejiang y Hong Kong" },
+      { value: "OEM", label: "marca blanca a medida" },
+    ],
+    teas: {
+      eyebrow: "Nuestros tés",
+      title: "Los grados que piden sus clientes",
+      text: "Cada grado tiene su hoja, su color y su fuerza. Le ayudamos a elegir el que mejor encaja con su mercado.",
+    },
+    brands: {
+      eyebrow: "Nuestras marcas",
+      title: "Cajas que se venden en el lineal",
+      text: "Cuatro universos pensados para los amantes del té con menta: el desierto, la hospitalidad sahariana, la identidad amazigh y la elegancia en negro y oro.",
+    },
+    process: {
+      eyebrow: "Del jardín al contenedor",
+      title: "El recorrido de cada lote",
+      text: "El té verde es cuestión de gestos precisos. Estas son las etapas que sigue un lote antes de llegar a su almacén.",
+      steps: [
+        { title: "Recolección", text: "Los brotes jóvenes se recogen en primavera, cuando la hoja es más aromática." },
+        { title: "Fijación", text: "Las hojas se calientan para detener la oxidación y conservar su color verde." },
+        { title: "Enrollado", text: "En forma de «ceja» para el Chunmee o de perla apretada para el Gunpowder." },
+        { title: "Selección y calibrado", text: "El té se seca, se tamiza y se clasifica en grados: 41022, 4011, 9371, 9366, 3505." },
+        { title: "Cata", text: "Cada lote se cata y se compara con la muestra validada por el cliente." },
+        { title: "Envasado y exportación", text: "En caja o a granel, carga del contenedor y documentos de exportación." },
+      ],
+    },
+    services: {
+      eyebrow: "Nuestros servicios",
+      title: "Mucho más que un proveedor de té",
+      text: "De la elección del grado a la llegada a puerto, un único interlocutor.",
+      items: [
+        { icon: "leaf", title: "Selección y mezcla", text: "Lotes elegidos y mezclados para mantener el mismo sabor de un pedido a otro." },
+        { icon: "box", title: "Marca blanca (OEM)", text: "Su marca, su caja, sus textos en árabe y francés: lo producimos todo." },
+        { icon: "check", title: "Control de calidad", text: "Muestras antes del envío e inspección independiente bajo petición." },
+        { icon: "ship", title: "Exportación y logística", text: "Contenedores completos o grupajes, documentos de exportación y seguimiento hasta su puerto." },
+      ],
+      cta: "Todos nuestros servicios",
+    },
+    ritual: {
+      eyebrow: "Cultura del té",
+      title: "El primer vaso es suave como la vida…",
+      text: "…el segundo, fuerte como el amor; el tercero, amargo como la muerte. Detrás de este proverbio del desierto hay un té que debe aguantar tres infusiones. Ese es el té que seleccionamos.",
+      cta: "El té a la marroquí",
+    },
+    markets: {
+      eyebrow: "Nuestros mercados",
+      title: "Un té para cada tradición",
+      text: "La misma palabra, «atay», abarca gustos muy distintos. Preparamos nuestros tés para cada uno.",
+      regions: [
+        { name: "Magreb", text: "Té con menta aromático y dulce: Chunmee 41022, 4011 y 9371." },
+        { name: "Sahel y África Occidental", text: "Té muy concentrado servido en tres vasos: Gunpowder 3505 y Chunmee intensos." },
+        { name: "Europa", text: "Tiendas de alimentación étnica y diáspora: formatos familiares y marcas conocidas." },
+      ],
+    },
+    pantry: {
+      eyebrow: "Despensa y menaje",
+      title: "Todo lo que acompaña al té",
+      text: "Además del té, enviamos un juego de té decorado, mieles, conservas (concentrado de tomate, maíz dulce, guisantes) y pasta de cacahuete.",
+      cta: "Ver la despensa",
+    },
+    cta: {
+      title: "Hablemos de su próximo contenedor",
+      text: "Indíquenos el grado, el envase y el puerto de destino: le responderemos con muestras y un presupuesto.",
+      button: "Pedir presupuesto",
+    },
+  },
+  teasPage: {
+    metaTitle: "Tés verdes de China: Chunmee y Gunpowder",
+    metaDescription:
+      "Chunmee 41022, 4011 Extra, 9371, 9366 y Gunpowder 3505: hoja, licor, aroma y usos de cada grado de té verde de China para exportación.",
+    eyebrow: "Nuestros tés",
+    title: "Tés verdes de China, grado a grado",
+    intro:
+      "El código de un té verde de exportación indica su forma, su selección y su fuerza. Estos son nuestros cinco grados de referencia y lo que aporta cada uno al vaso.",
+    families: [
+      {
+        id: "chunmee",
+        title: "Chunmee — el té «ceja»",
+        text: "Chunmee (珍眉) significa «cejas preciosas». La hoja se enrolla en una curva alargada. Según la selección, da un té fino y sedoso (4011), equilibrado (41022) o potente (9371, 9366).",
+      },
+      {
+        id: "gunpowder",
+        title: "Gunpowder — el té «perla»",
+        text: "El Gunpowder (珠茶, «té perla») se enrolla en pequeñas bolitas. Se conserva muy bien, se abre lentamente y aguanta varias infusiones: es el té de las ceremonias largas.",
+      },
+    ],
+    compareTitle: "Comparar los grados de un vistazo",
+    ctaTitle: "¿Duda entre dos grados?",
+    ctaText: "Le enviamos muestras para que pueda catarlos uno al lado del otro.",
+  },
+  teaDetail: {
+    metaTitle: "Té verde {name}: perfil y usos",
+    metaSuffix: "Muestras bajo pedido.",
+    specsTitle: "Perfil de cata",
+    brewTitle: "Preparación recomendada",
+    brewSteps: [
+      "Enjuagar una cucharada colmada de té con agua hirviendo y desechar esa primera agua.",
+      "Añadir agua a punto de hervir, hojas de menta fresca y azúcar al gusto.",
+      "Dejar infusionar de 3 a 4 minutos y servir desde lo alto para que el té haga espuma.",
+    ],
+    packagingTitle: "Envasado",
+    packagingText:
+      "Disponible a granel para envasadores, en cajas con nuestras marcas o en su propio envase. Los formatos y el etiquetado se definen con usted.",
+    otherTeas: "Nuestros otros grados",
+    ctaTitle: "Recibir una muestra de este té",
+    ctaText: "Indíquenos su mercado y los volúmenes estimados.",
+  },
+  brandsPage: {
+    metaTitle: "Té Al Mousafir, Dkhmiss, Amghar y 511",
+    metaDescription:
+      "Descubra las marcas de té verde de China Tea Group: Al Mousafir 4011, Dkhmiss 41022, Amghar berberisco y 511 negro y oro. Cajas listas para la distribución.",
+    eyebrow: "Nuestras marcas",
+    title: "Marcas que hablan a sus clientes",
+    intro:
+      "Una caja de té se elige en pocos segundos en el lineal. Nuestras marcas se apoyan en imágenes fuertes y familiares — el desierto, el viajero, el Atlas — y en un té que cumple lo que promete.",
+    ctaTitle: "Distribuir nuestras marcas",
+    ctaText: "Buscamos importadores y distribuidores en cada país. Hablemos de su zona.",
+  },
+  brandDetail: {
+    metaTitle: "Té {name} {grades}: marca de té verde",
+    metaSuffix: "Cajas listas para la distribución.",
+    storyTitle: "La historia de la marca",
+    rangeTitle: "La gama",
+    otherBrands: "Nuestras otras marcas",
+    ctaTitle: "¿Le interesa esta marca?",
+    ctaText: "Solicite las condiciones de distribución para su país.",
+  },
+  pantryPage: {
+    metaTitle: "Despensa y juegos de té para importadores",
+    metaDescription:
+      "Además del té verde, China Tea Group exporta un juego de té decorado en oro, mieles, conservas de tomate, maíz dulce y guisantes, y pasta de cacahuete.",
+    eyebrow: "Despensa y menaje",
+    title: "Lo que acompaña al té",
+    intro:
+      "Nuestros clientes importadores suelen completar sus contenedores con otros productos. Podemos añadir estas referencias a su pedido de té.",
+    note: "¿Quiere añadir un producto a su contenedor? Envíenos la referencia que busca y estudiaremos la solicitud.",
+  },
+  servicesPage: {
+    metaTitle: "Marca blanca OEM y exportación de té verde",
+    metaDescription:
+      "Selección de lotes, marca blanca OEM, envasado, control de calidad y exportación en contenedor de té verde de China al Magreb, África y Europa.",
+    eyebrow: "Nuestros servicios",
+    title: "De la hoja al contenedor, un único interlocutor",
+    intro:
+      "Importar té verde exige dominar el sabor, el envase, la calidad y el transporte. Nos ocupamos de cada etapa para que reciba un producto listo para vender.",
+    items: [
+      {
+        icon: "leaf",
+        title: "Selección y mezcla",
+        text: "Catamos y comparamos lotes para encontrar el perfil que gusta en su mercado y lo mezclamos para que sea idéntico de un pedido a otro.",
+        points: ["Grado elegido según su mercado", "Muestra de referencia validada con usted", "El mismo sabor pedido tras pedido"],
+      },
+      {
+        icon: "box",
+        title: "Marca blanca (OEM)",
+        text: "¿Tiene una marca o quiere crearla? Diseñamos y producimos el envase con sus textos en árabe, francés o el idioma que elija.",
+        points: ["Diseño nuevo o a partir de su arte final", "Cajas, bolsas y estuches impresos", "Etiquetado adaptado a su país"],
+      },
+      {
+        icon: "check",
+        title: "Control de calidad",
+        text: "Antes de la salida, cada lote se compara con la muestra validada. También puede designar la empresa de inspección que prefiera.",
+        points: ["Cata y control visual", "Muestra antes del envío", "Inspección independiente bajo petición"],
+      },
+      {
+        icon: "ship",
+        title: "Exportación y logística",
+        text: "Organizamos la carga y el envío desde los puertos del este de China, con los documentos que necesita su transitario.",
+        points: ["Contenedores de 20' y 40', completos o grupajes", "Incoterms FOB, CFR o CIF", "Factura, lista de embalaje, certificados de origen y fitosanitario"],
+      },
+    ],
+    packagingTitle: "Formatos de envasado",
+    packagingText: "Del pequeño formato familiar al granel para envasadores, adaptamos el envase a su canal de venta.",
+    formats: [
+      { title: "Formatos pequeños", text: "Cajas y bolsitas para la tienda de barrio." },
+      { title: "Cajas familiares", text: "Cajas de 200 g o más, el formato estrella del lineal." },
+      { title: "Estuches", text: "Ediciones especiales y estuches de regalo para las fiestas." },
+      { title: "Granel", text: "Cajas con forro interior para envasadores y mayoristas." },
+    ],
+    stepsTitle: "Cómo funciona un pedido",
+    steps: [
+      { title: "Su solicitud", text: "Grado, volúmenes, envase y puerto de destino." },
+      { title: "Muestras y presupuesto", text: "Usted cata, nosotros cotizamos." },
+      { title: "Validación", text: "Muestra de referencia, diseño y contrato." },
+      { title: "Producción", text: "Mezcla, envasado y control." },
+      { title: "Envío", text: "Carga, documentos y seguimiento hasta la llegada." },
+    ],
+    faqTitle: "Preguntas frecuentes",
+    faq: [
+      {
+        q: "¿Cuál es el pedido mínimo?",
+        a: "La mayoría de nuestros pedidos son por contenedor de 20 o 40 pies. Para una primera colaboración también estudiamos volúmenes menores: cuéntenos qué necesita.",
+      },
+      {
+        q: "¿Puedo recibir muestras antes de pedir?",
+        a: "Sí. Enviamos muestras de los grados que le interesan para que pueda catarlos y compararlos antes de cualquier pedido.",
+      },
+      {
+        q: "¿Pueden producir el té con mi propia marca?",
+        a: "Sí, es nuestro servicio de marca blanca (OEM). Utilizamos su diseño o lo creamos con usted y producimos las cajas o bolsas impresas.",
+      },
+      {
+        q: "¿Qué documentos acompañan el envío?",
+        a: "Factura comercial, lista de embalaje, conocimiento de embarque, certificado de origen y certificado fitosanitario. Se pueden aportar otros documentos según las exigencias de su país.",
+      },
+      {
+        q: "¿Cuáles son los plazos?",
+        a: "Dependen del grado, de los volúmenes y de si hay que crear un envase. Le indicamos un calendario preciso junto con el presupuesto.",
+      },
+      {
+        q: "¿Qué formas de pago aceptan?",
+        a: "La transferencia bancaria (T/T) y la carta de crédito (L/C) son las más habituales. Las condiciones se acuerdan con cada cliente.",
+      },
+    ],
+  },
+  ritualPage: {
+    metaTitle: "Té a la marroquí: historia y preparación",
+    metaDescription:
+      "Cómo el té verde de China se convirtió en el atay marroquí: preparación del té con menta, los tres vasos y el sentido de los grados 41022 y 3505.",
+    eyebrow: "Cultura del té",
+    title: "El té verde de China, corazón del té a la marroquí",
+    intro:
+      "En Marruecos, como en el Sahel, el té es mucho más que una bebida: es una bienvenida, una conversación, un ritual. Y ese ritual empieza en los jardines de té de China.",
+    historyTitle: "Una historia de rutas comerciales",
+    history: [
+      "El té llega a Marruecos en el siglo XVIII, primero como regalo para la corte. Durante mucho tiempo sigue siendo un lujo reservado a las familias acomodadas.",
+      "En el siglo XIX, los comerciantes europeos multiplican los cargamentos de té verde chino hacia los puertos de Tánger y Esauira. El té se populariza, se une a la menta y al azúcar y se convierte en la bebida nacional.",
+      "Hoy Marruecos figura entre los mayores importadores de té verde chino del mundo, y los países del Sahel lo han convertido en el centro de su hospitalidad.",
+    ],
+    prepTitle: "Preparar un té con menta",
+    prep: [
+      { title: "Calentar", text: "Llevar el agua a ebullición y escaldar la tetera." },
+      { title: "Lavar el té", text: "Poner una buena cucharada de té, cubrir con un poco de agua, remover y desechar esa agua, que elimina el amargor." },
+      { title: "Infusionar", text: "Llenar con agua a punto de hervir, añadir el azúcar y un ramillete de menta fresca y dejar infusionar unos minutos." },
+      { title: "Mezclar", text: "Servir un vaso y devolverlo a la tetera dos o tres veces para mezclar sin cuchara." },
+      { title: "Servir desde lo alto", text: "Servir levantando la tetera: el aire forma la espuma, señal de un té bien hecho." },
+    ],
+    glassesTitle: "La ceremonia de los tres vasos",
+    glasses: [
+      { title: "El primer vaso", text: "Suave como la vida." },
+      { title: "El segundo vaso", text: "Fuerte como el amor." },
+      { title: "El tercer vaso", text: "Amargo como la muerte." },
+    ],
+    glassesNote:
+      "En el Sáhara y el Sahel, el mismo té se infusiona tres veces. Solo un té bien enrollado, como el Gunpowder 3505 o un Chunmee intenso, aguanta hasta el final.",
+    glossaryTitle: "Pequeño glosario del té de exportación",
+    glossary: [
+      { term: "Chunmee", def: "«Cejas preciosas»: té verde enrollado en curvas alargadas." },
+      { term: "Gunpowder", def: "«Té perla»: té verde enrollado en pequeñas bolitas apretadas." },
+      { term: "41022, 4011, 9371…", def: "Códigos de exportación que indican la forma y la selección del té." },
+      { term: "AAA, AA, A", def: "Niveles de selección: cuantas más A, más regular es la hoja." },
+      { term: "Atay", def: "El nombre del té en el Magreb y el Sahel." },
+    ],
+  },
+  aboutPage: {
+    metaTitle: "Exportador de té verde, Zhejiang–Hong Kong",
+    metaDescription:
+      "China Tea Group selecciona, envasa y exporta té verde de China desde Zhejiang y Hong Kong para los mercados del té con menta.",
+    eyebrow: "Quiénes somos",
+    title: "Té verde de China, preparado para sus mercados",
+    paras: [
+      "China Tea Group es una empresa exportadora de té verde con sede en la provincia de Zhejiang, una de las grandes regiones productoras de té verde de China, y una oficina comercial en Hong Kong.",
+      "Nuestro oficio: encontrar los lotes adecuados, mezclarlos al gusto de cada mercado, envasarlos con nuestras marcas o las de nuestros clientes y enviarlos cumpliendo todas las normas.",
+      "Trabajamos para importadores, mayoristas, envasadores y cadenas de distribución que venden té a los amantes del té con menta, del Magreb al Sahel y hasta Europa.",
+    ],
+    valuesTitle: "Nuestros compromisos",
+    values: [
+      { title: "Un sabor constante", text: "Una muestra de referencia validada con usted y cada lote comparado con ese estándar." },
+      { title: "Transparencia", text: "Muestras antes del pedido, documentación completa, inspección independiente posible." },
+      { title: "Cercanía", text: "Un interlocutor dedicado, disponible directamente por WhatsApp." },
+      { title: "Marcas que venden", text: "Envases pensados para los consumidores y los lineales de su país." },
+    ],
+    officesTitle: "Nuestras oficinas",
+  },
+  contactPage: {
+    metaTitle: "Presupuesto de té verde chino en contenedor",
+    metaDescription:
+      "Solicite un presupuesto o muestras de té verde de China. WhatsApp +86 180 5797 8014, oficinas en Zhejiang y Hong Kong.",
+    eyebrow: "Contacto",
+    title: "Pedir presupuesto o muestras",
+    intro: "Rellene el formulario: su mensaje se abre directamente en WhatsApp, listo para enviarlo a nuestro equipo comercial.",
+    form: {
+      name: "Nombre y apellidos",
+      company: "Empresa",
+      country: "País",
+      interest: "Producto de interés",
+      interestOptions: ["Chunmee 41022", "Chunmee 4011", "Chunmee 9371", "Chunmee 9366", "Gunpowder 3505", "Marca blanca (OEM)", "Despensa / menaje", "Otro"],
+      volume: "Volumen estimado",
+      volumeOptions: ["Muestras", "Menos de un contenedor", "1 contenedor de 20'", "1 contenedor de 40'", "Varios contenedores"],
+      message: "Su mensaje",
+      submit: "Enviar por WhatsApp",
+      required: "Campo obligatorio",
+      hint: "Este sitio no guarda ningún dato: el mensaje se envía únicamente por WhatsApp.",
+      intro: "Hola, China Tea Group:",
+    },
+    directTitle: "Contacto directo",
+  },
+  legalPage: {
+    metaTitle: "Aviso legal y créditos fotográficos",
+    metaDescription: "Aviso legal del sitio web de China Tea Group y créditos de las fotografías utilizadas.",
+    title: "Aviso legal",
+    sections: [
+      { title: "Editor del sitio", text: "China Tea Group — datos de contacto completos más abajo." },
+      { title: "Alojamiento", text: "Los datos del proveedor de alojamiento se indicarán en la puesta en línea." },
+      {
+        title: "Propiedad intelectual",
+        text: "Los textos, marcas, logotipos y diseños de envase que aparecen en este sitio pertenecen a China Tea Group o a sus respectivos titulares. Queda prohibida su reproducción sin autorización.",
+      },
+      {
+        title: "Datos personales",
+        text: "Este sitio no instala cookies de seguimiento ni guarda datos. El formulario de contacto prepara un mensaje que usted mismo envía por WhatsApp.",
+      },
+    ],
+    creditsTitle: "Créditos fotográficos",
+    creditsIntro: "Fotografías de ambiente y de hojas de té procedentes de Wikimedia Commons:",
+  },
+  notFound: {
+    title: "Página no encontrada",
+    text: "Esta página no existe o se ha movido.",
+  },
+};
+
+export default es;

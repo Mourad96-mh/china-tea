@@ -1,0 +1,397 @@
+const en = {
+  meta: {
+    title: "China Tea Group — Chinese green tea for Morocco and Africa",
+    description:
+      "Chinese green tea exporter: Chunmee 41022, 4011, 9371, 9366 and Gunpowder 3505. House brands, private label (OEM), packing and export from Zhejiang.",
+  },
+  nav: {
+    home: "Home",
+    teas: "Our teas",
+    brands: "Our brands",
+    pantry: "Pantry",
+    services: "Services",
+    ritual: "Tea culture",
+    about: "About us",
+    contact: "Contact",
+    quote: "Request a quote",
+    menu: "Menu",
+    close: "Close",
+    language: "Language",
+    skip: "Skip to content",
+  },
+  topbar: {
+    text: "Chinese green tea exporter · Zhejiang — Hong Kong",
+  },
+  common: {
+    learnMore: "Learn more",
+    viewSheet: "View tea sheet",
+    discover: "Discover",
+    allTeas: "All our teas",
+    allBrands: "All our brands",
+    whatsapp: "Message us on WhatsApp",
+    call: "Call",
+    home: "Home",
+    grade: "Grade",
+    leaf: "Leaf",
+    liquor: "Liquor",
+    aroma: "Aroma",
+    taste: "Taste",
+    idealFor: "Ideal for",
+    availableIn: "Available under our brands",
+    privateLabelOnly: "Available in bulk and as private label.",
+    brandTeas: "Grade used",
+    packs: "The boxed range",
+    family: { chunmee: "Chunmee", gunpowder: "Gunpowder" },
+    phone: "Phone / WhatsApp",
+    email: "E-mail",
+    offices: "Our offices",
+    photoCredits: "Photo credits",
+    rights: "All rights reserved.",
+    legal: "Legal notice",
+    backHome: "Back to home",
+  },
+  home: {
+    hero: {
+      eyebrow: "Chinese green tea · Export",
+      title: "From the tea gardens of China",
+      titleAccent: "to the Moroccan tea glass",
+      text: "We select, pack and ship China’s great green teas — Chunmee 41022, 4011, 9371 and Gunpowder 3505 — for importers and distributors across the Maghreb, Africa and Europe.",
+      cta: "Discover our teas",
+      cta2: "Request a quote",
+      badge: "House brands & private label",
+    },
+    intro: {
+      eyebrow: "China Tea Group",
+      title: "A bridge between Zhejiang and the world’s mint-tea tables",
+      paras: [
+        "Much of the green tea poured in Morocco, Mauritania or Senegal comes from China. Between the garden and the glass lie decisive choices: the grade, the sorting, the blend, the packaging and the logistics.",
+        "China Tea Group brings these steps together. From our head office in Zhejiang, China’s leading export green-tea province, and our Hong Kong office, we prepare teas that suit your customers’ taste and deliver them ready to sell, under our brands or yours.",
+      ],
+      cta: "About us",
+    },
+    stats: [
+      { value: "5", label: "core tea grades" },
+      { value: "4", label: "house brands" },
+      { value: "2", label: "offices: Zhejiang & Hong Kong" },
+      { value: "OEM", label: "tailor-made private label" },
+    ],
+    teas: {
+      eyebrow: "Our teas",
+      title: "The grades your customers ask for",
+      text: "Each grade has its own leaf, colour and strength. We help you choose the one that fits your market.",
+    },
+    brands: {
+      eyebrow: "Our brands",
+      title: "Boxes that sell on the shelf",
+      text: "Four worlds designed for mint-tea drinkers: the desert, Saharan hospitality, Amazigh identity and black-and-gold elegance.",
+    },
+    process: {
+      eyebrow: "From garden to container",
+      title: "The journey of every lot",
+      text: "Green tea is a matter of precise steps. Here is what a lot goes through before it reaches your warehouse.",
+      steps: [
+        { title: "Plucking", text: "Young shoots are harvested in spring, when the leaf is at its most aromatic." },
+        { title: "Fixing", text: "The leaves are heated to stop oxidation and keep their green colour." },
+        { title: "Rolling", text: "Rolled into an “eyebrow” for Chunmee or a tight pearl for Gunpowder." },
+        { title: "Sorting & grading", text: "The tea is dried, sieved and graded: 41022, 4011, 9371, 9366, 3505." },
+        { title: "Tasting", text: "Every lot is tasted and matched against the sample approved by the customer." },
+        { title: "Packing & export", text: "Boxed or bulk, container loading and export documents." },
+      ],
+    },
+    services: {
+      eyebrow: "Our services",
+      title: "Much more than a tea supplier",
+      text: "From choosing the grade to arrival at port, one single contact.",
+      items: [
+        { icon: "leaf", title: "Selection & blending", text: "Lots chosen and blended to keep the same taste from one order to the next." },
+        { icon: "box", title: "Private label (OEM)", text: "Your brand, your box, your Arabic and French copy: we produce it all." },
+        { icon: "check", title: "Quality control", text: "Pre-shipment samples and independent inspection on request." },
+        { icon: "ship", title: "Export & logistics", text: "Full or shared containers, export documents and tracking to your port." },
+      ],
+      cta: "All our services",
+    },
+    ritual: {
+      eyebrow: "Tea culture",
+      title: "The first glass is gentle, like life…",
+      text: "…the second is strong, like love, the third is bitter, like death. Behind this desert proverb lies a tea that must survive three brews. That is the tea we select.",
+      cta: "Moroccan-style tea",
+    },
+    markets: {
+      eyebrow: "Our markets",
+      title: "A tea for every tradition",
+      text: "The single word “atay” covers very different tastes. We prepare our teas for each of them.",
+      regions: [
+        { name: "Maghreb", text: "Fragrant, sweet mint tea: Chunmee 41022, 4011 and 9371." },
+        { name: "Sahel & West Africa", text: "Highly concentrated tea served in three glasses: Gunpowder 3505 and bold Chunmees." },
+        { name: "Europe", text: "Ethnic grocers and diaspora: family-size packs and familiar brands." },
+      ],
+    },
+    pantry: {
+      eyebrow: "Pantry & tableware",
+      title: "Everything that goes with tea",
+      text: "Alongside tea, we ship a decorated tea set, honey, canned goods (tomato concentrate, sweet corn, garden peas) and peanut paste.",
+      cta: "See the pantry",
+    },
+    cta: {
+      title: "Let’s talk about your next container",
+      text: "Tell us the grade, the packing and your destination port: we’ll come back with samples and a quotation.",
+      button: "Request a quote",
+    },
+  },
+  teasPage: {
+    metaTitle: "Chinese green teas: Chunmee and Gunpowder",
+    metaDescription:
+      "Chunmee 41022, 4011 Extra, 9371, 9366 and Gunpowder 3505: leaf, liquor, aroma and uses of each Chinese green tea grade for export.",
+    eyebrow: "Our teas",
+    title: "Chinese green teas, grade by grade",
+    intro:
+      "An export green tea’s code tells you its shape, its sorting and its strength. Here are our five core grades and what each brings to the glass.",
+    families: [
+      {
+        id: "chunmee",
+        title: "Chunmee — the “eyebrow” tea",
+        text: "Chunmee (珍眉) means “precious eyebrows”. The leaf is rolled into a long curve. Depending on the sort, it gives a fine, silky tea (4011), a balanced one (41022) or a powerful one (9371, 9366).",
+      },
+      {
+        id: "gunpowder",
+        title: "Gunpowder — the “pearl” tea",
+        text: "Gunpowder (珠茶, “pearl tea”) is rolled into small balls. It keeps very well, opens slowly and stands up to several brews: it is the tea of long ceremonies.",
+      },
+    ],
+    compareTitle: "Compare the grades at a glance",
+    ctaTitle: "Torn between two grades?",
+    ctaText: "We send samples so you can taste them side by side.",
+  },
+  teaDetail: {
+    metaTitle: "{name} green tea: profile and uses",
+    metaSuffix: "Samples available on request.",
+    specsTitle: "Tasting profile",
+    brewTitle: "How to brew",
+    brewSteps: [
+      "Rinse a heaped spoonful of tea with boiling water and pour this first water away.",
+      "Add simmering water, fresh mint leaves and sugar to taste.",
+      "Steep for 3 to 4 minutes, then pour from high so the tea foams.",
+    ],
+    packagingTitle: "Packing",
+    packagingText:
+      "Available in bulk for packers, in boxes under our brands or in your own packaging. Pack sizes and labelling are agreed with you.",
+    otherTeas: "Our other grades",
+    ctaTitle: "Get a sample of this tea",
+    ctaText: "Tell us your market and estimated volumes.",
+  },
+  brandsPage: {
+    metaTitle: "Al Mousafir, Dkhmiss, Amghar and 511 teas",
+    metaDescription:
+      "Discover China Tea Group’s green tea brands: Al Mousafir 4011, Dkhmiss 41022, Amghar Berber tea and black-and-gold 511. Boxes ready for distribution.",
+    eyebrow: "Our brands",
+    title: "Brands that speak to your customers",
+    intro:
+      "A box of tea is chosen in seconds on a shelf. Our brands rely on strong, familiar images — the desert, the traveller, the Atlas — and on a tea that keeps its promise.",
+    ctaTitle: "Distribute our brands",
+    ctaText: "We are looking for importers and distributors in every country. Let’s talk about your area.",
+  },
+  brandDetail: {
+    metaTitle: "{name} {grades} green tea brand",
+    metaSuffix: "Boxes ready for distribution.",
+    storyTitle: "The brand story",
+    rangeTitle: "The range",
+    otherBrands: "Our other brands",
+    ctaTitle: "Interested in this brand?",
+    ctaText: "Ask for distribution terms for your country.",
+  },
+  pantryPage: {
+    metaTitle: "Pantry goods and tea sets for importers",
+    metaDescription:
+      "Alongside green tea, China Tea Group exports a gold-decorated tea set, flower honey, canned tomato concentrate, sweet corn and garden peas, and peanut paste.",
+    eyebrow: "Pantry & tableware",
+    title: "What goes with tea",
+    intro:
+      "Our importing customers often fill their containers with other products. We can add these items to your tea order.",
+    note: "Want to add a product to your container? Send us the item you are looking for and we will look into it.",
+  },
+  servicesPage: {
+    metaTitle: "OEM private label and green tea export",
+    metaDescription:
+      "Lot selection, OEM private label, packing, quality control and container export of Chinese green tea to the Maghreb, Africa and Europe.",
+    eyebrow: "Our services",
+    title: "From leaf to container, one single contact",
+    intro:
+      "Importing green tea means mastering taste, packaging, quality and shipping. We handle every step so that you receive a product ready to sell.",
+    items: [
+      {
+        icon: "leaf",
+        title: "Selection & blending",
+        text: "We taste and compare lots to find the profile your market likes, then blend it so it stays the same from one order to the next.",
+        points: ["Grade chosen for your market", "Reference sample approved with you", "Same taste order after order"],
+      },
+      {
+        icon: "box",
+        title: "Private label (OEM)",
+        text: "Already have a brand or want to create one? We design and produce the packaging with your copy in Arabic, French or the language of your choice.",
+        points: ["New design or your existing artwork", "Printed boxes, bags and cartons", "Labelling adapted to your country"],
+      },
+      {
+        icon: "check",
+        title: "Quality control",
+        text: "Before departure, every lot is checked against the approved sample. You can also appoint the inspection company of your choice.",
+        points: ["Tasting and visual inspection", "Pre-shipment sample", "Independent inspection on request"],
+      },
+      {
+        icon: "ship",
+        title: "Export & logistics",
+        text: "We organise container loading and shipping from East China ports, with the documents your forwarder needs.",
+        points: ["20' and 40' containers, full or shared", "FOB, CFR or CIF Incoterms", "Invoice, packing list, certificates of origin and phytosanitary certificate"],
+      },
+    ],
+    packagingTitle: "Packing formats",
+    packagingText: "From small family packs to bulk for packers, we adapt the packaging to your sales channel.",
+    formats: [
+      { title: "Small packs", text: "Boxes and bags for neighbourhood grocers." },
+      { title: "Family boxes", text: "200 g boxes and up, the shelf best-seller." },
+      { title: "Gift boxes", text: "Special editions and gift sets for festive seasons." },
+      { title: "Bulk", text: "Lined cartons for packers and wholesalers." },
+    ],
+    stepsTitle: "How an order works",
+    steps: [
+      { title: "Your enquiry", text: "Grade, volumes, packaging and destination port." },
+      { title: "Samples & quotation", text: "You taste, we price." },
+      { title: "Approval", text: "Reference sample, artwork and contract." },
+      { title: "Production", text: "Blending, packing and inspection." },
+      { title: "Shipping", text: "Loading, documents and tracking until arrival." },
+    ],
+    faqTitle: "Frequently asked questions",
+    faq: [
+      {
+        q: "What is the minimum order quantity?",
+        a: "Most of our orders are by 20- or 40-foot container. For a first order, we also consider smaller volumes: tell us what you need.",
+      },
+      {
+        q: "Can I get samples before ordering?",
+        a: "Yes. We send samples of the grades you are interested in so you can taste and compare them before placing any order.",
+      },
+      {
+        q: "Can you produce tea under my own brand?",
+        a: "Yes, that is our private label (OEM) service. We use your artwork or design it with you, then produce the printed boxes or bags.",
+      },
+      {
+        q: "Which documents come with the shipment?",
+        a: "Commercial invoice, packing list, bill of lading, certificate of origin and phytosanitary certificate. Other documents can be supplied depending on your country’s requirements.",
+      },
+      {
+        q: "What are the lead times?",
+        a: "They depend on the grade, the volumes and whether new packaging has to be created. We give you a precise schedule with the quotation.",
+      },
+      {
+        q: "Which payment methods do you accept?",
+        a: "Bank transfer (T/T) and letter of credit (L/C) are the most common. Terms are agreed with each customer.",
+      },
+    ],
+  },
+  ritualPage: {
+    metaTitle: "Moroccan mint tea: history and preparation",
+    metaDescription:
+      "How Chinese green tea became Moroccan atay, how to make mint tea, the three-glass ceremony and what the 41022, 4011 and 3505 grades mean.",
+    eyebrow: "Tea culture",
+    title: "Chinese green tea, the heart of Moroccan tea",
+    intro:
+      "In Morocco as in the Sahel, tea is much more than a drink: it is a welcome, a conversation, a ritual. And that ritual begins in the tea gardens of China.",
+    historyTitle: "A story of trade routes",
+    history: [
+      "Tea reached Morocco in the 18th century, first as a gift to the royal court. For a long time it remained a luxury for wealthy families.",
+      "In the 19th century, European merchants shipped more and more Chinese green tea to the ports of Tangier and Essaouira. Tea became affordable, was paired with mint and sugar, and turned into the national drink.",
+      "Today Morocco ranks among the very largest importers of Chinese green tea in the world, and the countries of the Sahel have made it the heart of their hospitality.",
+    ],
+    prepTitle: "Making mint tea",
+    prep: [
+      { title: "Heat", text: "Bring the water to the boil and scald the teapot." },
+      { title: "Wash the tea", text: "Add a good spoonful of tea, cover with a little water, swirl and pour this water away to remove bitterness." },
+      { title: "Steep", text: "Fill with simmering water, add sugar and a bunch of fresh mint, and leave to steep for a few minutes." },
+      { title: "Mix", text: "Pour a glass and return it to the pot two or three times to mix without a spoon." },
+      { title: "Pour from high", text: "Pour while raising the teapot: the air creates the foam, the sign of a well-made tea." },
+    ],
+    glassesTitle: "The three-glass ceremony",
+    glasses: [
+      { title: "The first glass", text: "Gentle, like life." },
+      { title: "The second glass", text: "Strong, like love." },
+      { title: "The third glass", text: "Bitter, like death." },
+    ],
+    glassesNote:
+      "In the Sahara and the Sahel, the same tea is brewed three times. Only a well-rolled tea, such as Gunpowder 3505 or a bold Chunmee, lasts the distance.",
+    glossaryTitle: "A short glossary of export tea",
+    glossary: [
+      { term: "Chunmee", def: "“Precious eyebrows”: green tea rolled into long curves." },
+      { term: "Gunpowder", def: "“Pearl tea”: green tea rolled into small, tight balls." },
+      { term: "41022, 4011, 9371…", def: "Export codes that indicate the shape and sort of the tea." },
+      { term: "AAA, AA, A", def: "Sorting levels: the more A’s, the more even the leaf." },
+      { term: "Atay", def: "The name for tea in the Maghreb and the Sahel." },
+    ],
+  },
+  aboutPage: {
+    metaTitle: "Green tea exporter, Zhejiang–Hong Kong",
+    metaDescription:
+      "China Tea Group selects, packs and exports Chinese green tea from Zhejiang and Hong Kong for the world’s mint-tea markets.",
+    eyebrow: "About us",
+    title: "Chinese green tea, prepared for your markets",
+    paras: [
+      "China Tea Group is a green tea export company based in Zhejiang province, one of China’s major green-tea producing regions, with a trading office in Hong Kong.",
+      "What we do: find the right lots, blend them to each market’s taste, pack them under our brands or our customers’ brands, and ship them fully compliant.",
+      "We work for importers, wholesalers, packers and retail chains who sell tea to mint-tea lovers, from the Maghreb to the Sahel and on to Europe.",
+    ],
+    valuesTitle: "Our commitments",
+    values: [
+      { title: "Consistent taste", text: "A reference sample approved with you, and every lot checked against that standard." },
+      { title: "Transparency", text: "Samples before ordering, complete documents, independent inspection possible." },
+      { title: "Closeness", text: "A dedicated contact, reachable directly on WhatsApp." },
+      { title: "Brands that sell", text: "Packaging designed for the shoppers and shelves of your country." },
+    ],
+    officesTitle: "Our offices",
+  },
+  contactPage: {
+    metaTitle: "Quote for Chinese green tea by container",
+    metaDescription:
+      "Request a quote or samples of Chinese green tea. WhatsApp +86 180 5797 8014, offices in Zhejiang and Hong Kong.",
+    eyebrow: "Contact",
+    title: "Request a quote or samples",
+    intro: "Fill in the form: your message opens directly in WhatsApp, ready to send to our sales team.",
+    form: {
+      name: "Full name",
+      company: "Company",
+      country: "Country",
+      interest: "Product of interest",
+      interestOptions: ["Chunmee 41022", "Chunmee 4011", "Chunmee 9371", "Chunmee 9366", "Gunpowder 3505", "Private label (OEM)", "Pantry / tableware", "Other"],
+      volume: "Estimated volume",
+      volumeOptions: ["Samples", "Less than a container", "1 × 20' container", "1 × 40' container", "Several containers"],
+      message: "Your message",
+      submit: "Send on WhatsApp",
+      required: "Required field",
+      hint: "No data is stored on this website: the message is sent only through WhatsApp.",
+      intro: "Hello China Tea Group,",
+    },
+    directTitle: "Reach us directly",
+  },
+  legalPage: {
+    metaTitle: "Legal notice and photo credits",
+    metaDescription: "Legal notice for the China Tea Group website and credits for the photographs used.",
+    title: "Legal notice",
+    sections: [
+      { title: "Publisher", text: "China Tea Group — full contact details below." },
+      { title: "Hosting", text: "Hosting provider details will be added at launch." },
+      {
+        title: "Intellectual property",
+        text: "The texts, brands, logos and packaging artwork shown on this website belong to China Tea Group or their respective owners. Any reproduction without permission is prohibited.",
+      },
+      {
+        title: "Personal data",
+        text: "This website sets no tracking cookies and stores no data. The contact form prepares a message that you send yourself through WhatsApp.",
+      },
+    ],
+    creditsTitle: "Photo credits",
+    creditsIntro: "Mood and tea-leaf photographs from Wikimedia Commons:",
+  },
+  notFound: {
+    title: "Page not found",
+    text: "This page does not exist or has been moved.",
+  },
+};
+
+export default en;

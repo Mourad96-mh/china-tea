@@ -1,0 +1,334 @@
+{
+ "containers.webp": [
+  1920,
+  1280
+ ],
+ "containers-1280.webp": [
+  1280,
+  853
+ ],
+ "containers-800.webp": [
+  800,
+  533
+ ],
+ "mint-tea-dark.webp": [
+  1920,
+  1278
+ ],
+ "mint-tea-dark-1280.webp": [
+  1280,
+  851
+ ],
+ "mint-tea-dark-800.webp": [
+  800,
+  532
+ ],
+ "mint-tea-tray.webp": [
+  1920,
+  1440
+ ],
+ "mint-tea-tray-1280.webp": [
+  1280,
+  960
+ ],
+ "mint-tea-tray-800.webp": [
+  800,
+  600
+ ],
+ "tea-gardens.webp": [
+  1920,
+  1280
+ ],
+ "tea-gardens-1280.webp": [
+  1280,
+  853
+ ],
+ "tea-gardens-800.webp": [
+  800,
+  533
+ ],
+ "tea-hills.webp": [
+  1920,
+  1279
+ ],
+ "tea-hills-1280.webp": [
+  1280,
+  853
+ ],
+ "tea-hills-800.webp": [
+  800,
+  533
+ ],
+ "tea-leaves.webp": [
+  1920,
+  1280
+ ],
+ "tea-leaves-1280.webp": [
+  1280,
+  853
+ ],
+ "tea-leaves-800.webp": [
+  800,
+  533
+ ],
+ "tea-picker.webp": [
+  1920,
+  1275
+ ],
+ "tea-picker-1280.webp": [
+  1280,
+  850
+ ],
+ "tea-picker-800.webp": [
+  800,
+  531
+ ],
+ "teapot.webp": [
+  1920,
+  1440
+ ],
+ "teapot-1280.webp": [
+  1280,
+  960
+ ],
+ "teapot-800.webp": [
+  800,
+  600
+ ],
+ "withering.webp": [
+  1920,
+  1081
+ ],
+ "withering-1280.webp": [
+  1280,
+  720
+ ],
+ "withering-800.webp": [
+  800,
+  450
+ ],
+ "products/al-mousafir-4011-cube.webp": [
+  696,
+  975
+ ],
+ "products/al-mousafir-4011-cube-450.webp": [
+  393,
+  550
+ ],
+ "products/al-mousafir-4011.webp": [
+  682,
+  1066
+ ],
+ "products/al-mousafir-4011-450.webp": [
+  352,
+  550
+ ],
+ "products/al-mousafir-sadjar.webp": [
+  736,
+  900
+ ],
+ "products/al-mousafir-sadjar-450.webp": [
+  450,
+  550
+ ],
+ "products/amghar-41022.webp": [
+  736,
+  1095
+ ],
+ "products/amghar-41022-450.webp": [
+  370,
+  550
+ ],
+ "products/assila-honey-square.webp": [
+  900,
+  900
+ ],
+ "products/assila-honey-square-450.webp": [
+  450,
+  450
+ ],
+ "products/bondelice-tomato-square.webp": [
+  900,
+  900
+ ],
+ "products/bondelice-tomato-square-450.webp": [
+  450,
+  450
+ ],
+ "products/chunmee-9366.webp": [
+  900,
+  900
+ ],
+ "products/chunmee-9366-450.webp": [
+  450,
+  450
+ ],
+ "products/dkhmiss-41022-edition.webp": [
+  736,
+  926
+ ],
+ "products/dkhmiss-41022-edition-450.webp": [
+  437,
+  550
+ ],
+ "products/dkhmiss-41022-marble.webp": [
+  689,
+  1100
+ ],
+ "products/dkhmiss-41022-marble-450.webp": [
+  345,
+  550
+ ],
+ "products/dkhmiss-41022.webp": [
+  736,
+  864
+ ],
+ "products/dkhmiss-41022-450.webp": [
+  450,
+  528
+ ],
+ "products/dkhmiss-diwan-41022.webp": [
+  669,
+  1100
+ ],
+ "products/dkhmiss-diwan-41022-450.webp": [
+  335,
+  550
+ ],
+ "products/gold-511-3505.webp": [
+  736,
+  845
+ ],
+ "products/gold-511-3505-450.webp": [
+  450,
+  517
+ ],
+ "products/layane-glassware.webp": [
+  368,
+  213
+ ],
+ "products/layane-glassware-450.webp": [
+  368,
+  213
+ ],
+ "products/mamafe-peanut.webp": [
+  736,
+  1093
+ ],
+ "products/mamafe-peanut-450.webp": [
+  370,
+  550
+ ],
+ "products/rollio-tomato.webp": [
+  736,
+  1000
+ ],
+ "products/rollio-tomato-450.webp": [
+  405,
+  550
+ ],
+ "products/al-mousafir-4011-cube-cut.webp": [
+  657,
+  733
+ ],
+ "products/al-mousafir-4011-cube-cut-400.webp": [
+  400,
+  446
+ ],
+ "products/al-mousafir-4011-cut.webp": [
+  634,
+  724
+ ],
+ "products/al-mousafir-4011-cut-400.webp": [
+  394,
+  450
+ ],
+ "products/bondelice-corn-cut.webp": [
+  796,
+  900
+ ],
+ "products/bondelice-corn-cut-400.webp": [
+  398,
+  450
+ ],
+ "products/bondelice-peas-cut.webp": [
+  618,
+  801
+ ],
+ "products/bondelice-peas-cut-400.webp": [
+  347,
+  450
+ ],
+ "products/chunmee-9371-cut.webp": [
+  800,
+  444
+ ],
+ "products/chunmee-9371-cut-400.webp": [
+  400,
+  222
+ ],
+ "products/dkhmiss-41022-edition-cut.webp": [
+  715,
+  746
+ ],
+ "products/dkhmiss-41022-edition-cut-400.webp": [
+  400,
+  417
+ ],
+ "products/dkhmiss-41022-cut.webp": [
+  667,
+  689
+ ],
+ "products/dkhmiss-41022-cut-400.webp": [
+  400,
+  413
+ ],
+ "products/dkhmiss-diwan-41022-cut.webp": [
+  664,
+  900
+ ],
+ "products/dkhmiss-diwan-41022-cut-400.webp": [
+  332,
+  450
+ ],
+ "products/luna-honey-cut.webp": [
+  305,
+  537
+ ],
+ "products/luna-honey-cut-400.webp": [
+  256,
+  450
+ ],
+ "products/mama-delice-corn-cut.webp": [
+  654,
+  750
+ ],
+ "products/mama-delice-corn-cut-400.webp": [
+  392,
+  450
+ ],
+ "products/mamafe-peanut-cut.webp": [
+  584,
+  900
+ ],
+ "products/mamafe-peanut-cut-400.webp": [
+  292,
+  450
+ ],
+ "products/mill-miel-honey-cut.webp": [
+  305,
+  536
+ ],
+ "products/mill-miel-honey-cut-400.webp": [
+  256,
+  450
+ ],
+ "products/rollio-tomato-cut.webp": [
+  609,
+  900
+ ],
+ "products/rollio-tomato-cut-400.webp": [
+  305,
+  450
+ ]
+}
