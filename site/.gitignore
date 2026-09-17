@@ -2,3 +2,5 @@ node_modules
 .next
 out
 assets-src/stock-candidates
+
+.vercel
