@@ -1,0 +1,6 @@
+# Keep the upload small: none of this is needed to run `next build`.
+node_modules
+.next
+out
+assets-src
+seo-audit
