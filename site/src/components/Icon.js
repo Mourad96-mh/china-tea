@@ -22,6 +22,20 @@ export default function Icon({ name, size = 24, className, strokeWidth = 1.6 }) 
       </svg>
     );
   }
+  if (name === "wechat") {
+    // Two chat bubbles; the eyes and the gap around the small bubble use --icon-cut (the button colour).
+    const cut = "var(--icon-cut, #07c160)";
+    return (
+      <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M9.4 3C5.3 3 2 5.8 2 9.2c0 2 1.1 3.7 2.8 4.9l-.7 2.2 2.6-1.3c.8.2 1.7.4 2.7.4h.5a5.4 5.4 0 0 1-.2-1.5c0-3.3 3.2-6 7.1-6h.5C16.6 5.2 13.3 3 9.4 3Z" />
+        <circle cx="6.9" cy="7.9" r="1" fill={cut} />
+        <circle cx="11.9" cy="7.9" r="1" fill={cut} />
+        <path d="M22 14c0-2.9-2.9-5.2-6.4-5.2S9.2 11.1 9.2 14s2.9 5.2 6.4 5.2c.8 0 1.5-.1 2.2-.3l2.1 1.1-.6-1.8C20.9 17.2 22 15.7 22 14Z" stroke={cut} strokeWidth="1.1" />
+        <circle cx="13.5" cy="13.2" r=".85" fill={cut} />
+        <circle cx="17.7" cy="13.2" r=".85" fill={cut} />
+      </svg>
+    );
+  }
   return (
     <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       {paths[name]}

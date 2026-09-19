@@ -23,18 +23,6 @@
   800,
   532
  ],
- "mint-tea-tray.webp": [
-  1920,
-  1440
- ],
- "mint-tea-tray-1280.webp": [
-  1280,
-  960
- ],
- "mint-tea-tray-800.webp": [
-  800,
-  600
- ],
  "tea-gardens.webp": [
   1920,
   1280
@@ -155,14 +143,6 @@
   450,
   450
  ],
- "products/chunmee-9366.webp": [
-  900,
-  900
- ],
- "products/chunmee-9366-450.webp": [
-  450,
-  450
- ],
  "products/dkhmiss-41022-edition.webp": [
   736,
   926
@@ -202,14 +182,6 @@
  "products/gold-511-3505-450.webp": [
   450,
   517
- ],
- "products/layane-glassware.webp": [
-  368,
-  213
- ],
- "products/layane-glassware-450.webp": [
-  368,
-  213
  ],
  "products/mamafe-peanut.webp": [
   736,
@@ -258,14 +230,6 @@
  "products/bondelice-peas-cut-400.webp": [
   347,
   450
- ],
- "products/chunmee-9371-cut.webp": [
-  800,
-  444
- ],
- "products/chunmee-9371-cut-400.webp": [
-  400,
-  222
  ],
  "products/dkhmiss-41022-edition-cut.webp": [
   715,
@@ -330,5 +294,137 @@
  "products/rollio-tomato-cut-400.webp": [
   305,
   450
+ ],
+ "products/custom-bag.webp": [
+  725,
+  1100
+ ],
+ "products/custom-bag-450.webp": [
+  363,
+  550
+ ],
+ "products/brand-4111-box.webp": [
+  600,
+  560
+ ],
+ "products/brand-4111-box-450.webp": [
+  450,
+  420
+ ],
+ "products/dkhmiss-41022-gold.webp": [
+  696,
+  1090
+ ],
+ "products/dkhmiss-41022-gold-450.webp": [
+  351,
+  550
+ ],
+ "products/mama-delice-peas-cut.webp": [
+  619,
+  801
+ ],
+ "products/mama-delice-peas-cut-400.webp": [
+  348,
+  450
+ ],
+ "products/brand-401-box.webp": [
+  691,
+  231
+ ],
+ "products/brand-401-box-450.webp": [
+  450,
+  150
+ ],
+ "products/brand-777-cut.webp": [
+  792,
+  766
+ ],
+ "products/brand-777-cut-400.webp": [
+  400,
+  387
+ ],
+ "products/brand-401-3d-cut.webp": [
+  800,
+  732
+ ],
+ "products/brand-401-3d-cut-400.webp": [
+  400,
+  366
+ ],
+ "products/brand-9371-3d-cut.webp": [
+  800,
+  732
+ ],
+ "products/brand-9371-3d-cut-400.webp": [
+  400,
+  366
+ ],
+ "products/leaf-41022.webp": [
+  800,
+  800
+ ],
+ "products/leaf-41022-400.webp": [
+  400,
+  400
+ ],
+ "products/leaf-4011.webp": [
+  800,
+  800
+ ],
+ "products/leaf-4011-400.webp": [
+  400,
+  400
+ ],
+ "products/leaf-9371.webp": [
+  800,
+  800
+ ],
+ "products/leaf-9371-400.webp": [
+  400,
+  400
+ ],
+ "products/leaf-3505.webp": [
+  800,
+  800
+ ],
+ "products/leaf-3505-400.webp": [
+  400,
+  400
+ ],
+ "products/leaf-3505-a.webp": [
+  800,
+  800
+ ],
+ "products/leaf-3505-a-400.webp": [
+  400,
+  400
+ ],
+ "products/leaf-3505-aa.webp": [
+  800,
+  800
+ ],
+ "products/leaf-3505-aa-400.webp": [
+  400,
+  400
+ ],
+ "products/leaf-3505-aaa.webp": [
+  800,
+  800
+ ],
+ "products/leaf-3505-aaa-400.webp": [
+  400,
+  400
+ ],
+ "conserves-cans.webp": [
+  1920,
+  1280
+ ],
+ "conserves-cans-1280.webp": [
+  1280,
+  853
+ ],
+ "conserves-cans-800.webp": [
+  800,
+  533
  ]
 }

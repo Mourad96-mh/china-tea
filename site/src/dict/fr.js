@@ -1,16 +1,15 @@
 const fr = {
   meta: {
-    title: "China Tea Group — Thé vert de Chine pour le Maroc et l’Afrique",
+    title: "China Tea Group — Grossiste thé vert de Chine : Chunmee, Gunpowder",
     description:
-      "Exportateur de thé vert de Chine : Chunmee 41022, 4011, 9371, 9366 et Gunpowder 3505. Marques maison, marque privée (OEM) et export depuis le Zhejiang.",
+      "Import-export de thé vert de Chine : grossiste et distributeur de Chunmee et Gunpowder, en conteneur 20FT ou 40FT vers le Maroc, l’Afrique et l’Europe.",
   },
   nav: {
     home: "Accueil",
     teas: "Nos thés",
     brands: "Nos marques",
-    pantry: "Épicerie",
+    pantry: "Conserves",
     services: "Services",
-    ritual: "L’art du thé",
     about: "Qui sommes-nous",
     contact: "Contact",
     quote: "Demander un devis",
@@ -29,6 +28,11 @@ const fr = {
     allTeas: "Tous nos thés",
     allBrands: "Toutes nos marques",
     whatsapp: "Écrire sur WhatsApp",
+    wechat: "Nous contacter sur WeChat",
+    wechatText: "Ajoutez-nous sur WeChat en recherchant ce numéro :",
+    wechatQr: "QR code WeChat",
+    wechatCopy: "Copier le numéro",
+    wechatCopied: "Numéro copié ✓",
     call: "Appeler",
     home: "Accueil",
     grade: "Grade",
@@ -54,11 +58,38 @@ const fr = {
     hero: {
       eyebrow: "Thé vert de Chine · Export",
       title: "Du jardin de thé chinois",
-      titleAccent: "au verre de thé marocain",
-      text: "Nous sélectionnons, conditionnons et expédions les grands thés verts de Chine — Chunmee 41022, 4011, 9371 et Gunpowder 3505 — pour les importateurs et distributeurs du Maghreb, d’Afrique et d’Europe.",
+      titleAccent: "jusqu’au verre de vos clients",
+      text: "De nos montagnes à votre porte. Un air pur, des terres préservées : c’est là que naissent nos thés. De la récolte à l’usine, chaque étape est contrôlée, pour une qualité qui ne change pas d’un conteneur à l’autre.",
       cta: "Découvrir nos thés",
       cta2: "Demander un devis",
       badge: "Marques maison & marque privée",
+    },
+    categories: {
+      eyebrow: "Nos produits",
+      title: "Quatre gammes, un seul fournisseur",
+      text: "Import-export en gros : du thé vert de Chine aux sacs à votre marque, en conteneur 20FT ou 40FT.",
+      items: {
+        chunmee: {
+          title: "Thé vert Chunmee",
+          text: "La feuille « sourcil » du thé à la menthe : 41022, 4011 et 9371.",
+          cta: "Voir les Chunmee",
+        },
+        gunpowder: {
+          title: "Thé vert Gunpowder",
+          text: "Des perles roulées serrées pour une infusion forte : le 3505.",
+          cta: "Voir le Gunpowder",
+        },
+        food: {
+          title: "Produits alimentaires & conserves",
+          text: "Concentré de tomate en boîtes 1/2 (400 g) et 4/4, miel 100 % pur et épicerie.",
+          cta: "Voir les conserves",
+        },
+        bags: {
+          title: "Sacs bagages personnalisés",
+          text: "Sacs imprimés à votre marque, en tailles S, M, L et XL.",
+          cta: "Demander un devis",
+        },
+      },
     },
     intro: {
       eyebrow: "China Tea Group",
@@ -70,8 +101,8 @@ const fr = {
       cta: "Qui sommes-nous",
     },
     stats: [
-      { value: "5", label: "grades de référence" },
-      { value: "4", label: "marques maison" },
+      { value: "4", label: "grades de référence" },
+      { value: "8", label: "marques maison" },
       { value: "2", label: "bureaux : Zhejiang & Hong Kong" },
       { value: "OEM", label: "marque privée sur mesure" },
     ],
@@ -83,7 +114,7 @@ const fr = {
     brands: {
       eyebrow: "Nos marques",
       title: "Des boîtes qui se vendent en rayon",
-      text: "Quatre univers pensés pour les consommateurs du thé à la menthe : le désert, l’hospitalité saharienne, l’identité amazighe et l’élégance noir et or.",
+      text: "Chaque marque a son univers, pensé pour les consommateurs du thé à la menthe : le désert, l’hospitalité saharienne, l’identité amazighe, l’élégance noir et or.",
     },
     process: {
       eyebrow: "Du jardin au conteneur",
@@ -93,7 +124,7 @@ const fr = {
         { title: "Cueillette", text: "Les jeunes pousses sont récoltées au printemps, quand la feuille est la plus aromatique." },
         { title: "Fixation", text: "Les feuilles passent à la chaleur pour stopper l’oxydation et garder leur couleur verte." },
         { title: "Roulage", text: "Roulées en « sourcil » pour le Chunmee ou en perle serrée pour le Gunpowder." },
-        { title: "Tri & calibrage", text: "Le thé est séché, tamisé et classé en grades : 41022, 4011, 9371, 9366, 3505." },
+        { title: "Tri & calibrage", text: "Le thé est séché, tamisé et classé en grades : 41022, 4011, 9371, 3505." },
         { title: "Dégustation", text: "Chaque lot est goûté et comparé à l’échantillon validé avec le client." },
         { title: "Conditionnement & export", text: "Mise en boîte ou en vrac, empotage du conteneur et documents d’export." },
       ],
@@ -101,12 +132,12 @@ const fr = {
     services: {
       eyebrow: "Nos services",
       title: "Bien plus qu’un fournisseur de thé",
-      text: "Du choix du grade à l’arrivée au port, un seul interlocuteur.",
+      text: "Du choix du grade à l’arrivée au port, un seul interlocuteur — et, sur votre région, une distribution exclusive.",
       items: [
         { icon: "leaf", title: "Sélection & assemblage", text: "Des lots choisis et assemblés pour garder le même goût d’une commande à l’autre." },
         { icon: "box", title: "Marque privée (OEM)", text: "Votre marque, votre boîte, vos textes en arabe et en français : nous produisons tout." },
-        { icon: "check", title: "Contrôle qualité", text: "Échantillons avant expédition et inspection indépendante sur demande." },
-        { icon: "ship", title: "Export & logistique", text: "Conteneurs complets ou groupés, documents d’export et suivi jusqu’à votre port." },
+        { icon: "check", title: "Contrôle qualité", text: "Certificats sanitaires aux normes internationales, faible taux de pesticides, échantillons avant expédition." },
+        { icon: "ship", title: "Export & logistique", text: "Maersk, CMA CGM, HMM : nous livrons au port de votre pays, en conteneurs complets ou groupés." },
       ],
       cta: "Tous nos services",
     },
@@ -114,23 +145,36 @@ const fr = {
       eyebrow: "L’art du thé",
       title: "Le premier verre est doux comme la vie…",
       text: "…le deuxième fort comme l’amour, le troisième amer comme la mort. Derrière ce proverbe du désert, il y a un thé qui doit tenir trois infusions. C’est ce thé que nous sélectionnons.",
-      cta: "Le thé à la marocaine",
     },
     markets: {
       eyebrow: "Nos marchés",
       title: "Un thé pour chaque tradition",
       text: "Le même mot « atay » recouvre des goûts très différents. Nous préparons nos thés pour chacun.",
       regions: [
-        { name: "Maghreb", text: "Thé à la menthe parfumé et sucré : Chunmee 41022, 4011 et 9371." },
-        { name: "Sahel & Afrique de l’Ouest", text: "Thé très concentré servi en trois verres : Gunpowder 3505 et Chunmee corsés." },
-        { name: "Europe", text: "Épiceries orientales et diaspora : formats familiaux et marques reconnues." },
+        {
+          name: "Maghreb",
+          text: "Thé à la menthe parfumé et sucré : Chunmee 41022, 4011 et 9371.",
+          countries: ["Maroc", "Algérie", "Tunisie", "Libye"],
+        },
+        {
+          name: "Sahel & Afrique de l’Ouest",
+          text: "Thé très concentré servi en trois verres : Gunpowder 3505 et Chunmee corsés.",
+          countries: ["Mauritanie", "Sénégal", "Mali", "Niger", "Burkina Faso"],
+        },
+        {
+          name: "Europe",
+          text: "Épiceries orientales et diaspora : formats familiaux et marques reconnues.",
+          countries: ["France", "Belgique", "Espagne", "Pays-Bas", "Italie"],
+        },
       ],
+      note: "Votre pays n’apparaît pas dans la liste ? Nous chargeons pour le port de votre choix.",
+      noteCta: "Parlons de votre marché",
     },
     pantry: {
-      eyebrow: "Épicerie & art de la table",
+      eyebrow: "Conserves",
       title: "Tout ce qui accompagne le thé",
-      text: "En complément du thé, nous expédions un service à thé décoré, des miels, des conserves (concentré de tomates, maïs doux, petits pois) et de la pâte d’arachide.",
-      cta: "Voir l’épicerie",
+      text: "En complément du thé, nous expédions du miel, des conserves (concentré de tomates, maïs doux, petits pois) et de la pâte d’arachide.",
+      cta: "Voir les conserves",
     },
     cta: {
       title: "Parlons de votre prochain conteneur",
@@ -141,16 +185,16 @@ const fr = {
   teasPage: {
     metaTitle: "Thés verts de Chine : Chunmee et Gunpowder",
     metaDescription:
-      "Chunmee 41022, 4011 Extra, 9371, 9366 et Gunpowder 3505 : feuille, liqueur, arôme et usages de chaque grade de thé vert de Chine pour l’export.",
+      "Chunmee 41022, 4011 Extra, 9371 et Gunpowder 3505 : feuille, liqueur, arôme et usages de chaque grade de thé vert de Chine pour l’export.",
     eyebrow: "Nos thés",
     title: "Thés verts de Chine, grade par grade",
     intro:
-      "Le code d’un thé vert d’exportation raconte sa forme, son tri et sa force. Voici nos cinq grades de référence et ce qu’ils apportent dans le verre.",
+      "Le code d’un thé vert d’exportation raconte sa forme, son tri et sa force. Voici nos quatre grades de référence et ce qu’ils apportent dans le verre.",
     families: [
       {
         id: "chunmee",
         title: "Chunmee — le thé « sourcil »",
-        text: "Chunmee (珍眉) signifie « sourcils précieux ». La feuille est roulée en longue virgule. Selon le tri, on obtient un thé fin et soyeux (4011), équilibré (41022) ou puissant (9371, 9366).",
+        text: "Chunmee (珍眉) signifie « sourcils précieux ». La feuille est roulée en longue virgule. Selon le tri, on obtient un thé fin et soyeux (4011), équilibré (41022) ou puissant (9371).",
       },
       {
         id: "gunpowder",
@@ -166,6 +210,8 @@ const fr = {
     metaTitle: "Thé vert {name} : profil et usages",
     metaSuffix: "Échantillons sur demande.",
     specsTitle: "Profil de dégustation",
+    leafLabel: "Feuille sèche — {name}",
+    photoLabel: "Voir la photo {n}",
     brewTitle: "Préparation conseillée",
     brewSteps: [
       "Rincer une grosse cuillerée de thé à l’eau bouillante et jeter cette première eau.",
@@ -180,9 +226,9 @@ const fr = {
     ctaText: "Indiquez-nous votre marché et les volumes estimés.",
   },
   brandsPage: {
-    metaTitle: "Thé Al Mousafir, Dkhmiss, Amghar et 511",
+    metaTitle: "Nos 8 marques de thé vert Chunmee et Gunpowder",
     metaDescription:
-      "Découvrez les marques de thé vert de China Tea Group : Al Mousafir 4011, Dkhmiss 41022, Amghar berbère et 511 noir et or. Boîtes prêtes pour la distribution.",
+      "Chunmee : Dkhmiss 41022, Al Mousafir, 4111, 401 et 9371. Gunpowder : 511, 777 et Amghar. Les 8 marques de thé vert de China Tea Group, prêtes pour la distribution.",
     eyebrow: "Nos marques",
     title: "Des marques qui parlent à vos clients",
     intro:
@@ -194,19 +240,20 @@ const fr = {
     metaTitle: "Thé {name} {grades} : marque de thé vert",
     metaSuffix: "Boîtes prêtes pour la distribution.",
     storyTitle: "L’histoire de la marque",
+    conceptNote: "Visuel de présentation — l’emballage final peut différer.",
     rangeTitle: "La gamme",
     otherBrands: "Nos autres marques",
     ctaTitle: "Intéressé par cette marque ?",
     ctaText: "Demandez les conditions de distribution pour votre pays.",
   },
   pantryPage: {
-    metaTitle: "Épicerie et service à thé pour importateurs",
+    metaTitle: "Épicerie et conserves pour importateurs",
     metaDescription:
-      "En complément du thé vert, China Tea Group exporte un service à thé décoré or, des miels, des conserves de tomate, maïs et petits pois, et de la pâte d’arachide.",
-    eyebrow: "Épicerie & art de la table",
-    title: "Ce qui accompagne le thé",
+      "En complément du thé vert, China Tea Group exporte du miel 100 % pur, du concentré de tomate 1/2 et 4/4, du maïs, des petits pois et de la pâte d’arachide.",
+    eyebrow: "Conserves & produits alimentaires",
+    title: "Conserves et épicerie pour l’export",
     intro:
-      "Nos clients importateurs remplissent souvent leurs conteneurs avec d’autres produits. Nous pouvons compléter votre commande de thé avec ces références.",
+      "Concentré de tomate en boîtes 1/2 et 4/4, maïs doux, petits pois, miel et pâte d’arachide : des références à ajouter à votre conteneur de thé, en 20FT ou 40FT.",
     note: "Envie d’ajouter un produit à votre conteneur ? Envoyez-nous la référence recherchée, nous étudions la demande.",
   },
   servicesPage: {
@@ -233,14 +280,20 @@ const fr = {
       {
         icon: "check",
         title: "Contrôle qualité",
-        text: "Avant le départ, chaque lot est comparé à l’échantillon validé. Vous pouvez aussi mandater l’organisme d’inspection de votre choix.",
-        points: ["Dégustation et contrôle visuel", "Échantillon avant expédition", "Inspection indépendante sur demande"],
+        text: "Avant le départ, chaque lot est comparé à l’échantillon validé et part avec les certificats sanitaires exigés par les normes internationales. Vous pouvez aussi mandater l’organisme d’inspection de votre choix.",
+        points: ["Certificats sanitaires aux normes internationales", "Faible taux de pesticides", "Dégustation, contrôle visuel et échantillon avant expédition", "Inspection indépendante sur demande"],
       },
       {
         icon: "ship",
         title: "Export & logistique",
-        text: "Nous organisons l’empotage et l’expédition depuis les ports de Chine de l’Est, avec les documents dont votre transitaire a besoin.",
-        points: ["Conteneurs 20' et 40', complets ou groupés", "Incoterms FOB, CFR ou CIF", "Facture, liste de colisage, certificats d’origine et phytosanitaire"],
+        text: "Nous travaillons avec les grandes compagnies maritimes — Maersk, CMA CGM, HMM — pour charger depuis les ports de Chine de l’Est et livrer au port de votre pays, avec les documents dont votre transitaire a besoin.",
+        points: ["Conteneurs 20FT et 40FT, complets ou groupés", "Partenariats Maersk, CMA CGM et HMM", "Incoterms FOB, CFR ou CIF", "Facture, liste de colisage, certificats d’origine, sanitaire et phytosanitaire"],
+      },
+      {
+        icon: "globe",
+        title: "Exclusivité par région",
+        text: "Nous pouvons vous réserver la distribution de nos marques sur votre pays ou votre région : vous investissez pour installer la marque sans la retrouver le lendemain chez le concurrent d’en face.",
+        points: ["Exclusivité par pays ou par région", "Marques maison réservées à votre réseau", "Conditions définies avec vous"],
       },
     ],
     packagingTitle: "Formats de conditionnement",
@@ -275,7 +328,15 @@ const fr = {
       },
       {
         q: "Quels documents accompagnent l’expédition ?",
-        a: "Facture commerciale, liste de colisage, connaissement, certificat d’origine et certificat phytosanitaire. D’autres documents peuvent être fournis selon les exigences de votre pays.",
+        a: "Facture commerciale, liste de colisage, connaissement, certificat d’origine, certificat sanitaire et certificat phytosanitaire. D’autres documents peuvent être fournis selon les exigences de votre pays.",
+      },
+      {
+        q: "Vos thés sont-ils certifiés ?",
+        a: "Oui. Nos thés partent avec les certificats sanitaires exigés par les normes internationales, avec un faible taux de pesticides. Les certificats sont joints au dossier d’expédition.",
+      },
+      {
+        q: "Proposez-vous une exclusivité de distribution ?",
+        a: "Oui, par pays ou par région. Si vous développez nos marques sur votre marché, nous pouvons vous en réserver la distribution : parlons-en dès la première commande.",
       },
       {
         q: "Quels sont les délais ?",
@@ -285,45 +346,6 @@ const fr = {
         q: "Quels modes de paiement acceptez-vous ?",
         a: "Le virement bancaire (T/T) et la lettre de crédit (L/C) sont les plus courants. Les conditions sont définies avec chaque client.",
       },
-    ],
-  },
-  ritualPage: {
-    metaTitle: "Thé à la marocaine : histoire et préparation",
-    metaDescription:
-      "Comment le thé vert de Chine est devenu l’atay marocain : préparation du thé à la menthe, cérémonie des trois verres et sens des grades 41022 et 3505.",
-    eyebrow: "L’art du thé",
-    title: "Le thé vert de Chine, cœur du thé à la marocaine",
-    intro:
-      "Au Maroc comme au Sahel, le thé est bien plus qu’une boisson : c’est un accueil, une conversation, un rituel. Et ce rituel commence dans les jardins de thé de Chine.",
-    historyTitle: "Une histoire de routes commerciales",
-    history: [
-      "Le thé arrive au Maroc au XVIIIe siècle, d’abord comme présent offert à la cour. Il reste longtemps un luxe réservé aux familles aisées.",
-      "Au XIXe siècle, les marchands européens multiplient les cargaisons de thé vert chinois vers les ports de Tanger et d’Essaouira. Le thé se démocratise, s’associe à la menthe et au sucre, et devient la boisson nationale.",
-      "Aujourd’hui, le Maroc compte parmi les tout premiers importateurs de thé vert chinois au monde, et les pays du Sahel en ont fait le cœur de leur hospitalité.",
-    ],
-    prepTitle: "Préparer un thé à la menthe",
-    prep: [
-      { title: "Chauffer", text: "Porter l’eau à ébullition et ébouillanter la théière." },
-      { title: "Laver le thé", text: "Mettre une bonne cuillerée de thé, couvrir d’un peu d’eau, remuer et jeter cette eau qui retire l’amertume." },
-      { title: "Infuser", text: "Remplir d’eau frémissante, ajouter le sucre et un bouquet de menthe fraîche, laisser infuser quelques minutes." },
-      { title: "Mélanger", text: "Verser un verre et le reverser dans la théière deux ou trois fois pour mélanger sans cuillère." },
-      { title: "Servir de haut", text: "Servir en levant la théière : l’air forme la mousse, signe d’un thé réussi." },
-    ],
-    glassesTitle: "La cérémonie des trois verres",
-    glasses: [
-      { title: "Le premier verre", text: "Doux comme la vie." },
-      { title: "Le deuxième verre", text: "Fort comme l’amour." },
-      { title: "Le troisième verre", text: "Amer comme la mort." },
-    ],
-    glassesNote:
-      "Dans le Sahara et au Sahel, le même thé est infusé trois fois. Seul un thé bien roulé, comme le Gunpowder 3505 ou un Chunmee corsé, tient la distance.",
-    glossaryTitle: "Petit lexique du thé d’exportation",
-    glossary: [
-      { term: "Chunmee", def: "« Sourcils précieux » : thé vert roulé en longues virgules." },
-      { term: "Gunpowder", def: "« Thé perle » : thé vert roulé en petites billes serrées." },
-      { term: "41022, 4011, 9371…", def: "Codes d’exportation qui indiquent la forme et le tri du thé." },
-      { term: "AAA, AA, A", def: "Niveaux de tri : plus il y a de A, plus la feuille est régulière." },
-      { term: "Atay", def: "Le nom du thé au Maghreb et au Sahel." },
     ],
   },
   aboutPage: {
@@ -359,9 +381,9 @@ const fr = {
       company: "Société",
       country: "Pays",
       interest: "Produit recherché",
-      interestOptions: ["Chunmee 41022", "Chunmee 4011", "Chunmee 9371", "Chunmee 9366", "Gunpowder 3505", "Marque privée (OEM)", "Épicerie / art de la table", "Autre"],
+      interestOptions: ["Chunmee 41022", "Chunmee 4011", "Chunmee 9371", "Gunpowder 3505", "Marque privée (OEM)", "Épicerie / conserves", "Autre"],
       volume: "Volume estimé",
-      volumeOptions: ["Échantillons", "Moins d’un conteneur", "1 conteneur 20'", "1 conteneur 40'", "Plusieurs conteneurs"],
+      volumeOptions: ["Échantillons", "Moins d’un conteneur", "1 conteneur 20FT", "1 conteneur 40FT", "Plusieurs conteneurs"],
       message: "Votre message",
       submit: "Envoyer sur WhatsApp",
       required: "Champ requis",

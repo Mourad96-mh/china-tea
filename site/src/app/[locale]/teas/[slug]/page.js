@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Icon from "@/components/Icon";
 import Ornament from "@/components/Ornament";
 import Reveal from "@/components/Reveal";
+import Gallery from "@/components/Gallery";
 import SectionHead from "@/components/SectionHead";
 import { CtaBand, PageHero, TeaCard } from "@/components/Blocks";
 import { getDict } from "@/dict";
@@ -38,7 +39,27 @@ export default async function TeaDetailPage({ params }) {
   const dict = getDict(locale);
   const c = dict.common;
   const d = dict.teaDetail;
-  const visual = tea.image ? img(tea.image) : img("tea-leaves-800.webp");
+  // Main photo first, then the extra shop-style photos. Leaf photos are captioned with the grade
+  // (and sort level), shown whole on white like their own background; nothing is cropped.
+  const name = pick(tea.name, locale);
+  const leafLabel = (sort) => fill(d.leafLabel, { name: sort ? `${name} ${sort}` : name });
+  const photos = [
+    tea.imageWhite
+      ? { image: tea.image, fit: true, leaf: true, alt: leafLabel(), caption: leafLabel() }
+      : {
+          image: tea.image,
+          scene: Boolean(tea.imageScene),
+          alt: name,
+          caption: tea.imageConcept ? dict.brandDetail.conceptNote : undefined,
+        },
+    ...(tea.gallery || []).map((g) => ({
+      image: g.image,
+      fit: true,
+      leaf: g.kind === "leaf",
+      alt: g.kind === "leaf" ? leafLabel(g.sort) : name,
+      caption: g.kind === "leaf" ? leafLabel(g.sort) : undefined,
+    })),
+  ].map((p) => ({ ...p, ...img(p.image) }));
   const brandList = tea.brands.map(getBrand).filter(Boolean);
   const others = teas.filter((t) => t.slug !== slug);
   const specKeys = ["leaf", "liquor", "aroma", "taste"];
@@ -59,9 +80,8 @@ export default async function TeaDetailPage({ params }) {
 
       <section className="section section--pattern">
         <div className="container detail">
-          <Reveal className={`detail__visual${tea.image ? "" : " detail__visual--leaf"}${tea.imageScene ? " is-scene" : ""}`}>
-            <img src={visual.src} srcSet={visual.srcSet} sizes="(max-width: 860px) 90vw, 480px" width={visual.width} height={visual.height} alt={pick(tea.name, locale)} />
-            <span className="detail__code">{tea.code}</span>
+          <Reveal className="detail__media">
+            <Gallery items={photos} code={tea.code} photoLabel={d.photoLabel} />
           </Reveal>
           <Reveal className="detail__copy" delay={100}>
             <p className="lead">{pick(tea.summary, locale)}</p>

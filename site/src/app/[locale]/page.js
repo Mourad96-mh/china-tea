@@ -11,6 +11,14 @@ import { teas } from "@/content/teas";
 import { brands } from "@/content/brands";
 import { pantry } from "@/content/pantry";
 
+// The four product lines shown right under the hero; their text lives in dict.home.categories.
+const categories = [
+  { id: "chunmee", image: "products/dkhmiss-41022.webp", path: "/teas", hash: "chunmee" },
+  { id: "gunpowder", image: "products/gold-511-3505.webp", path: "/teas", hash: "gunpowder" },
+  { id: "food", image: "products/bondelice-tomato-square.webp", path: "/conserves", hash: "canned" },
+  { id: "bags", image: "products/custom-bag.webp", path: "/contact" },
+];
+
 export default async function HomePage({ params }) {
   const { locale } = await params;
   const dict = getDict(locale);
@@ -41,13 +49,6 @@ export default async function HomePage({ params }) {
                 {h.hero.cta2}
               </Link>
             </div>
-            <ul className="hero__grades" aria-label={dict.nav.teas}>
-              {teas.map((t) => (
-                <li key={t.slug}>
-                  <Link href={href(locale, `/teas/${t.slug}`)}>{t.code}</Link>
-                </li>
-              ))}
-            </ul>
           </div>
           <div className="hero__showcase" aria-hidden="true">
             <div className="hero__halo" />
@@ -59,6 +60,35 @@ export default async function HomePage({ params }) {
           </div>
         </div>
         <HeroArc />
+      </section>
+
+      {/* ——— Product categories ——— */}
+      <section className="section section--cream">
+        <div className="container">
+          <SectionHead eyebrow={h.categories.eyebrow} title={h.categories.title} text={h.categories.text} />
+          <div className="cat-grid">
+            {categories.map((c, i) => {
+              const t = h.categories.items[c.id];
+              const pic = img(c.image);
+              return (
+                <Reveal key={c.id} className="cat-card" delay={i * 80}>
+                  <Link className="cat-card__link" href={href(locale, c.path) + (c.hash ? `#${c.hash}` : "")}>
+                    <div className="cat-card__visual">
+                      <img src={pic.src} srcSet={pic.srcSet} sizes="(max-width: 560px) 45vw, 280px" width={pic.width} height={pic.height} alt="" loading="lazy" />
+                    </div>
+                    <div className="cat-card__body">
+                      <h3 className="cat-card__title">{t.title}</h3>
+                      <p>{t.text}</p>
+                      <span className="link-arrow">
+                        {t.cta} <Icon name="arrow" size={18} />
+                      </span>
+                    </div>
+                  </Link>
+                </Reveal>
+              );
+            })}
+          </div>
+        </div>
       </section>
 
       {/* ——— Intro + figures ——— */}
@@ -180,9 +210,6 @@ export default async function HomePage({ params }) {
             <h2 className="quote-band__title">{h.ritual.title}</h2>
             <Ornament className="ornament--light ornament--start" />
             <p>{h.ritual.text}</p>
-            <Link className="btn btn--gold" href={href(locale, "/tea-ritual")}>
-              {h.ritual.cta} <Icon name="arrow" size={18} />
-            </Link>
           </Reveal>
         </div>
       </section>
@@ -197,9 +224,20 @@ export default async function HomePage({ params }) {
                 <span className="market-card__num">{String(i + 1).padStart(2, "0")}</span>
                 <h3>{r.name}</h3>
                 <p>{r.text}</p>
+                <ul className="market-card__countries">
+                  {r.countries.map((c) => (
+                    <li key={c}>{c}</li>
+                  ))}
+                </ul>
               </Reveal>
             ))}
           </div>
+          <p className="market-note">
+            {h.markets.note}{" "}
+            <Link className="link-arrow" href={href(locale, "/contact")}>
+              {h.markets.noteCta} <Icon name="arrow" size={16} />
+            </Link>
+          </p>
         </div>
       </section>
 
@@ -208,7 +246,7 @@ export default async function HomePage({ params }) {
         <div className="container split split--reverse">
           <Reveal className="split__copy">
             <SectionHead eyebrow={h.pantry.eyebrow} title={h.pantry.title} text={h.pantry.text} align="start" />
-            <Link className="btn btn--outline" href={href(locale, "/pantry")}>
+            <Link className="btn btn--outline" href={href(locale, "/conserves")}>
               {h.pantry.cta}
             </Link>
           </Reveal>

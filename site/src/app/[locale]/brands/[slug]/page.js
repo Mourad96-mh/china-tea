@@ -58,8 +58,11 @@ export default async function BrandPage({ params }) {
 
       <section className="section section--pattern">
         <div className="container detail" style={{ "--brand": brand.accent }}>
-          <Reveal className={`detail__visual detail__visual--brand${brand.coverScene ? " is-scene" : ""}`}>
-            <img src={cover.src} srcSet={cover.srcSet} sizes="(max-width: 860px) 90vw, 480px" width={cover.width} height={cover.height} alt={`${brand.name} — ${pick(brand.packs[0].name, locale)}`} />
+          <Reveal className="detail__media">
+            <div className={`detail__visual detail__visual--brand${brand.coverScene ? " is-scene" : ""}`}>
+              <img src={cover.src} srcSet={cover.srcSet} sizes="(max-width: 860px) 90vw, 480px" width={cover.width} height={cover.height} alt={`${brand.name} — ${pick(brand.packs[0].name, locale)}`} />
+            </div>
+            {brand.concept && <p className="detail__note">{d.conceptNote}</p>}
           </Reveal>
           <Reveal className="detail__copy" delay={100}>
             {brand.arabic && (

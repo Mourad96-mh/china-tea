@@ -7,6 +7,9 @@ export const site = {
   phoneDisplay: "+86 180 5797 8014",
   phoneE164: "+8618057978014",
   whatsapp: "8618057978014",
+  // WeChat is linked to the same number: visitors add us by searching it in the app.
+  // Optional: `qr` = path in public/img to the WeChat QR code (WeChat > Me > QR code), shown in the panel.
+  wechat: { search: "+86 180 5797 8014", qr: "" },
   // TODO: no e-mail address was supplied — add one here and it appears everywhere.
   email: "",
   offices: [

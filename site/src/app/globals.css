@@ -491,8 +491,8 @@ a:hover .link-arrow svg {
 
 .logo__emblem {
   color: var(--gold-600);
-  width: 44px;
-  height: 44px;
+  width: 50px;
+  height: 50px;
 }
 
 .logo__text {
@@ -504,14 +504,14 @@ a:hover .link-arrow svg {
 .logo__name {
   font-family: var(--font-display);
   white-space: nowrap;
-  font-size: 1.55rem;
+  font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 0.02em;
 }
 
 .logo__group {
   margin-top: 4px;
-  font-size: 0.64rem;
+  font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.42em;
   text-transform: uppercase;
@@ -721,12 +721,12 @@ a:hover .link-arrow svg {
   }
 
   .logo__name {
-    font-size: 1.35rem;
+    font-size: 1.55rem;
   }
 
   .logo__emblem {
-    width: 38px;
-    height: 38px;
+    width: 42px;
+    height: 42px;
   }
 }
 
@@ -784,6 +784,12 @@ a:hover .link-arrow svg {
     var(--pattern-light);
 }
 
+.hero::before {
+  background:
+    linear-gradient(100deg, rgb(10 28 20 / 58%) 0%, rgb(10 28 20 / 36%) 45%, rgb(10 28 20 / 8%) 100%),
+    var(--pattern-light);
+}
+
 .hero__inner {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
@@ -812,33 +818,6 @@ a:hover .link-arrow svg {
   margin-bottom: 32px;
   color: rgb(252 249 242 / 82%);
   font-size: clamp(1rem, 0.95rem + 0.3vw, 1.12rem);
-}
-
-.hero__grades {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 36px;
-}
-
-.hero__grades a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 36px;
-  padding: 4px 14px;
-  border: 1px solid rgb(228 203 142 / 35%);
-  border-radius: 999px;
-  color: var(--gold-300);
-  font-family: var(--font-display);
-  font-size: 1.1rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  transition: background-color 0.2s, border-color 0.2s;
-}
-
-.hero__grades a:hover {
-  background: rgb(228 203 142 / 12%);
-  border-color: var(--gold-300);
 }
 
 .hero__showcase {
@@ -940,7 +919,7 @@ a:hover .link-arrow svg {
 
   .hero::before {
     background:
-      linear-gradient(180deg, rgb(10 28 20 / 90%) 0%, rgb(10 28 20 / 82%) 60%, rgb(10 28 20 / 92%) 100%),
+      linear-gradient(180deg, rgb(10 28 20 / 82%) 0%, rgb(10 28 20 / 72%) 60%, rgb(10 28 20 / 84%) 100%),
       var(--pattern-light);
   }
 
@@ -949,12 +928,18 @@ a:hover .link-arrow svg {
   }
 }
 
-@media (max-width: 480px) {
-  .hero__badge {
-    font-size: 0.74rem;
-    padding: 8px 14px;
+/* Phones: the packshots go, the photo behind the hero carries it alone. */
+@media (max-width: 640px) {
+  .hero__showcase {
+    display: none;
   }
 
+  .hero__inner {
+    gap: 0;
+  }
+}
+
+@media (max-width: 480px) {
   .hero .btn-row .btn {
     width: 100%;
   }
@@ -971,13 +956,24 @@ a:hover .link-arrow svg {
 
 .page-hero::before {
   background:
-    linear-gradient(180deg, rgb(10 28 20 / 88%), rgb(10 28 20 / 76%)),
+    linear-gradient(180deg, rgb(10 28 20 / 50%), rgb(10 28 20 / 38%)),
     var(--pattern-light);
 }
 
 .page-hero__inner {
   padding-block: clamp(40px, 6vw, 72px) clamp(88px, 10vw, 130px);
   text-align: center;
+}
+
+/* Light overlay on the hero photos: a soft shadow keeps the text readable */
+.hero__copy,
+.page-hero__inner {
+  text-shadow: 0 2px 16px rgb(10 28 20 / 55%), 0 1px 3px rgb(10 28 20 / 45%);
+}
+
+.hero__copy .btn,
+.page-hero__inner .btn {
+  text-shadow: none;
 }
 
 .page-hero__title {
@@ -1172,15 +1168,151 @@ a:hover .link-arrow svg {
   }
 }
 
-/* ---------- Tea cards ---------- */
-.tea-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 210px), 1fr));
-  gap: 22px;
+/* ---------- Centred card grids ----------
+   Flex rows instead of CSS grid so an incomplete last row sits in the middle
+   (grid would leave it on the left). Each grid sets --cols and --gap. */
+.cat-grid,
+.tea-grid,
+.brand-grid,
+.product-grid,
+.pack-grid,
+.prep-grid {
+  --gap: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap);
 }
 
-.tea-grid > * {
+.cat-grid > *,
+.tea-grid > *,
+.brand-grid > *,
+.product-grid > *,
+.pack-grid > *,
+.prep-grid > * {
+  flex: 0 0 calc((100% - (var(--cols) - 1) * var(--gap)) / var(--cols));
+  min-width: 0;
+}
+
+/* ---------- Product category cards (home) ---------- */
+.cat-grid {
+  --cols: 4;
+}
+
+@media (max-width: 1100px) {
+  .cat-grid {
+    --cols: 2;
+  }
+}
+
+.cat-card {
   height: 100%;
+}
+
+.cat-card__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid rgb(168 132 59 / 25%);
+  border-radius: var(--radius-lg);
+  background: var(--white);
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease), border-color 0.35s;
+}
+
+.cat-card__link:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold-500);
+  box-shadow: var(--shadow);
+}
+
+.cat-card__visual {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--cream-100);
+}
+
+.cat-card__visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s var(--ease);
+}
+
+.cat-card__link:hover .cat-card__visual img {
+  transform: scale(1.05);
+}
+
+.cat-card__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 22px 24px;
+}
+
+.cat-card__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  line-height: 1.15;
+  color: var(--green-900);
+}
+
+.cat-card__body p {
+  margin: 0;
+  color: var(--ink-700);
+}
+
+.cat-card__body .link-arrow {
+  margin-top: auto;
+}
+
+/* Phones: two small cards per row instead of four tall ones stacked. */
+@media (max-width: 560px) {
+  .cat-grid {
+    --cols: 2;
+    --gap: 12px;
+  }
+
+  .cat-card__link {
+    border-radius: var(--radius);
+  }
+
+  .cat-card__body {
+    gap: 6px;
+    padding: 12px 12px 14px;
+  }
+
+  .cat-card__title {
+    font-size: 1.12rem;
+  }
+
+  .cat-card__body p {
+    font-size: 0.82rem;
+    line-height: 1.45;
+  }
+
+  .cat-card__body .link-arrow {
+    font-size: 0.8rem;
+  }
+}
+
+/* ---------- Tea cards ---------- */
+.tea-grid {
+  --cols: 4;
+}
+
+@media (max-width: 900px) {
+  .tea-grid {
+    --cols: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .tea-grid {
+    --cols: 1;
+  }
 }
 
 .tea-card {
@@ -1230,6 +1362,36 @@ a:hover .link-arrow svg {
 
 .tea-card__visual--scene {
   padding: 0;
+}
+
+/* Photo on a white background (dry-leaf bowl): white tile, no drop shadow */
+.tea-card__visual--white {
+  background: var(--white);
+}
+
+.tea-card__visual--white > img {
+  filter: none;
+}
+
+/* Second photo that fades in on hover (shop-style) */
+.tea-card__visual .tea-card__hover {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  object-fit: contain;
+  background: var(--white);
+  filter: none;
+  opacity: 0;
+  transition: opacity 0.45s var(--ease);
+}
+
+.tea-card__link:hover .tea-card__visual .tea-card__hover,
+.tea-card__link:focus-visible .tea-card__visual .tea-card__hover {
+  opacity: 1;
+  transform: none;
 }
 
 .tea-card__visual--scene img {
@@ -1335,28 +1497,22 @@ a:hover .link-arrow svg {
 
 /* ---------- Brand cards ---------- */
 .brand-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 22px;
+  --cols: 4;
 }
 
 .brand-grid--two {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 28px;
+  --cols: 2;
+  --gap: 28px;
 }
 
 .brand-grid--three {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.brand-grid > * {
-  height: 100%;
+  --cols: 3;
 }
 
 @media (max-width: 1080px) {
   .brand-grid,
   .brand-grid--three {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    --cols: 2;
   }
 }
 
@@ -1364,7 +1520,7 @@ a:hover .link-arrow svg {
   .brand-grid,
   .brand-grid--two,
   .brand-grid--three {
-    grid-template-columns: 1fr;
+    --cols: 1;
   }
 }
 
@@ -1424,6 +1580,39 @@ a:hover .link-arrow svg {
 
 .brand-card__link:hover .brand-card__visual img {
   transform: scale(1.04);
+}
+
+/* Second pack that fades in on hover (shop-style) */
+.brand-card__visual .brand-card__hover {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  padding: 26px;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.45s var(--ease), transform 0.5s var(--ease);
+}
+
+.brand-card__visual .brand-card__hover.is-scene {
+  padding: 0;
+  object-fit: cover;
+  filter: none;
+}
+
+.brand-card__visual.has-hover > img {
+  transition: opacity 0.45s var(--ease), transform 0.5s var(--ease);
+}
+
+.brand-card__link:hover .has-hover > img:first-child,
+.brand-card__link:focus-visible .has-hover > img:first-child {
+  opacity: 0;
+}
+
+.brand-card__link:hover .has-hover .brand-card__hover,
+.brand-card__link:focus-visible .has-hover .brand-card__hover {
+  opacity: 1;
 }
 
 .brand-card__body {
@@ -1866,6 +2055,33 @@ a:hover .link-arrow svg {
   line-height: 1.6;
 }
 
+.market-card__countries {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 18px;
+}
+
+.market-card__countries li {
+  padding: 3px 11px;
+  border: 1px solid rgb(228 203 142 / 32%);
+  border-radius: 999px;
+  color: var(--gold-300);
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+}
+
+.market-note {
+  margin: 32px 0 0;
+  text-align: center;
+  color: var(--green-800);
+}
+
+.market-note .link-arrow {
+  margin-left: 4px;
+}
+
 /* ---------- Pantry ---------- */
 .pantry-mini {
   display: grid;
@@ -1904,14 +2120,13 @@ a:hover .link-arrow svg {
 }
 
 .product-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 26px;
+  --cols: 2;
+  --gap: 26px;
 }
 
 @media (max-width: 720px) {
   .product-grid {
-    grid-template-columns: 1fr;
+    --cols: 1;
   }
 }
 
@@ -2087,6 +2302,91 @@ a:hover .link-arrow svg {
 @media (max-width: 860px) {
   .detail {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Small note under a product visual (e.g. a presentation visual, not the final pack) */
+.detail__note {
+  margin: 28px 0 0;
+  color: var(--ink-500);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* Shop-style product gallery: large photo in the arch, thumbnails underneath */
+.gallery {
+  display: grid;
+  gap: 30px;
+}
+
+.gallery__main {
+  animation: gallery-in 0.35s var(--ease);
+}
+
+@keyframes gallery-in {
+  from {
+    opacity: 0;
+  }
+}
+
+.gallery__caption {
+  margin: -12px 0 0;
+  color: var(--ink-500);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.gallery__thumbs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery__thumb {
+  display: block;
+  width: 68px;
+  height: 68px;
+  padding: 8px;
+  overflow: hidden;
+  border: 1px solid rgb(168 132 59 / 30%);
+  border-radius: var(--radius);
+  background: radial-gradient(circle at 50% 58%, var(--white), var(--gold-100) 70%);
+  cursor: pointer;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.gallery__thumb.is-scene {
+  padding: 0;
+}
+
+.gallery__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.gallery__thumb.is-scene img {
+  object-fit: cover;
+}
+
+.gallery__thumb.is-leaf {
+  padding: 2px;
+  background: var(--white);
+}
+
+.gallery__thumb:hover,
+.gallery__thumb.is-active {
+  border-color: var(--gold-500);
+  box-shadow: 0 0 0 2px var(--gold-300);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gallery__main {
+    animation: none;
   }
 }
 
@@ -2334,26 +2634,42 @@ a:hover .link-arrow svg {
 }
 
 .tea-grid--four {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  --cols: 4;
 }
 
 @media (max-width: 1024px) {
   .tea-grid--four {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    --cols: 2;
   }
 }
 
 @media (max-width: 480px) {
   .tea-grid--four {
-    grid-template-columns: 1fr;
+    --cols: 1;
   }
 }
 
 /* Brand range */
 .pack-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
-  gap: 22px;
+  --cols: 4;
+}
+
+@media (max-width: 1024px) {
+  .pack-grid {
+    --cols: 3;
+  }
+}
+
+@media (max-width: 720px) {
+  .pack-grid {
+    --cols: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .pack-grid {
+    --cols: 1;
+  }
 }
 
 .pack {
@@ -2401,20 +2717,19 @@ a:hover .link-arrow svg {
 
 /* ---------- Ritual ---------- */
 .prep-grid {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 18px;
+  --cols: 5;
+  --gap: 18px;
 }
 
 @media (max-width: 1024px) {
   .prep-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    --cols: 2;
   }
 }
 
 @media (max-width: 520px) {
   .prep-grid {
-    grid-template-columns: 1fr;
+    --cols: 1;
   }
 }
 
@@ -3008,6 +3323,105 @@ a.contact-line:hover {
   transform: scale(1.07);
 }
 
+/* WeChat button above the WhatsApp one, with a small panel (number to search, copy button) */
+.wechat-float {
+  --wechat: #07c160;
+  --wechat-dark: #05783d; /* 5.3:1 under white text */
+  position: fixed;
+  right: 20px;
+  bottom: 92px;
+  z-index: 91;
+}
+
+.wechat-float__btn {
+  --icon-cut: var(--wechat);
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--wechat);
+  color: var(--white);
+  box-shadow: 0 10px 28px rgb(7 193 96 / 38%);
+  cursor: pointer;
+  transition: transform 0.25s var(--ease);
+}
+
+.wechat-float__btn:hover {
+  transform: scale(1.07);
+}
+
+.wechat-panel {
+  position: absolute;
+  right: 0;
+  bottom: 72px;
+  width: min(290px, calc(100vw - 40px));
+  padding: 20px 22px 22px;
+  border: 1px solid rgb(168 132 59 / 25%);
+  border-radius: var(--radius-lg);
+  background: var(--white);
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+  animation: wechat-in 0.25s var(--ease);
+}
+
+@keyframes wechat-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+.wechat-panel__title {
+  --icon-cut: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 0 8px;
+  color: var(--wechat-dark);
+  font-weight: 700;
+}
+
+.wechat-panel__text {
+  margin: 0 0 12px;
+  color: var(--ink-700);
+  font-size: 0.9rem;
+}
+
+.wechat-panel__qr {
+  display: block;
+  margin: 0 auto 12px;
+  border-radius: var(--radius-sm);
+}
+
+.wechat-panel__id {
+  margin: 0 0 14px;
+  color: var(--ink-900);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  user-select: all;
+}
+
+.btn--wechat {
+  width: 100%;
+  justify-content: center;
+  background: var(--wechat-dark);
+  color: var(--white);
+}
+
+.btn--wechat:hover {
+  background: #04632f;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wechat-panel {
+    animation: none;
+  }
+}
+
 /* ---------- Image tiles ----------
    Pack shots are absolutely positioned so they always fit inside their frame
    (a percentage max-height does not resolve in an auto-height grid box). */
@@ -3066,6 +3480,30 @@ a.contact-line:hover {
 .detail__visual.is-scene > img,
 .detail__visual--leaf > img {
   object-fit: cover;
+}
+
+/* Gallery extras: shown whole, never cropped; leaf photos on white like their own background */
+.detail__visual.is-fit {
+  --tile-pad: clamp(18px, 3vw, 30px);
+}
+
+.detail__visual.is-fit > img {
+  filter: none;
+}
+
+/* Keep the grade badge below product photos instead of over them */
+.detail__visual.is-fit:not(.is-leaf) > img {
+  bottom: 78px;
+  height: calc(100% - var(--tile-pad) - 78px);
+}
+
+.detail__visual.is-leaf {
+  background: var(--white);
+}
+
+/* Clip the square white photo to the arch so its corners do not show */
+.detail__visual.is-leaf > img {
+  border-radius: 999px 999px var(--radius) var(--radius);
 }
 
 /* ---------- Legal ---------- */
@@ -3185,6 +3623,7 @@ a.contact-line:hover {
 @media print {
   .site-header,
   .wa-float,
+  .wechat-float,
   .cta-band {
     display: none;
   }

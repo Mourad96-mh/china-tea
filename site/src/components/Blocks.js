@@ -68,11 +68,14 @@ export function CtaBand({ title, text, button, buttonHref, whatsappLabel }) {
 
 export function TeaCard({ tea, locale, dict }) {
   const visual = tea.image ? img(tea.image) : null;
+  // Second photo, shown on hover like a shop listing
+  const hover = tea.gallery?.[0] ? img(tea.gallery[0].image) : null;
   return (
     <article className="tea-card">
       <Link href={href(locale, `/teas/${tea.slug}`)} className="tea-card__link">
-        <div className={`tea-card__visual${visual ? "" : " tea-card__visual--leaf"}${tea.imageScene ? " tea-card__visual--scene" : ""}`}>
+        <div className={`tea-card__visual${visual ? "" : " tea-card__visual--leaf"}${tea.imageScene ? " tea-card__visual--scene" : ""}${tea.imageWhite ? " tea-card__visual--white" : ""}${hover ? " has-hover" : ""}`}>
           {visual && <img src={visual.src} srcSet={visual.srcSet} sizes="(max-width: 560px) 80vw, 260px" width={visual.width} height={visual.height} alt="" loading="lazy" />}
+          {hover && <img className="tea-card__hover" src={hover.src} srcSet={hover.srcSet} sizes="(max-width: 560px) 80vw, 260px" width={hover.width} height={hover.height} alt="" loading="lazy" />}
           <span className="tea-card__code">{tea.code}</span>
         </div>
         <div className="tea-card__body">
@@ -100,12 +103,16 @@ export function TeaCard({ tea, locale, dict }) {
 
 export function BrandCard({ brand, locale, dict, headingLevel = 3 }) {
   const cover = img(brand.cover);
+  // Another pack of the range, shown on hover like a shop listing
+  const alt = brand.packs.find((p) => p.image !== brand.cover);
+  const hover = alt ? img(alt.image) : null;
   const Heading = `h${headingLevel}`;
   return (
     <article className="brand-card" style={{ "--brand": brand.accent }}>
       <Link href={href(locale, `/brands/${brand.slug}`)} className="brand-card__link">
-        <div className={`brand-card__visual${brand.coverScene ? " brand-card__visual--scene" : ""}`}>
+        <div className={`brand-card__visual${brand.coverScene ? " brand-card__visual--scene" : ""}${hover ? " has-hover" : ""}`}>
           <img src={cover.src} srcSet={cover.srcSet} sizes="(max-width: 560px) 90vw, (max-width: 1080px) 45vw, 280px" width={cover.width} height={cover.height} alt={`${brand.name} — ${pick(brand.packs[0].name, locale)}`} loading="lazy" />
+          {hover && <img className={`brand-card__hover${alt.scene ? " is-scene" : ""}`} src={hover.src} srcSet={hover.srcSet} sizes="(max-width: 560px) 90vw, (max-width: 1080px) 45vw, 280px" width={hover.width} height={hover.height} alt="" loading="lazy" />}
         </div>
         <div className="brand-card__body">
           <p className="brand-card__meaning">{pick(brand.meaning, locale)}</p>

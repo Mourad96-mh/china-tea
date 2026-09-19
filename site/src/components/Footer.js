@@ -42,8 +42,7 @@ export default function Footer({ locale, dict }) {
           <h2 className="footer__title">{site.name}</h2>
           <ul className="footer__list">
             <li><Link href={href(locale, "/services")}>{dict.nav.services}</Link></li>
-            <li><Link href={href(locale, "/tea-ritual")}>{dict.nav.ritual}</Link></li>
-            <li><Link href={href(locale, "/pantry")}>{dict.nav.pantry}</Link></li>
+            <li><Link href={href(locale, "/conserves")}>{dict.nav.pantry}</Link></li>
             <li><Link href={href(locale, "/about")}>{dict.nav.about}</Link></li>
             <li><Link href={href(locale, "/contact")}>{dict.nav.contact}</Link></li>
           </ul>

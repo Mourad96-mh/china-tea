@@ -1,14 +1,22 @@
-// The five export grades. Tasting notes describe each grade as the trade knows it;
+// The four export grades. Tasting notes describe each grade as the trade knows it;
 // the client can refine them against their own lots.
-// Grades without a house pack show real dry Chun Mee leaf (assets-src/sources/chunmee-soultea.jpg);
 // `image: null` would fall back to a dark leaf texture with the grade code;
-// `imageScene: true` = the image is a styled photo, shown full-bleed rather than as a cut-out.
+// `imageScene: true` = the image is a styled photo, shown full-bleed rather than as a cut-out;
+// `imageWhite: true` = a photo on a white background (the dry-leaf bowls), shown whole on white;
+// `imageConcept: true` = a presentation visual, not the real pack (captioned as such on the page).
+// `gallery` = extra photos after the main one, like a shop listing: the first shows on card hover,
+// all of them in the thumbnail gallery on the tea page. kind "leaf" = the grade's dry leaf in a bowl
+// (assets-src/leaves/), `sort` names a sorting level (3505 A / AA / AAA) in the caption.
 export const teas = [
   {
     slug: "chunmee-41022",
     code: "41022",
     family: "chunmee",
     image: "products/dkhmiss-41022-cut.webp",
+    gallery: [
+      { image: "products/leaf-41022.webp", kind: "leaf" },
+      { image: "products/dkhmiss-41022-gold.webp", kind: "pack" },
+    ],
     name: { fr: "Chunmee 41022", en: "Chunmee 41022", es: "Chunmee 41022" },
     tagline: {
       fr: "Le grand classique du thé à la menthe",
@@ -39,13 +47,17 @@ export const teas = [
       en: ["Everyday mint tea", "Cafés and hospitality", "House blends"],
       es: ["Té con menta diario", "Cafeterías y hostelería", "Mezclas propias"],
     },
-    brands: ["dkhmiss", "amghar"],
+    brands: ["dkhmiss"],
   },
   {
     slug: "chunmee-4011",
     code: "4011",
     family: "chunmee",
     image: "products/al-mousafir-4011-cut.webp",
+    gallery: [
+      { image: "products/leaf-4011.webp", kind: "leaf" },
+      { image: "products/brand-4111-box.webp", kind: "pack" },
+    ],
     name: { fr: "Chunmee 4011 Extra", en: "Chunmee 4011 Extra", es: "Chunmee 4011 Extra" },
     tagline: {
       fr: "La finesse d’un chunmee extra",
@@ -76,13 +88,16 @@ export const teas = [
       en: ["Premium serving", "Receptions and celebrations", "Gift boxes"],
       es: ["Servicio premium", "Recepciones y celebraciones", "Estuches de regalo"],
     },
-    brands: ["al-mousafir"],
+    brands: ["al-mousafir", "4111", "401"],
   },
   {
     slug: "chunmee-9371",
     code: "9371",
     family: "chunmee",
-    image: "products/chunmee-9371-cut.webp",
+    // Concept box (no real 9371 pack supplied yet), captioned as a presentation visual.
+    image: "products/brand-9371-3d-cut.webp",
+    imageConcept: true,
+    gallery: [{ image: "products/leaf-9371.webp", kind: "leaf" }],
     name: { fr: "Chunmee 9371", en: "Chunmee 9371", es: "Chunmee 9371" },
     tagline: {
       fr: "La référence des tables marocaines",
@@ -109,47 +124,20 @@ export const teas = [
       en: ["Daily drinking", "Mass retail", "Large packs"],
       es: ["Consumo diario", "Gran distribución", "Formatos grandes"],
     },
-    brands: [],
-  },
-  {
-    slug: "chunmee-9366",
-    code: "9366",
-    family: "chunmee",
-    image: "products/chunmee-9366.webp",
-    imageScene: true,
-    name: { fr: "Chunmee 9366", en: "Chunmee 9366", es: "Chunmee 9366" },
-    tagline: {
-      fr: "Le chunmee économique et généreux",
-      en: "The generous value chunmee",
-      es: "El chunmee económico y generoso",
-    },
-    summary: {
-      fr: "Une feuille plus ouverte pour une infusion rapide et une couleur soutenue. Le 9366 est le choix des marchés sensibles au prix qui veulent garder du goût.",
-      en: "A more open leaf for a quick brew and a deep colour. 9366 suits price-driven markets that still want taste.",
-      es: "Una hoja más abierta para una infusión rápida y un color intenso. El 9366 es la elección de los mercados sensibles al precio que no renuncian al sabor.",
-    },
-    specs: {
-      leaf: {
-        fr: "Plus ouverte, vert-brun",
-        en: "More open, brownish green",
-        es: "Más abierta, verde parduzco",
-      },
-      liquor: { fr: "Ambre soutenu", en: "Deep amber", es: "Ámbar intenso" },
-      aroma: { fr: "Boisé, simple", en: "Woody, straightforward", es: "Amaderado, sencillo" },
-      taste: { fr: "Franc, corsé", en: "Direct, bold", es: "Franco, intenso" },
-    },
-    uses: {
-      fr: ["Marchés prix", "Vrac et conditionneurs", "Restauration collective"],
-      en: ["Price-driven markets", "Bulk and packers", "Catering"],
-      es: ["Mercados de precio", "Granel y envasadores", "Restauración colectiva"],
-    },
-    brands: [],
+    brands: ["9371"],
   },
   {
     slug: "gunpowder-3505",
     code: "3505",
     family: "gunpowder",
     image: "products/gold-511-3505.webp",
+    gallery: [
+      { image: "products/leaf-3505.webp", kind: "leaf" },
+      { image: "products/leaf-3505-a.webp", kind: "leaf", sort: "A" },
+      { image: "products/leaf-3505-aa.webp", kind: "leaf", sort: "AA" },
+      { image: "products/leaf-3505-aaa.webp", kind: "leaf", sort: "AAA" },
+      { image: "products/brand-777-cut.webp", kind: "pack" },
+    ],
     imageScene: true,
     name: { fr: "Gunpowder 3505", en: "Gunpowder 3505", es: "Gunpowder 3505" },
     tagline: {
@@ -181,7 +169,7 @@ export const teas = [
       en: ["Three-glass ceremony", "West Africa and the Sahara", "3505 AAA / AA blends"],
       es: ["Ceremonia de los tres vasos", "África Occidental y el Sáhara", "Mezclas 3505 AAA / AA"],
     },
-    brands: ["511"],
+    brands: ["511", "777", "amghar"],
   },
 ];
 

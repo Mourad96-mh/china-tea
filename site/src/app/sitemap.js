@@ -12,8 +12,7 @@ const paths = [
   "/brands",
   ...brands.map((b) => `/brands/${b.slug}`),
   "/services",
-  "/tea-ritual",
-  "/pantry",
+  "/conserves",
   "/about",
   "/contact",
 ];

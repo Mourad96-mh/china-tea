@@ -10,7 +10,7 @@ import { pantry, pantryGroups } from "@/content/pantry";
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const d = getDict(locale).pantryPage;
-  return pageMetadata({ locale, path: "/pantry", title: d.metaTitle, description: d.metaDescription });
+  return pageMetadata({ locale, path: "/conserves", title: d.metaTitle, description: d.metaDescription });
 }
 
 export default async function PantryPage({ params }) {
@@ -24,16 +24,16 @@ export default async function PantryPage({ params }) {
         eyebrow={d.eyebrow}
         title={d.title}
         intro={d.intro}
-        image="teapot.webp"
+        image="conserves-cans.webp"
         crumbs={[
           { name: dict.common.home, url: href(locale) },
-          { name: dict.nav.pantry, url: href(locale, "/pantry") },
+          { name: dict.nav.pantry, url: href(locale, "/conserves") },
         ]}
       />
       {pantryGroups.map((group, g) => {
         const items = pantry.filter((p) => p.group === group.id);
         return (
-          <section key={group.id} className={`section section--compact ${g % 2 ? "section--cream" : "section--pattern"}`}>
+          <section key={group.id} id={group.id} className={`section section--compact ${g % 2 ? "section--cream" : "section--pattern"}`}>
             <div className="container">
               <SectionHead title={pick(group.name, locale)} />
               <div className="product-grid">

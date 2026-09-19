@@ -27,7 +27,7 @@ node scripts/validate-schema.mjs    # valide le JSON-LD sur out/
 | Textes des pages (FR / EN / ES) | `src/dict/fr.js`, `en.js`, `es.js` |
 | Grades de thé (fiches) | `src/content/teas.js` |
 | Marques et leurs boîtes | `src/content/brands.js` |
-| Épicerie / art de la table | `src/content/pantry.js` |
+| Conserves (`/conserves`) | `src/content/pantry.js` |
 | Couleurs, typographies, mise en page | `src/app/globals.css` (tokens en haut du fichier) |
 | Nouvelle photo produit | déposer le PNG dans `assets-src/client/` (ou `assets-src/cutout/` si fond transparent), puis `npm run images` |
 | Crédits des photos d’ambiance | `src/content/photo-credits.json` (affichés dans /legal) |

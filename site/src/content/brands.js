@@ -35,6 +35,62 @@ export const brands = [
     ],
   },
   {
+    slug: "4111",
+    name: "4111",
+    arabic: "",
+    accent: "#6B4A2B",
+    cover: "products/brand-4111-box.webp",
+    coverScene: true,
+    meaning: { fr: "Brun & or", en: "Brown & gold", es: "Marrón y oro" },
+    pitch: {
+      fr: "Une boîte brun et or aux arabesques fines, avec le voyageur du désert et le thé versé haut : un Chunmee 4011 au décor soigné.",
+      en: "A brown-and-gold box with fine arabesques, the desert traveller and tea poured from high: Chunmee 4011 in a carefully crafted pack.",
+      es: "Una caja marrón y oro con finos arabescos, el viajero del desierto y el té servido desde lo alto: un Chunmee 4011 con un diseño cuidado.",
+    },
+    story: {
+      fr: "4111 reprend les codes du thé saharien : caravane au coucher du soleil, palmiers et verre de thé mousseux, dans un cadre d’arabesques dorées. À l’intérieur, un Chunmee 4011, fin et parfumé.",
+      en: "4111 draws on the codes of Saharan tea: a caravan at sunset, palm trees and a frothy glass of tea, framed by golden arabesques. Inside is Chunmee 4011, fine and fragrant.",
+      es: "4111 retoma los códigos del té sahariano: caravana al atardecer, palmeras y un vaso de té espumoso, en un marco de arabescos dorados. Dentro, un Chunmee 4011, fino y aromático.",
+    },
+    teas: ["chunmee-4011"],
+    packs: [
+      {
+        image: "products/brand-4111-box.webp",
+        name: { fr: "4111 · Chunmee 4011", en: "4111 · Chunmee 4011", es: "4111 · Chunmee 4011" },
+        scene: true,
+      },
+    ],
+  },
+  {
+    slug: "401",
+    name: "401",
+    arabic: "",
+    accent: "#8A6A3E",
+    cover: "products/brand-401-3d-cut.webp",
+    meaning: { fr: "Toile de jute & feuilles vertes", en: "Burlap & green leaves", es: "Arpillera y hojas verdes" },
+    pitch: {
+      fr: "Un décor toile de jute semé de feuilles de thé, avec le médaillon Sahraoui au centre : un Chunmee 4011 à l’allure naturelle.",
+      en: "A burlap design scattered with tea leaves and the Sahraoui medallion at its centre: Chunmee 4011 with a natural look.",
+      es: "Un diseño de arpillera salpicado de hojas de té, con el medallón Sahraoui en el centro: un Chunmee 4011 de aspecto natural.",
+    },
+    story: {
+      fr: "401 mise sur la simplicité : une boîte couleur jute, des feuilles de thé et la mention « thé vert qualité supérieure » en français et en arabe. À l’intérieur, un Chunmee 4011, fin et parfumé.",
+      en: "401 keeps it simple: a burlap-coloured box, tea leaves and “superior quality green tea” in French and Arabic. Inside is Chunmee 4011, fine and fragrant.",
+      es: "401 apuesta por la sencillez: una caja color arpillera, hojas de té y la mención «té verde de calidad superior» en francés y árabe. Dentro, un Chunmee 4011, fino y aromático.",
+    },
+    teas: ["chunmee-4011"],
+    packs: [
+      {
+        image: "products/brand-401-3d-cut.webp",
+        name: { fr: "401 · Chunmee 4011 — 200 g", en: "401 · Chunmee 4011 — 200 g", es: "401 · Chunmee 4011 — 200 g" },
+      },
+      {
+        image: "products/brand-401-box.webp",
+        name: { fr: "401 · Chunmee 4011 — boîte à plat", en: "401 · Chunmee 4011 — box artwork", es: "401 · Chunmee 4011 — caja desplegada" },
+      },
+    ],
+  },
+  {
     slug: "dkhmiss",
     name: "Dkhmiss",
     arabic: "",
@@ -42,9 +98,9 @@ export const brands = [
     cover: "products/dkhmiss-41022-edition-cut.webp",
     meaning: { fr: "Gammes Sahraoui & Diwan", en: "Sahraoui & Diwan ranges", es: "Gamas Sahraoui y Diwan" },
     pitch: {
-      fr: "Le bleu du chèche et l’or du thé servi haut : une marque au caractère affirmé, pensée pour le Chunmee 41022.",
-      en: "The blue of the desert turban and the gold of tea poured from high: a bold brand built around Chunmee 41022.",
-      es: "El azul del turbante del desierto y el oro del té servido desde lo alto: una marca con carácter, pensada para el Chunmee 41022.",
+      fr: "Le bleu du chèche et l’or du thé servi haut : une marque au caractère affirmé, pensée pour le Chunmee 41022 5A.",
+      en: "The blue of the desert turban and the gold of tea poured from high: a bold brand built around Chunmee 41022 5A.",
+      es: "El azul del turbante del desierto y el oro del té servido desde lo alto: una marca con carácter, pensada para el Chunmee 41022 5A.",
     },
     story: {
       fr: "Dkhmiss rend hommage à l’hospitalité saharienne. La ligne Sahraoui (boîte rouge et bleue) existe en édition standard et en Édition spéciale à liseré doré ; la ligne Diwan, en boîte haute jaune, parle aux familles qui achètent en plus grande quantité.",
@@ -66,9 +122,41 @@ export const brands = [
         name: { fr: "Diwan 41022 — boîte haute", en: "Diwan 41022 — tall box", es: "Diwan 41022 — caja alta" },
       },
       {
+        image: "products/dkhmiss-41022-gold.webp",
+        name: { fr: "41022 Qualité supérieure — boîte noir et or", en: "41022 Superior quality — black and gold box", es: "41022 Calidad superior — caja negra y oro" },
+        scene: true,
+      },
+      {
         image: "products/dkhmiss-41022-marble.webp",
         name: { fr: "Édition spéciale — mise en scène", en: "Special Edition — styled shot", es: "Edición especial — ambientada" },
         scene: true,
+      },
+    ],
+  },
+  {
+    slug: "9371",
+    name: "9371",
+    arabic: "",
+    accent: "#224B34",
+    // No packaging supplied yet: concept box built from the site placeholder, labelled on the page.
+    cover: "products/brand-9371-3d-cut.webp",
+    concept: true,
+    meaning: { fr: "Chunmee corsé", en: "Bold Chunmee", es: "Chunmee intenso" },
+    pitch: {
+      fr: "Une feuille bien roulée, une liqueur ambrée et une tasse puissante : la marque des amateurs de thé corsé.",
+      en: "A well-rolled leaf, an amber liquor and a strong cup: the brand for lovers of bold tea.",
+      es: "Una hoja bien enrollada, un licor ambarino y una taza potente: la marca de los amantes del té intenso.",
+    },
+    story: {
+      fr: "9371 porte le nom de son grade : un Chunmee à la feuille moyenne, qui donne une liqueur ambrée et un goût franc. Un excellent rapport qualité-prix pour la consommation quotidienne et la grande distribution.",
+      en: "9371 takes its name from its grade: a medium-leaf Chunmee giving an amber liquor and a straightforward taste. Excellent value for daily drinking and mass retail.",
+      es: "9371 lleva el nombre de su grado: un Chunmee de hoja mediana que da un licor ambarino y un sabor franco. Una excelente relación calidad-precio para el consumo diario y la gran distribución.",
+    },
+    teas: ["chunmee-9371"],
+    packs: [
+      {
+        image: "products/brand-9371-3d-cut.webp",
+        name: { fr: "9371 · Chunmee — visuel de présentation", en: "9371 · Chunmee — presentation visual", es: "9371 · Chunmee — visual de presentación" },
       },
     ],
   },
@@ -86,15 +174,15 @@ export const brands = [
       es: "Los colores amazigh, el Atlas y los campos de té reunidos en una caja alegre y orgullosa de sus raíces.",
     },
     story: {
-      fr: "Amghar célèbre la culture berbère : drapeau amazigh, montagnes de l’Atlas et caravane au pied des cimes. À l’intérieur, un Chunmee 41022 généreux en boîte de 200 g, pour une clientèle attachée à son identité.",
-      en: "Amghar celebrates Berber culture: the Amazigh flag, the Atlas peaks and a caravan at their foot. Inside is a generous Chunmee 41022 in a 200 g box, for customers attached to their identity.",
-      es: "Amghar celebra la cultura berberisca: la bandera amazigh, las cumbres del Atlas y una caravana a sus pies. Dentro, un Chunmee 41022 generoso en caja de 200 g, para un público apegado a su identidad.",
+      fr: "Amghar célèbre la culture berbère : drapeau amazigh, montagnes de l’Atlas et caravane au pied des cimes. À l’intérieur, un thé vert Gunpowder en boîte de 200 g, pour une clientèle attachée à son identité.",
+      en: "Amghar celebrates Berber culture: the Amazigh flag, the Atlas peaks and a caravan at their foot. Inside is Gunpowder green tea in a 200 g box, for customers attached to their identity.",
+      es: "Amghar celebra la cultura berberisca: la bandera amazigh, las cumbres del Atlas y una caravana a sus pies. Dentro, un té verde Gunpowder en caja de 200 g, para un público apegado a su identidad.",
     },
-    teas: ["chunmee-41022"],
+    teas: ["gunpowder-3505"],
     packs: [
       {
         image: "products/amghar-41022.webp",
-        name: { fr: "Thé amazigh berbère 41022 — 200 g", en: "Amazigh Berber tea 41022 — 200 g", es: "Té amazigh berberisco 41022 — 200 g" },
+        name: { fr: "Thé amazigh berbère Gunpowder — 200 g", en: "Amazigh Berber Gunpowder tea — 200 g", es: "Té amazigh berberisco Gunpowder — 200 g" },
         scene: true,
       },
     ],
@@ -123,6 +211,31 @@ export const brands = [
         image: "products/gold-511-3505.webp",
         name: { fr: "511 · 3505 — coffret noir et or", en: "511 · 3505 — black and gold box", es: "511 · 3505 — estuche negro y oro" },
         scene: true,
+      },
+    ],
+  },
+  {
+    slug: "777",
+    name: "777",
+    arabic: "",
+    accent: "#1E8A3A",
+    cover: "products/brand-777-cut.webp",
+    meaning: { fr: "Vert & or", en: "Green & gold", es: "Verde y oro" },
+    pitch: {
+      fr: "Une boîte vert et or, cinq étoiles et une rangée de verres de thé mousseux : un Gunpowder 3505 AAAAA qui se voit de loin en rayon.",
+      en: "A green-and-gold box with five stars and a row of frothy glasses of tea: Gunpowder 3505 AAAAA that stands out on the shelf.",
+      es: "Una caja verde y oro, cinco estrellas y una fila de vasos de té espumoso: un Gunpowder 3505 AAAAA que se ve de lejos en el lineal.",
+    },
+    story: {
+      fr: "Sur fond vert profond, le chiffre doré, la mention « thé première qualité » et les verres de thé servis bien mousseux. À l’intérieur, un Gunpowder 3505 AAAAA en boîte de 500 g, pour les familles qui préparent le thé plusieurs fois par jour.",
+      en: "On a deep green background: the golden number, “first-quality tea” and glasses of tea poured with a thick froth. Inside is Gunpowder 3505 AAAAA in a 500 g box, for families who brew tea several times a day.",
+      es: "Sobre fondo verde intenso, el número dorado, la mención «té de primera calidad» y vasos de té servidos con mucha espuma. Dentro, un Gunpowder 3505 AAAAA en caja de 500 g, para las familias que preparan té varias veces al día.",
+    },
+    teas: ["gunpowder-3505"],
+    packs: [
+      {
+        image: "products/brand-777-cut.webp",
+        name: { fr: "Gunpowder 3505 AAAAA — 500 g", en: "Gunpowder 3505 AAAAA — 500 g", es: "Gunpowder 3505 AAAAA — 500 g" },
       },
     ],
   },

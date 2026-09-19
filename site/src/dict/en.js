@@ -1,16 +1,15 @@
 const en = {
   meta: {
-    title: "China Tea Group — Chinese green tea for Morocco and Africa",
+    title: "China Tea Group — Chinese green tea wholesaler: Chunmee, Gunpowder",
     description:
-      "Chinese green tea exporter: Chunmee 41022, 4011, 9371, 9366 and Gunpowder 3505. House brands, private label (OEM), packing and export from Zhejiang.",
+      "Chinese green tea import-export: wholesaler and distributor of Chunmee and Gunpowder, shipped in 20FT or 40FT containers to Morocco, Africa and Europe.",
   },
   nav: {
     home: "Home",
     teas: "Our teas",
     brands: "Our brands",
-    pantry: "Pantry",
+    pantry: "Canned goods",
     services: "Services",
-    ritual: "Tea culture",
     about: "About us",
     contact: "Contact",
     quote: "Request a quote",
@@ -29,6 +28,11 @@ const en = {
     allTeas: "All our teas",
     allBrands: "All our brands",
     whatsapp: "Message us on WhatsApp",
+    wechat: "Contact us on WeChat",
+    wechatText: "Add us on WeChat by searching this number:",
+    wechatQr: "WeChat QR code",
+    wechatCopy: "Copy the number",
+    wechatCopied: "Number copied ✓",
     call: "Call",
     home: "Home",
     grade: "Grade",
@@ -54,11 +58,38 @@ const en = {
     hero: {
       eyebrow: "Chinese green tea · Export",
       title: "From the tea gardens of China",
-      titleAccent: "to the Moroccan tea glass",
-      text: "We select, pack and ship China’s great green teas — Chunmee 41022, 4011, 9371 and Gunpowder 3505 — for importers and distributors across the Maghreb, Africa and Europe.",
+      titleAccent: "to your customers’ glass",
+      text: "From our mountains to your door. Clean air, protected land: this is where our teas are grown. From the harvest to the factory, every step is checked, so the quality never changes from one container to the next.",
       cta: "Discover our teas",
       cta2: "Request a quote",
       badge: "House brands & private label",
+    },
+    categories: {
+      eyebrow: "Our products",
+      title: "Four product lines, one supplier",
+      text: "Wholesale import-export: from Chinese green tea to bags with your brand, in 20FT or 40FT containers.",
+      items: {
+        chunmee: {
+          title: "Chunmee green tea",
+          text: "The “eyebrow” leaf of mint tea: 41022, 4011 and 9371.",
+          cta: "See the Chunmees",
+        },
+        gunpowder: {
+          title: "Gunpowder green tea",
+          text: "Tightly rolled pearls for a strong brew: grade 3505.",
+          cta: "See the Gunpowder",
+        },
+        food: {
+          title: "Food products & canned goods",
+          text: "Tomato concentrate in 1/2 (400 g) and 4/4 cans, 100% pure honey and pantry items.",
+          cta: "See the canned goods",
+        },
+        bags: {
+          title: "Custom luggage bags",
+          text: "Bags printed with your brand, in sizes S, M, L and XL.",
+          cta: "Request a quote",
+        },
+      },
     },
     intro: {
       eyebrow: "China Tea Group",
@@ -70,8 +101,8 @@ const en = {
       cta: "About us",
     },
     stats: [
-      { value: "5", label: "core tea grades" },
-      { value: "4", label: "house brands" },
+      { value: "4", label: "core tea grades" },
+      { value: "8", label: "house brands" },
       { value: "2", label: "offices: Zhejiang & Hong Kong" },
       { value: "OEM", label: "tailor-made private label" },
     ],
@@ -83,7 +114,7 @@ const en = {
     brands: {
       eyebrow: "Our brands",
       title: "Boxes that sell on the shelf",
-      text: "Four worlds designed for mint-tea drinkers: the desert, Saharan hospitality, Amazigh identity and black-and-gold elegance.",
+      text: "Each brand has its own world, designed for mint-tea drinkers: the desert, Saharan hospitality, Amazigh identity, black-and-gold elegance.",
     },
     process: {
       eyebrow: "From garden to container",
@@ -93,7 +124,7 @@ const en = {
         { title: "Plucking", text: "Young shoots are harvested in spring, when the leaf is at its most aromatic." },
         { title: "Fixing", text: "The leaves are heated to stop oxidation and keep their green colour." },
         { title: "Rolling", text: "Rolled into an “eyebrow” for Chunmee or a tight pearl for Gunpowder." },
-        { title: "Sorting & grading", text: "The tea is dried, sieved and graded: 41022, 4011, 9371, 9366, 3505." },
+        { title: "Sorting & grading", text: "The tea is dried, sieved and graded: 41022, 4011, 9371, 3505." },
         { title: "Tasting", text: "Every lot is tasted and matched against the sample approved by the customer." },
         { title: "Packing & export", text: "Boxed or bulk, container loading and export documents." },
       ],
@@ -101,12 +132,12 @@ const en = {
     services: {
       eyebrow: "Our services",
       title: "Much more than a tea supplier",
-      text: "From choosing the grade to arrival at port, one single contact.",
+      text: "From choosing the grade to arrival at port, one single contact — and exclusive distribution for your region.",
       items: [
         { icon: "leaf", title: "Selection & blending", text: "Lots chosen and blended to keep the same taste from one order to the next." },
         { icon: "box", title: "Private label (OEM)", text: "Your brand, your box, your Arabic and French copy: we produce it all." },
-        { icon: "check", title: "Quality control", text: "Pre-shipment samples and independent inspection on request." },
-        { icon: "ship", title: "Export & logistics", text: "Full or shared containers, export documents and tracking to your port." },
+        { icon: "check", title: "Quality control", text: "Sanitary certificates to international standards, low pesticide levels, pre-shipment samples." },
+        { icon: "ship", title: "Export & logistics", text: "Maersk, CMA CGM, HMM: we deliver to the port in your country, in full or shared containers." },
       ],
       cta: "All our services",
     },
@@ -114,23 +145,36 @@ const en = {
       eyebrow: "Tea culture",
       title: "The first glass is gentle, like life…",
       text: "…the second is strong, like love, the third is bitter, like death. Behind this desert proverb lies a tea that must survive three brews. That is the tea we select.",
-      cta: "Moroccan-style tea",
     },
     markets: {
       eyebrow: "Our markets",
       title: "A tea for every tradition",
       text: "The single word “atay” covers very different tastes. We prepare our teas for each of them.",
       regions: [
-        { name: "Maghreb", text: "Fragrant, sweet mint tea: Chunmee 41022, 4011 and 9371." },
-        { name: "Sahel & West Africa", text: "Highly concentrated tea served in three glasses: Gunpowder 3505 and bold Chunmees." },
-        { name: "Europe", text: "Ethnic grocers and diaspora: family-size packs and familiar brands." },
+        {
+          name: "Maghreb",
+          text: "Fragrant, sweet mint tea: Chunmee 41022, 4011 and 9371.",
+          countries: ["Morocco", "Algeria", "Tunisia", "Libya"],
+        },
+        {
+          name: "Sahel & West Africa",
+          text: "Highly concentrated tea served in three glasses: Gunpowder 3505 and bold Chunmees.",
+          countries: ["Mauritania", "Senegal", "Mali", "Niger", "Burkina Faso"],
+        },
+        {
+          name: "Europe",
+          text: "Ethnic grocers and diaspora: family-size packs and familiar brands.",
+          countries: ["France", "Belgium", "Spain", "Netherlands", "Italy"],
+        },
       ],
+      note: "Your country not on the list? We load for the port of your choice.",
+      noteCta: "Let’s talk about your market",
     },
     pantry: {
-      eyebrow: "Pantry & tableware",
+      eyebrow: "Canned goods",
       title: "Everything that goes with tea",
-      text: "Alongside tea, we ship a decorated tea set, honey, canned goods (tomato concentrate, sweet corn, garden peas) and peanut paste.",
-      cta: "See the pantry",
+      text: "Alongside tea, we ship honey, canned goods (tomato concentrate, sweet corn, garden peas) and peanut paste.",
+      cta: "See the canned goods",
     },
     cta: {
       title: "Let’s talk about your next container",
@@ -141,16 +185,16 @@ const en = {
   teasPage: {
     metaTitle: "Chinese green teas: Chunmee and Gunpowder",
     metaDescription:
-      "Chunmee 41022, 4011 Extra, 9371, 9366 and Gunpowder 3505: leaf, liquor, aroma and uses of each Chinese green tea grade for export.",
+      "Chunmee 41022, 4011 Extra, 9371 and Gunpowder 3505: leaf, liquor, aroma and uses of each Chinese green tea grade for export.",
     eyebrow: "Our teas",
     title: "Chinese green teas, grade by grade",
     intro:
-      "An export green tea’s code tells you its shape, its sorting and its strength. Here are our five core grades and what each brings to the glass.",
+      "An export green tea’s code tells you its shape, its sorting and its strength. Here are our four core grades and what each brings to the glass.",
     families: [
       {
         id: "chunmee",
         title: "Chunmee — the “eyebrow” tea",
-        text: "Chunmee (珍眉) means “precious eyebrows”. The leaf is rolled into a long curve. Depending on the sort, it gives a fine, silky tea (4011), a balanced one (41022) or a powerful one (9371, 9366).",
+        text: "Chunmee (珍眉) means “precious eyebrows”. The leaf is rolled into a long curve. Depending on the sort, it gives a fine, silky tea (4011), a balanced one (41022) or a powerful one (9371).",
       },
       {
         id: "gunpowder",
@@ -166,6 +210,8 @@ const en = {
     metaTitle: "{name} green tea: profile and uses",
     metaSuffix: "Samples available on request.",
     specsTitle: "Tasting profile",
+    leafLabel: "Dry leaf — {name}",
+    photoLabel: "Show photo {n}",
     brewTitle: "How to brew",
     brewSteps: [
       "Rinse a heaped spoonful of tea with boiling water and pour this first water away.",
@@ -180,9 +226,9 @@ const en = {
     ctaText: "Tell us your market and estimated volumes.",
   },
   brandsPage: {
-    metaTitle: "Al Mousafir, Dkhmiss, Amghar and 511 teas",
+    metaTitle: "Our 8 Chunmee and Gunpowder green tea brands",
     metaDescription:
-      "Discover China Tea Group’s green tea brands: Al Mousafir 4011, Dkhmiss 41022, Amghar Berber tea and black-and-gold 511. Boxes ready for distribution.",
+      "Chunmee: Dkhmiss 41022, Al Mousafir, 4111, 401 and 9371. Gunpowder: 511, 777 and Amghar. China Tea Group’s 8 green tea brands, ready for distribution.",
     eyebrow: "Our brands",
     title: "Brands that speak to your customers",
     intro:
@@ -194,19 +240,20 @@ const en = {
     metaTitle: "{name} {grades} green tea brand",
     metaSuffix: "Boxes ready for distribution.",
     storyTitle: "The brand story",
+    conceptNote: "Presentation visual — the final packaging may differ.",
     rangeTitle: "The range",
     otherBrands: "Our other brands",
     ctaTitle: "Interested in this brand?",
     ctaText: "Ask for distribution terms for your country.",
   },
   pantryPage: {
-    metaTitle: "Pantry goods and tea sets for importers",
+    metaTitle: "Pantry and canned goods for importers",
     metaDescription:
-      "Alongside green tea, China Tea Group exports a gold-decorated tea set, flower honey, canned tomato concentrate, sweet corn and garden peas, and peanut paste.",
-    eyebrow: "Pantry & tableware",
-    title: "What goes with tea",
+      "Alongside green tea, China Tea Group exports 100% pure honey, tomato concentrate in 1/2 and 4/4 cans, sweet corn, peas and peanut paste.",
+    eyebrow: "Canned goods & food products",
+    title: "Canned goods and pantry for export",
     intro:
-      "Our importing customers often fill their containers with other products. We can add these items to your tea order.",
+      "Tomato concentrate in 1/2 and 4/4 cans, sweet corn, garden peas, honey and peanut paste: items to add to your tea container, in 20FT or 40FT.",
     note: "Want to add a product to your container? Send us the item you are looking for and we will look into it.",
   },
   servicesPage: {
@@ -233,14 +280,20 @@ const en = {
       {
         icon: "check",
         title: "Quality control",
-        text: "Before departure, every lot is checked against the approved sample. You can also appoint the inspection company of your choice.",
-        points: ["Tasting and visual inspection", "Pre-shipment sample", "Independent inspection on request"],
+        text: "Before departure, every lot is checked against the approved sample and ships with the sanitary certificates required by international standards. You can also appoint the inspection company of your choice.",
+        points: ["Sanitary certificates to international standards", "Low pesticide levels", "Tasting, visual check and pre-shipment sample", "Independent inspection on request"],
       },
       {
         icon: "ship",
         title: "Export & logistics",
-        text: "We organise container loading and shipping from East China ports, with the documents your forwarder needs.",
-        points: ["20' and 40' containers, full or shared", "FOB, CFR or CIF Incoterms", "Invoice, packing list, certificates of origin and phytosanitary certificate"],
+        text: "We work with the major shipping lines — Maersk, CMA CGM, HMM — to load at East China ports and deliver to the port in your own country, with the documents your forwarder needs.",
+        points: ["20FT and 40FT containers, full or shared", "Maersk, CMA CGM and HMM partnerships", "FOB, CFR or CIF Incoterms", "Invoice, packing list, certificates of origin, sanitary and phytosanitary"],
+      },
+      {
+        icon: "globe",
+        title: "Regional exclusivity",
+        text: "We can reserve the distribution of our brands for your country or your region: you spend to build the brand without finding it the next day on the shelf opposite.",
+        points: ["Exclusivity by country or region", "House brands reserved for your network", "Terms agreed with you"],
       },
     ],
     packagingTitle: "Packing formats",
@@ -275,7 +328,15 @@ const en = {
       },
       {
         q: "Which documents come with the shipment?",
-        a: "Commercial invoice, packing list, bill of lading, certificate of origin and phytosanitary certificate. Other documents can be supplied depending on your country’s requirements.",
+        a: "Commercial invoice, packing list, bill of lading, certificate of origin, sanitary certificate and phytosanitary certificate. Other documents can be supplied depending on your country’s requirements.",
+      },
+      {
+        q: "Are your teas certified?",
+        a: "Yes. Our teas ship with the sanitary certificates required by international standards, with low pesticide levels. The certificates are included in the shipping file.",
+      },
+      {
+        q: "Do you offer distribution exclusivity?",
+        a: "Yes, by country or by region. If you build our brands on your market, we can reserve their distribution for you: let’s discuss it from the first order.",
       },
       {
         q: "What are the lead times?",
@@ -285,45 +346,6 @@ const en = {
         q: "Which payment methods do you accept?",
         a: "Bank transfer (T/T) and letter of credit (L/C) are the most common. Terms are agreed with each customer.",
       },
-    ],
-  },
-  ritualPage: {
-    metaTitle: "Moroccan mint tea: history and preparation",
-    metaDescription:
-      "How Chinese green tea became Moroccan atay, how to make mint tea, the three-glass ceremony and what the 41022, 4011 and 3505 grades mean.",
-    eyebrow: "Tea culture",
-    title: "Chinese green tea, the heart of Moroccan tea",
-    intro:
-      "In Morocco as in the Sahel, tea is much more than a drink: it is a welcome, a conversation, a ritual. And that ritual begins in the tea gardens of China.",
-    historyTitle: "A story of trade routes",
-    history: [
-      "Tea reached Morocco in the 18th century, first as a gift to the royal court. For a long time it remained a luxury for wealthy families.",
-      "In the 19th century, European merchants shipped more and more Chinese green tea to the ports of Tangier and Essaouira. Tea became affordable, was paired with mint and sugar, and turned into the national drink.",
-      "Today Morocco ranks among the very largest importers of Chinese green tea in the world, and the countries of the Sahel have made it the heart of their hospitality.",
-    ],
-    prepTitle: "Making mint tea",
-    prep: [
-      { title: "Heat", text: "Bring the water to the boil and scald the teapot." },
-      { title: "Wash the tea", text: "Add a good spoonful of tea, cover with a little water, swirl and pour this water away to remove bitterness." },
-      { title: "Steep", text: "Fill with simmering water, add sugar and a bunch of fresh mint, and leave to steep for a few minutes." },
-      { title: "Mix", text: "Pour a glass and return it to the pot two or three times to mix without a spoon." },
-      { title: "Pour from high", text: "Pour while raising the teapot: the air creates the foam, the sign of a well-made tea." },
-    ],
-    glassesTitle: "The three-glass ceremony",
-    glasses: [
-      { title: "The first glass", text: "Gentle, like life." },
-      { title: "The second glass", text: "Strong, like love." },
-      { title: "The third glass", text: "Bitter, like death." },
-    ],
-    glassesNote:
-      "In the Sahara and the Sahel, the same tea is brewed three times. Only a well-rolled tea, such as Gunpowder 3505 or a bold Chunmee, lasts the distance.",
-    glossaryTitle: "A short glossary of export tea",
-    glossary: [
-      { term: "Chunmee", def: "“Precious eyebrows”: green tea rolled into long curves." },
-      { term: "Gunpowder", def: "“Pearl tea”: green tea rolled into small, tight balls." },
-      { term: "41022, 4011, 9371…", def: "Export codes that indicate the shape and sort of the tea." },
-      { term: "AAA, AA, A", def: "Sorting levels: the more A’s, the more even the leaf." },
-      { term: "Atay", def: "The name for tea in the Maghreb and the Sahel." },
     ],
   },
   aboutPage: {
@@ -358,9 +380,9 @@ const en = {
       company: "Company",
       country: "Country",
       interest: "Product of interest",
-      interestOptions: ["Chunmee 41022", "Chunmee 4011", "Chunmee 9371", "Chunmee 9366", "Gunpowder 3505", "Private label (OEM)", "Pantry / tableware", "Other"],
+      interestOptions: ["Chunmee 41022", "Chunmee 4011", "Chunmee 9371", "Gunpowder 3505", "Private label (OEM)", "Pantry / canned goods", "Other"],
       volume: "Estimated volume",
-      volumeOptions: ["Samples", "Less than a container", "1 × 20' container", "1 × 40' container", "Several containers"],
+      volumeOptions: ["Samples", "Less than a container", "1 × 20FT container", "1 × 40FT container", "Several containers"],
       message: "Your message",
       submit: "Send on WhatsApp",
       required: "Required field",

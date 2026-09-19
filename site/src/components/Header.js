@@ -11,8 +11,7 @@ const NAV = [
   ["teas", "/teas"],
   ["brands", "/brands"],
   ["services", "/services"],
-  ["ritual", "/tea-ritual"],
-  ["pantry", "/pantry"],
+  ["pantry", "/conserves"],
   ["about", "/about"],
 ];
 

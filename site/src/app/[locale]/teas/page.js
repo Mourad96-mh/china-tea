@@ -48,7 +48,7 @@ export default async function TeasPage({ params }) {
       <section className="section section--pattern">
         <div className="container family-grid">
           {d.families.map((f, i) => (
-            <Reveal key={f.id} className="family-card" delay={i * 100}>
+            <Reveal key={f.id} id={f.id} className="family-card" delay={i * 100}>
               <h2>{f.title}</h2>
               <p>{f.text}</p>
               <ul className="chip-list">

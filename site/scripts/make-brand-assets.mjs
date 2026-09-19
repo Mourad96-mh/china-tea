@@ -55,7 +55,7 @@ const overlay = Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${W}
   <text x="72" y="286" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="700" fill="${CREAM}">Thé vert de Chine</text>
   <text x="72" y="352" font-family="Georgia, 'Times New Roman', serif" font-size="50" font-style="italic" fill="${GOLD_LIGHT}">pour le Maroc et l’Afrique</text>
   <line x1="72" y1="392" x2="170" y2="392" stroke="${GOLD}" stroke-width="2"/>
-  <text x="72" y="440" font-family="Arial, sans-serif" font-size="26" fill="${CREAM}" fill-opacity=".88">Chunmee 41022 · 4011 · 9371 · 9366 · Gunpowder 3505</text>
+  <text x="72" y="440" font-family="Arial, sans-serif" font-size="26" fill="${CREAM}" fill-opacity=".88">Chunmee 41022 · 4011 · 9371 · Gunpowder 3505</text>
   <text x="72" y="482" font-family="Arial, sans-serif" font-size="22" fill="${CREAM}" fill-opacity=".72">Marques maison · Marque privée OEM · Export en conteneur</text>
   <text x="72" y="566" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="${GOLD_LIGHT}">Zhejiang — Hong Kong</text>
 </svg>`);

@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
 import { WhatsAppFloat } from "@/components/Blocks";
+import WeChatFloat from "@/components/WeChatFloat";
 import { getDict } from "@/dict";
 import { isLocale, locales } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/seo";
@@ -66,6 +67,7 @@ export default async function LocaleLayout({ children, params }) {
         <Header locale={locale} dict={dict} />
         <main id="main">{children}</main>
         <Footer locale={locale} dict={dict} />
+        <WeChatFloat t={dict.common} />
         <WhatsAppFloat label={dict.common.whatsapp} />
         <JsonLd data={organization} />
       </body>
