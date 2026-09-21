@@ -12,6 +12,7 @@ const paths = {
   close: <path d="M6 6l12 12M18 6 6 18" />,
   globe: <><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3Z" /></>,
   plus: <path d="M12 5v14M5 12h14" />,
+  handshake: <><path d="m2 11 4-4 4 1.5L12.5 7 17 8l5 3.5-3 3" /><path d="m6 7 .5 7.5 4 4a1.5 1.5 0 0 0 2.1-2.1m-2.6-.9 2.2 2.2a1.5 1.5 0 0 0 2.1-2.1l-1.2-1.2m-1.4 2.6.8.8a1.5 1.5 0 0 0 2.1-2.1L10 9.5" /></>,
 };
 
 export default function Icon({ name, size = 24, className, strokeWidth = 1.6 }) {

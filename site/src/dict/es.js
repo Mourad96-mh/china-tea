@@ -56,13 +56,12 @@ const es = {
   },
   home: {
     hero: {
-      eyebrow: "Té verde de China · Exportación",
-      title: "Del jardín de té chino",
-      titleAccent: "hasta el vaso de sus clientes",
-      text: "De nuestras montañas a su puerta. Aire puro, tierras preservadas: aquí nacen nuestros tés. De la cosecha a la fábrica, cada etapa está controlada, para una calidad que no cambia de un contenedor a otro.",
+      eyebrow: "Té de China",
+      title: "Tés excepcionales",
+      text: "Una selección auténtica para profesionales de todo el mundo.",
       cta: "Descubrir nuestros tés",
-      cta2: "Pedir presupuesto",
-      badge: "Marcas propias y marca blanca",
+      featuresLabel: "Nuestros compromisos",
+      features: ["Calidad seleccionada", "Exportación mundial", "Una colaboración duradera"],
     },
     categories: {
       eyebrow: "Nuestros productos",
@@ -86,7 +85,7 @@ const es = {
         },
         bags: {
           title: "Bolsas de equipaje personalizadas",
-          text: "Bolsas impresas con su marca, en tallas S, M, L y XL.",
+          text: "Bolsas impresas con su marca, en tallas M, L y XL.",
           cta: "Pedir presupuesto",
         },
       },
@@ -102,7 +101,7 @@ const es = {
     },
     stats: [
       { value: "4", label: "grados de referencia" },
-      { value: "8", label: "marcas propias" },
+      { value: "9", label: "marcas propias" },
       { value: "2", label: "oficinas: Zhejiang y Hong Kong" },
       { value: "OEM", label: "marca blanca a medida" },
     ],
@@ -226,9 +225,9 @@ const es = {
     ctaText: "Indíquenos su mercado y los volúmenes estimados.",
   },
   brandsPage: {
-    metaTitle: "Nuestras 8 marcas de té verde Chunmee y Gunpowder",
+    metaTitle: "Nuestras 9 marcas de té verde Chunmee y Gunpowder",
     metaDescription:
-      "Chunmee: Dkhmiss 41022, Al Mousafir, 4111, 401 y 9371. Gunpowder: 511, 777 y Amghar. Las 8 marcas de té verde de China Tea Group, listas para la distribución.",
+      "Chunmee: Dkhmiss, Amghar, Al Mousafir, 4111, 401, 711 y 9371. Gunpowder: 511 y 777. Las 9 marcas de té verde de China Tea Group, listas para la distribución.",
     eyebrow: "Nuestras marcas",
     title: "Marcas que hablan a sus clientes",
     intro:

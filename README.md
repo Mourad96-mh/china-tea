@@ -14,7 +14,6 @@ Live: <https://china-tea-ebon.vercel.app>
 | `site/public/` | Processed images, logo, OG image, `llms.txt` |
 | `site/assets-src/` | Raw client, cut-out, source and stock images |
 | `site/scripts/` | Build, image preparation, brand assets, meta and schema checks |
-| `file.txt` + `*.jpeg` | The client brief and the photos they sent |
 
 ## Stack
 

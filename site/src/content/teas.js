@@ -16,6 +16,7 @@ export const teas = [
     gallery: [
       { image: "products/leaf-41022.webp", kind: "leaf" },
       { image: "products/dkhmiss-41022-gold.webp", kind: "pack" },
+      { image: "products/dkhmiss-41022-desert-cut.webp", kind: "pack" },
     ],
     name: { fr: "Chunmee 41022", en: "Chunmee 41022", es: "Chunmee 41022" },
     tagline: {
@@ -47,7 +48,7 @@ export const teas = [
       en: ["Everyday mint tea", "Cafés and hospitality", "House blends"],
       es: ["Té con menta diario", "Cafeterías y hostelería", "Mezclas propias"],
     },
-    brands: ["dkhmiss"],
+    brands: ["dkhmiss", "amghar"],
   },
   {
     slug: "chunmee-4011",
@@ -88,15 +89,13 @@ export const teas = [
       en: ["Premium serving", "Receptions and celebrations", "Gift boxes"],
       es: ["Servicio premium", "Recepciones y celebraciones", "Estuches de regalo"],
     },
-    brands: ["al-mousafir", "4111", "401"],
+    brands: ["al-mousafir", "4111", "401", "711"],
   },
   {
     slug: "chunmee-9371",
     code: "9371",
     family: "chunmee",
-    // Concept box (no real 9371 pack supplied yet), captioned as a presentation visual.
-    image: "products/brand-9371-3d-cut.webp",
-    imageConcept: true,
+    image: "products/dkhmiss-9371-cut.webp",
     gallery: [{ image: "products/leaf-9371.webp", kind: "leaf" }],
     name: { fr: "Chunmee 9371", en: "Chunmee 9371", es: "Chunmee 9371" },
     tagline: {
@@ -124,13 +123,13 @@ export const teas = [
       en: ["Daily drinking", "Mass retail", "Large packs"],
       es: ["Consumo diario", "Gran distribución", "Formatos grandes"],
     },
-    brands: ["9371"],
+    brands: ["9371", "dkhmiss"],
   },
   {
     slug: "gunpowder-3505",
     code: "3505",
     family: "gunpowder",
-    image: "products/gold-511-3505.webp",
+    image: "products/brand-511-diamant-cut.webp",
     gallery: [
       { image: "products/leaf-3505.webp", kind: "leaf" },
       { image: "products/leaf-3505-a.webp", kind: "leaf", sort: "A" },
@@ -138,7 +137,6 @@ export const teas = [
       { image: "products/leaf-3505-aaa.webp", kind: "leaf", sort: "AAA" },
       { image: "products/brand-777-cut.webp", kind: "pack" },
     ],
-    imageScene: true,
     name: { fr: "Gunpowder 3505", en: "Gunpowder 3505", es: "Gunpowder 3505" },
     tagline: {
       fr: "La perle roulée du Sahel",
@@ -169,7 +167,7 @@ export const teas = [
       en: ["Three-glass ceremony", "West Africa and the Sahara", "3505 AAA / AA blends"],
       es: ["Ceremonia de los tres vasos", "África Occidental y el Sáhara", "Mezclas 3505 AAA / AA"],
     },
-    brands: ["511", "777", "amghar"],
+    brands: ["511", "777", "711"],
   },
 ];
 

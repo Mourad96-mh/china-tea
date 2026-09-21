@@ -48,7 +48,7 @@ export function CtaBand({ title, text, button, buttonHref, whatsappLabel }) {
   return (
     <section className="cta-band">
       <div className="container cta-band__inner">
-        <Ornament className="ornament--light" />
+        <Ornament />
         <h2 className="cta-band__title">{title}</h2>
         {text && <p className="cta-band__text">{text}</p>}
         <div className="btn-row btn-row--center">
@@ -57,7 +57,7 @@ export function CtaBand({ title, text, button, buttonHref, whatsappLabel }) {
               {button}
             </Link>
           )}
-          <a className="btn btn--ghost-light" href={whatsappLink()} target="_blank" rel="noopener noreferrer">
+          <a className="btn btn--outline" href={whatsappLink()} target="_blank" rel="noopener noreferrer">
             <Icon name="whatsapp" size={18} /> {whatsappLabel}
           </a>
         </div>

@@ -72,7 +72,7 @@ export default async function ServicesPage({ params }) {
 
       <section className="section section--dark">
         <div className="container">
-          <SectionHead title={d.stepsTitle} light />
+          <SectionHead title={d.stepsTitle} />
           <ol className="timeline">
             {d.steps.map((s, i) => (
               <Reveal as="li" key={s.title} className="timeline__step" delay={i * 80}>

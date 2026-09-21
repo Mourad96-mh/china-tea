@@ -39,8 +39,7 @@ export const brands = [
     name: "4111",
     arabic: "",
     accent: "#6B4A2B",
-    cover: "products/brand-4111-box.webp",
-    coverScene: true,
+    cover: "products/brand-4111-200g-cut.webp",
     meaning: { fr: "Brun & or", en: "Brown & gold", es: "Marrón y oro" },
     pitch: {
       fr: "Une boîte brun et or aux arabesques fines, avec le voyageur du désert et le thé versé haut : un Chunmee 4011 au décor soigné.",
@@ -48,15 +47,19 @@ export const brands = [
       es: "Una caja marrón y oro con finos arabescos, el viajero del desierto y el té servido desde lo alto: un Chunmee 4011 con un diseño cuidado.",
     },
     story: {
-      fr: "4111 reprend les codes du thé saharien : caravane au coucher du soleil, palmiers et verre de thé mousseux, dans un cadre d’arabesques dorées. À l’intérieur, un Chunmee 4011, fin et parfumé.",
-      en: "4111 draws on the codes of Saharan tea: a caravan at sunset, palm trees and a frothy glass of tea, framed by golden arabesques. Inside is Chunmee 4011, fine and fragrant.",
-      es: "4111 retoma los códigos del té sahariano: caravana al atardecer, palmeras y un vaso de té espumoso, en un marco de arabescos dorados. Dentro, un Chunmee 4011, fino y aromático.",
+      fr: "4111 reprend les codes du thé saharien : caravane au coucher du soleil, palmiers et verre de thé mousseux, dans un cadre d’arabesques dorées. À l’intérieur, un Chunmee 4011, fin et parfumé. La boîte de 200 g, signée « L’authenticité au goût du jour », promet un goût fin et délicat.",
+      en: "4111 draws on the codes of Saharan tea: a caravan at sunset, palm trees and a frothy glass of tea, framed by golden arabesques. Inside is Chunmee 4011, fine and fragrant. The 200 g box, signed “L’authenticité au goût du jour” (authenticity for today), promises a fine, delicate taste.",
+      es: "4111 retoma los códigos del té sahariano: caravana al atardecer, palmeras y un vaso de té espumoso, en un marco de arabescos dorados. Dentro, un Chunmee 4011, fino y aromático. La caja de 200 g, con el lema «L’authenticité au goût du jour» (la autenticidad al gusto de hoy), promete un sabor fino y delicado.",
     },
     teas: ["chunmee-4011"],
     packs: [
       {
+        image: "products/brand-4111-200g-cut.webp",
+        name: { fr: "4111 · Chunmee 4011 — 200 g", en: "4111 · Chunmee 4011 — 200 g", es: "4111 · Chunmee 4011 — 200 g" },
+      },
+      {
         image: "products/brand-4111-box.webp",
-        name: { fr: "4111 · Chunmee 4011", en: "4111 · Chunmee 4011", es: "4111 · Chunmee 4011" },
+        name: { fr: "4111 · Chunmee 4011 — boîte brun et or", en: "4111 · Chunmee 4011 — brown and gold box", es: "4111 · Chunmee 4011 — caja marrón y oro" },
         scene: true,
       },
     ],
@@ -66,23 +69,28 @@ export const brands = [
     name: "401",
     arabic: "",
     accent: "#8A6A3E",
-    cover: "products/brand-401-3d-cut.webp",
+    cover: "products/brand-401-atay-cut.webp",
     meaning: { fr: "Toile de jute & feuilles vertes", en: "Burlap & green leaves", es: "Arpillera y hojas verdes" },
     pitch: {
-      fr: "Un décor toile de jute semé de feuilles de thé, avec le médaillon Sahraoui au centre : un Chunmee 4011 à l’allure naturelle.",
-      en: "A burlap design scattered with tea leaves and the Sahraoui medallion at its centre: Chunmee 4011 with a natural look.",
-      es: "Un diseño de arpillera salpicado de hojas de té, con el medallón Sahraoui en el centro: un Chunmee 4011 de aspecto natural.",
+      fr: "Un décor toile de jute semé de feuilles de thé, le médaillon ATAY et une fenêtre sur la feuille : un Chunmee 4011 Extra à l’allure naturelle.",
+      en: "A burlap design scattered with tea leaves, the ATAY medallion and a window onto the leaf: Chunmee 4011 Extra with a natural look.",
+      es: "Un diseño de arpillera salpicado de hojas de té, el medallón ATAY y una ventana sobre la hoja: un Chunmee 4011 Extra de aspecto natural.",
     },
     story: {
-      fr: "401 mise sur la simplicité : une boîte couleur jute, des feuilles de thé et la mention « thé vert qualité supérieure » en français et en arabe. À l’intérieur, un Chunmee 4011, fin et parfumé.",
-      en: "401 keeps it simple: a burlap-coloured box, tea leaves and “superior quality green tea” in French and Arabic. Inside is Chunmee 4011, fine and fragrant.",
-      es: "401 apuesta por la sencillez: una caja color arpillera, hojas de té y la mención «té verde de calidad superior» en francés y árabe. Dentro, un Chunmee 4011, fino y aromático.",
+      fr: "401 mise sur la simplicité : une boîte couleur jute, le médaillon ATAY « Goût naturel, santé durable » et la mention « thé vert qualité supérieure » en français et en arabe. Une fenêtre laisse voir la feuille : un Chunmee 4011, fin et parfumé. Une seconde version porte la signature « Du thé de choix ».",
+      en: "401 keeps it simple: a burlap-coloured box, the ATAY medallion (“Natural taste, lasting health”) and “superior quality green tea” in French and Arabic. A window shows the leaf inside: Chunmee 4011, fine and fragrant. A second version carries the tagline “Du thé de choix” (“Choice tea”).",
+      es: "401 apuesta por la sencillez: una caja color arpillera, el medallón ATAY («Sabor natural, salud duradera») y la mención «té verde de calidad superior» en francés y árabe. Una ventana deja ver la hoja: un Chunmee 4011, fino y aromático. Una segunda versión lleva el lema «Du thé de choix» («Té selecto»).",
     },
     teas: ["chunmee-4011"],
     packs: [
       {
-        image: "products/brand-401-3d-cut.webp",
-        name: { fr: "401 · Chunmee 4011 — 200 g", en: "401 · Chunmee 4011 — 200 g", es: "401 · Chunmee 4011 — 200 g" },
+        image: "products/brand-401-atay-cut.webp",
+        name: { fr: "401 Extra · ATAY — Chunmee 4011", en: "401 Extra · ATAY — Chunmee 4011", es: "401 Extra · ATAY — Chunmee 4011" },
+      },
+      {
+        image: "products/brand-401-atay-choix.webp",
+        name: { fr: "401 Extra · ATAY « Du thé de choix » — 200 g", en: "401 Extra · ATAY “Du thé de choix” — 200 g", es: "401 Extra · ATAY «Du thé de choix» — 200 g" },
+        scene: true,
       },
       {
         image: "products/brand-401-box.webp",
@@ -91,11 +99,36 @@ export const brands = [
     ],
   },
   {
+    slug: "711",
+    name: "711",
+    arabic: "",
+    accent: "#2F9A3C",
+    cover: "products/brand-711-cut.webp",
+    meaning: { fr: "Vert, noir & or", en: "Green, black & gold", es: "Verde, negro y oro" },
+    pitch: {
+      fr: "Un cube vert vif aux frises dorées, sept étoiles et une rangée de verres de thé mousseux sur fond de dunes : une boîte qui attire l’œil en rayon, en Chunmee 4011 ou en Gunpowder 3505.",
+      en: "A bright green cube with golden fretwork, seven stars and a row of frothy glasses of tea against the dunes: a box that catches the eye on the shelf, in Chunmee 4011 or Gunpowder 3505.",
+      es: "Un cubo verde vivo con grecas doradas, siete estrellas y una fila de vasos de té espumoso sobre fondo de dunas: una caja que llama la atención en el lineal, en Chunmee 4011 o Gunpowder 3505.",
+    },
+    story: {
+      fr: "711 joue la carte du thé du désert : le chiffre doré sur bandeau noir, les dunes, les verres servis bien mousseux et la mention « thé vert de Chine, qualité supérieure » en français et en arabe. La même boîte de 200 g existe en deux qualités : un Chunmee 4011, fin et parfumé, et un Gunpowder 3505, en perles serrées, pour une tasse plus corsée.",
+      en: "711 plays on desert tea: the golden number on a black band, the dunes, glasses poured with a thick froth and “Chinese green tea, superior quality” in French and Arabic. The same 200 g box comes in two grades: Chunmee 4011, fine and fragrant, and Gunpowder 3505, rolled into tight pearls for a bolder cup.",
+      es: "711 apuesta por el té del desierto: el número dorado sobre banda negra, las dunas, los vasos servidos con mucha espuma y la mención «té verde de China, calidad superior» en francés y árabe. La misma caja de 200 g existe en dos calidades: un Chunmee 4011, fino y aromático, y un Gunpowder 3505, en perlas apretadas, para una taza más intensa.",
+    },
+    teas: ["chunmee-4011", "gunpowder-3505"],
+    packs: [
+      {
+        image: "products/brand-711-cut.webp",
+        name: { fr: "711 · Chunmee 4011 ou Gunpowder 3505 — 200 g", en: "711 · Chunmee 4011 or Gunpowder 3505 — 200 g", es: "711 · Chunmee 4011 o Gunpowder 3505 — 200 g" },
+      },
+    ],
+  },
+  {
     slug: "dkhmiss",
     name: "Dkhmiss",
     arabic: "",
     accent: "#1F4E9E",
-    cover: "products/dkhmiss-41022-edition-cut.webp",
+    cover: "products/dkhmiss-41022-edition-hd-cut.webp",
     meaning: { fr: "Gammes Sahraoui & Diwan", en: "Sahraoui & Diwan ranges", es: "Gamas Sahraoui y Diwan" },
     pitch: {
       fr: "Le bleu du chèche et l’or du thé servi haut : une marque au caractère affirmé, pensée pour le Chunmee 41022 5A.",
@@ -103,19 +136,27 @@ export const brands = [
       es: "El azul del turbante del desierto y el oro del té servido desde lo alto: una marca con carácter, pensada para el Chunmee 41022 5A.",
     },
     story: {
-      fr: "Dkhmiss rend hommage à l’hospitalité saharienne. La ligne Sahraoui (boîte rouge et bleue) existe en édition standard et en Édition spéciale à liseré doré ; la ligne Diwan, en boîte haute jaune, parle aux familles qui achètent en plus grande quantité.",
-      en: "Dkhmiss pays tribute to Saharan hospitality. The Sahraoui line (red and blue box) comes as a standard pack and a gold-trimmed Special Edition; the Diwan line, in a tall yellow box, speaks to families who buy in larger quantities.",
-      es: "Dkhmiss rinde homenaje a la hospitalidad sahariana. La línea Sahraoui (caja roja y azul) existe en edición estándar y en Edición especial con ribete dorado; la línea Diwan, en caja alta amarilla, se dirige a las familias que compran en mayor cantidad.",
+      fr: "Dkhmiss rend hommage à l’hospitalité saharienne. La ligne Sahraoui (boîte rouge et bleue) existe en édition standard et en Édition spéciale à liseré doré ; le cube jaune désert, encadré d’arabesques, montre l’homme en chèche bleu qui sert le thé dans les dunes ; la ligne Diwan, en boîte haute jaune, parle aux familles qui achètent en plus grande quantité.",
+      en: "Dkhmiss pays tribute to Saharan hospitality. The Sahraoui line (red and blue box) comes as a standard pack and a gold-trimmed Special Edition; the yellow desert cube, framed with arabesques, shows a man in a blue turban serving tea among the dunes; the Diwan line, in a tall yellow box, speaks to families who buy in larger quantities.",
+      es: "Dkhmiss rinde homenaje a la hospitalidad sahariana. La línea Sahraoui (caja roja y azul) existe en edición estándar y en Edición especial con ribete dorado; el cubo amarillo desierto, enmarcado de arabescos, muestra a un hombre con turbante azul sirviendo té entre las dunas; la línea Diwan, en caja alta amarilla, se dirige a las familias que compran en mayor cantidad.",
     },
-    teas: ["chunmee-41022"],
+    teas: ["chunmee-41022", "chunmee-9371"],
     packs: [
       {
-        image: "products/dkhmiss-41022-edition-cut.webp",
+        image: "products/dkhmiss-41022-edition-hd-cut.webp",
         name: { fr: "Sahraoui 41022 — Édition spéciale 200 g", en: "Sahraoui 41022 — Special Edition 200 g", es: "Sahraoui 41022 — Edición especial 200 g" },
       },
       {
         image: "products/dkhmiss-41022-cut.webp",
         name: { fr: "Sahraoui 41022 — 200 g", en: "Sahraoui 41022 — 200 g", es: "Sahraoui 41022 — 200 g" },
+      },
+      {
+        image: "products/dkhmiss-41022-desert-cut.webp",
+        name: { fr: "41022 Qualité supérieure — boîte cube", en: "41022 Superior quality — cube box", es: "41022 Calidad superior — caja cubo" },
+      },
+      {
+        image: "products/dkhmiss-9371-cut.webp",
+        name: { fr: "9371 Chunmee — caisse en bois, 200 g", en: "9371 Chunmee — wooden crate, 200 g", es: "9371 Chunmee — caja de madera, 200 g" },
       },
       {
         image: "products/dkhmiss-diwan-41022-cut.webp",
@@ -138,9 +179,7 @@ export const brands = [
     name: "9371",
     arabic: "",
     accent: "#224B34",
-    // No packaging supplied yet: concept box built from the site placeholder, labelled on the page.
-    cover: "products/brand-9371-3d-cut.webp",
-    concept: true,
+    cover: "products/dkhmiss-9371-cut.webp",
     meaning: { fr: "Chunmee corsé", en: "Bold Chunmee", es: "Chunmee intenso" },
     pitch: {
       fr: "Une feuille bien roulée, une liqueur ambrée et une tasse puissante : la marque des amateurs de thé corsé.",
@@ -148,15 +187,15 @@ export const brands = [
       es: "Una hoja bien enrollada, un licor ambarino y una taza potente: la marca de los amantes del té intenso.",
     },
     story: {
-      fr: "9371 porte le nom de son grade : un Chunmee à la feuille moyenne, qui donne une liqueur ambrée et un goût franc. Un excellent rapport qualité-prix pour la consommation quotidienne et la grande distribution.",
-      en: "9371 takes its name from its grade: a medium-leaf Chunmee giving an amber liquor and a straightforward taste. Excellent value for daily drinking and mass retail.",
-      es: "9371 lleva el nombre de su grado: un Chunmee de hoja mediana que da un licor ambarino y un sabor franco. Una excelente relación calidad-precio para el consumo diario y la gran distribución.",
+      fr: "9371 porte le nom de son grade : un Chunmee à la feuille moyenne, qui donne une liqueur ambrée et un goût franc. Un excellent rapport qualité-prix pour la consommation quotidienne et la grande distribution. La boîte de 200 g, signée Dkhmiss, imite une caisse en bois cerclée d’acier, couronne en tête.",
+      en: "9371 takes its name from its grade: a medium-leaf Chunmee giving an amber liquor and a straightforward taste. Excellent value for daily drinking and mass retail. The 200 g box, signed Dkhmiss, looks like a steel-bound wooden crate topped with a crown.",
+      es: "9371 lleva el nombre de su grado: un Chunmee de hoja mediana que da un licor ambarino y un sabor franco. Una excelente relación calidad-precio para el consumo diario y la gran distribución. La caja de 200 g, firmada Dkhmiss, imita una caja de madera reforzada con acero, coronada por una corona.",
     },
     teas: ["chunmee-9371"],
     packs: [
       {
-        image: "products/brand-9371-3d-cut.webp",
-        name: { fr: "9371 · Chunmee — visuel de présentation", en: "9371 · Chunmee — presentation visual", es: "9371 · Chunmee — visual de presentación" },
+        image: "products/dkhmiss-9371-cut.webp",
+        name: { fr: "Dkhmiss 9371 Chunmee — 200 g", en: "Dkhmiss 9371 Chunmee — 200 g", es: "Dkhmiss 9371 Chunmee — 200 g" },
       },
     ],
   },
@@ -165,8 +204,7 @@ export const brands = [
     name: "Amghar",
     arabic: "أمغار",
     accent: "#2E8B3E",
-    cover: "products/amghar-41022.webp",
-    coverScene: true,
+    cover: "products/amghar-41022-box-cut.webp",
     meaning: { fr: "« Le chef, l’ancien » en amazigh", en: "“The chief, the elder” in Amazigh", es: "«El jefe, el anciano» en amazigh" },
     pitch: {
       fr: "Les couleurs amazighes, l’Atlas et les champs de thé réunis sur une boîte joyeuse et fière de ses racines.",
@@ -174,15 +212,19 @@ export const brands = [
       es: "Los colores amazigh, el Atlas y los campos de té reunidos en una caja alegre y orgullosa de sus raíces.",
     },
     story: {
-      fr: "Amghar célèbre la culture berbère : drapeau amazigh, montagnes de l’Atlas et caravane au pied des cimes. À l’intérieur, un thé vert Gunpowder en boîte de 200 g, pour une clientèle attachée à son identité.",
-      en: "Amghar celebrates Berber culture: the Amazigh flag, the Atlas peaks and a caravan at their foot. Inside is Gunpowder green tea in a 200 g box, for customers attached to their identity.",
-      es: "Amghar celebra la cultura berberisca: la bandera amazigh, las cumbres del Atlas y una caravana a sus pies. Dentro, un té verde Gunpowder en caja de 200 g, para un público apegado a su identidad.",
+      fr: "Amghar célèbre la culture berbère : drapeau amazigh, montagnes de l’Atlas et kasbah au pied des cimes, où un ancien sert le thé sous la devise « Un thé, un peuple, une histoire ». À l’intérieur, un Chunmee 41022 en boîte de 200 g, pour une clientèle attachée à son identité.",
+      en: "Amghar celebrates Berber culture: the Amazigh flag, the Atlas peaks and a kasbah at their foot, where an elder serves tea under the motto “Un thé, un peuple, une histoire” (one tea, one people, one story). Inside is Chunmee 41022 in a 200 g box, for customers attached to their identity.",
+      es: "Amghar celebra la cultura berberisca: la bandera amazigh, las cumbres del Atlas y una kasba a sus pies, donde un anciano sirve el té bajo el lema «Un thé, un peuple, une histoire» (un té, un pueblo, una historia). Dentro, un Chunmee 41022 en caja de 200 g, para un público apegado a su identidad.",
     },
-    teas: ["gunpowder-3505"],
+    teas: ["chunmee-41022"],
     packs: [
       {
+        image: "products/amghar-41022-box-cut.webp",
+        name: { fr: "Thé amazigh berbère 41022 — 200 g", en: "Amazigh Berber tea 41022 — 200 g", es: "Té amazigh berberisco 41022 — 200 g" },
+      },
+      {
         image: "products/amghar-41022.webp",
-        name: { fr: "Thé amazigh berbère Gunpowder — 200 g", en: "Amazigh Berber Gunpowder tea — 200 g", es: "Té amazigh berberisco Gunpowder — 200 g" },
+        name: { fr: "Thé amazigh berbère 41022 — première boîte", en: "Amazigh Berber tea 41022 — first box", es: "Té amazigh berberisco 41022 — primera caja" },
         scene: true,
       },
     ],
@@ -192,25 +234,23 @@ export const brands = [
     name: "511",
     arabic: "",
     accent: "#B8913A",
-    cover: "products/gold-511-3505.webp",
-    coverScene: true,
-    meaning: { fr: "Noir & or", en: "Black & gold", es: "Negro y oro" },
+    cover: "products/brand-511-diamant-cut.webp",
+    meaning: { fr: "Noir & jaune d’or", en: "Black & golden yellow", es: "Negro y amarillo oro" },
     pitch: {
-      fr: "Un écrin noir et or, sobre et haut de gamme, qui associe le thé vert de Chine au mélange traditionnel marocain 3505.",
-      en: "A sober, upmarket black-and-gold box pairing Chinese green tea with the traditional Moroccan 3505 blend.",
-      es: "Un estuche negro y oro, sobrio y de alta gama, que une el té verde de China con la mezcla tradicional marroquí 3505.",
+      fr: "Un cube noir et jaune d’or semé d’étoiles rouges, avec une fenêtre sur la perle de Gunpowder : le 3505 Diamant, pensé pour une présence premium en rayon.",
+      en: "A black and golden-yellow cube scattered with red stars, with a window onto the Gunpowder pearl: 3505 Diamant, made for a premium presence on the shelf.",
+      es: "Un cubo negro y amarillo oro salpicado de estrellas rojas, con una ventana sobre la perla de Gunpowder: el 3505 Diamant, pensado para una presencia premium en el lineal.",
     },
     story: {
-      fr: "511 s’adresse aux points de vente qui veulent une présence premium en rayon. Une face présente le thé vert de Chine, l’autre le « thé vert marocain, mélange traditionnel supérieur 3505 » : deux usages, une seule boîte.",
-      en: "511 is made for retailers who want a premium presence on the shelf. One face shows Chinese green tea, the other the “Moroccan green tea, superior traditional blend 3505”: two uses, one box.",
-      es: "511 está pensado para los puntos de venta que buscan una presencia premium en el lineal. Una cara presenta el té verde de China y la otra el «té verde marroquí, mezcla tradicional superior 3505»: dos usos, una sola caja.",
+      fr: "511 s’adresse aux points de vente qui veulent une présence premium en rayon. L’Édition spéciale 3505 Diamant associe les verres de thé mousseux, la Cité interdite et une fenêtre qui laisse voir la perle de Gunpowder, en boîte de 200 g.",
+      en: "511 is made for retailers who want a premium presence on the shelf. The 3505 Diamant Special Edition brings together frothy glasses of tea, the Forbidden City and a window showing the Gunpowder pearl, in a 200 g box.",
+      es: "511 está pensado para los puntos de venta que buscan una presencia premium en el lineal. La Edición especial 3505 Diamant reúne vasos de té espumoso, la Ciudad Prohibida y una ventana que deja ver la perla de Gunpowder, en caja de 200 g.",
     },
     teas: ["gunpowder-3505"],
     packs: [
       {
-        image: "products/gold-511-3505.webp",
-        name: { fr: "511 · 3505 — coffret noir et or", en: "511 · 3505 — black and gold box", es: "511 · 3505 — estuche negro y oro" },
-        scene: true,
+        image: "products/brand-511-diamant-cut.webp",
+        name: { fr: "511 · Gunpowder 3505 Diamant — Édition spéciale 200 g", en: "511 · Gunpowder 3505 Diamant — Special Edition 200 g", es: "511 · Gunpowder 3505 Diamant — Edición especial 200 g" },
       },
     ],
   },

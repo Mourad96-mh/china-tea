@@ -114,7 +114,7 @@ export default async function BrandPage({ params }) {
 
       <section className="section section--dark">
         <div className="container">
-          <SectionHead title={d.otherBrands} light />
+          <SectionHead title={d.otherBrands} />
           <div className="brand-grid brand-grid--three">
             {others.map((b) => (
               <BrandCard key={b.slug} brand={b} locale={locale} dict={dict} />

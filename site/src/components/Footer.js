@@ -12,7 +12,7 @@ export default function Footer({ locale, dict }) {
     <footer className="site-footer">
       <div className="container footer__grid">
         <div className="footer__brand">
-          <Logo light />
+          <Logo />
           <p>{dict.meta.description}</p>
           <a className="btn btn--whatsapp" href={whatsappLink()} target="_blank" rel="noopener noreferrer">
             <Icon name="whatsapp" size={18} /> {dict.common.whatsapp}

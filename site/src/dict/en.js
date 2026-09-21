@@ -56,13 +56,12 @@ const en = {
   },
   home: {
     hero: {
-      eyebrow: "Chinese green tea · Export",
-      title: "From the tea gardens of China",
-      titleAccent: "to your customers’ glass",
-      text: "From our mountains to your door. Clean air, protected land: this is where our teas are grown. From the harvest to the factory, every step is checked, so the quality never changes from one container to the next.",
+      eyebrow: "Chinese tea",
+      title: "Exceptional teas",
+      text: "An authentic selection for professionals around the world.",
       cta: "Discover our teas",
-      cta2: "Request a quote",
-      badge: "House brands & private label",
+      featuresLabel: "Our commitments",
+      features: ["Selected quality", "Worldwide export", "A lasting partnership"],
     },
     categories: {
       eyebrow: "Our products",
@@ -86,7 +85,7 @@ const en = {
         },
         bags: {
           title: "Custom luggage bags",
-          text: "Bags printed with your brand, in sizes S, M, L and XL.",
+          text: "Bags printed with your brand, in sizes M, L and XL.",
           cta: "Request a quote",
         },
       },
@@ -102,7 +101,7 @@ const en = {
     },
     stats: [
       { value: "4", label: "core tea grades" },
-      { value: "8", label: "house brands" },
+      { value: "9", label: "house brands" },
       { value: "2", label: "offices: Zhejiang & Hong Kong" },
       { value: "OEM", label: "tailor-made private label" },
     ],
@@ -226,9 +225,9 @@ const en = {
     ctaText: "Tell us your market and estimated volumes.",
   },
   brandsPage: {
-    metaTitle: "Our 8 Chunmee and Gunpowder green tea brands",
+    metaTitle: "Our 9 Chunmee and Gunpowder green tea brands",
     metaDescription:
-      "Chunmee: Dkhmiss 41022, Al Mousafir, 4111, 401 and 9371. Gunpowder: 511, 777 and Amghar. China Tea Group’s 8 green tea brands, ready for distribution.",
+      "Chunmee: Dkhmiss, Amghar, Al Mousafir, 4111, 401, 711 and 9371. Gunpowder: 511 and 777. China Tea Group’s 9 green tea brands, ready for distribution.",
     eyebrow: "Our brands",
     title: "Brands that speak to your customers",
     intro:

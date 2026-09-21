@@ -296,12 +296,12 @@
   450
  ],
  "products/custom-bag.webp": [
-  725,
-  1100
+  900,
+  600
  ],
  "products/custom-bag-450.webp": [
-  363,
-  550
+  450,
+  300
  ],
  "products/brand-4111-box.webp": [
   600,
@@ -426,5 +426,133 @@
  "conserves-cans-800.webp": [
   800,
   533
+ ],
+ "products/brand-401-atay-choix.webp": [
+  900,
+  900
+ ],
+ "products/brand-401-atay-choix-450.webp": [
+  450,
+  450
+ ],
+ "products/amghar-41022-box-cut.webp": [
+  800,
+  836
+ ],
+ "products/amghar-41022-box-cut-400.webp": [
+  400,
+  418
+ ],
+ "products/assila-honey-range-cut.webp": [
+  800,
+  491
+ ],
+ "products/assila-honey-range-cut-400.webp": [
+  400,
+  245
+ ],
+ "products/bondelice-corn-3pack-cut.webp": [
+  800,
+  300
+ ],
+ "products/bondelice-corn-3pack-cut-400.webp": [
+  400,
+  150
+ ],
+ "products/bondelice-peas-3pack-cut.webp": [
+  800,
+  338
+ ],
+ "products/bondelice-peas-3pack-cut-400.webp": [
+  400,
+  169
+ ],
+ "products/bondelice-tomato-cut.webp": [
+  625,
+  900
+ ],
+ "products/bondelice-tomato-cut-400.webp": [
+  312,
+  450
+ ],
+ "products/brand-401-atay-cut.webp": [
+  800,
+  838
+ ],
+ "products/brand-401-atay-cut-400.webp": [
+  400,
+  419
+ ],
+ "products/brand-4111-200g-cut.webp": [
+  800,
+  849
+ ],
+ "products/brand-4111-200g-cut-400.webp": [
+  400,
+  425
+ ],
+ "products/brand-511-diamant-cut.webp": [
+  800,
+  705
+ ],
+ "products/brand-511-diamant-cut-400.webp": [
+  400,
+  353
+ ],
+ "products/brand-711-cut.webp": [
+  800,
+  854
+ ],
+ "products/brand-711-cut-400.webp": [
+  400,
+  427
+ ],
+ "products/dkhmiss-41022-desert-cut.webp": [
+  800,
+  774
+ ],
+ "products/dkhmiss-41022-desert-cut-400.webp": [
+  400,
+  387
+ ],
+ "products/dkhmiss-41022-edition-hd-cut.webp": [
+  800,
+  778
+ ],
+ "products/dkhmiss-41022-edition-hd-cut-400.webp": [
+  400,
+  389
+ ],
+ "products/dkhmiss-9371-cut.webp": [
+  800,
+  821
+ ],
+ "products/dkhmiss-9371-cut-400.webp": [
+  400,
+  410
+ ],
+ "products/mamafe-peanut-range-cut.webp": [
+  800,
+  673
+ ],
+ "products/mamafe-peanut-range-cut-400.webp": [
+  400,
+  336
+ ],
+ "products/mill-miel-honey-range-cut.webp": [
+  800,
+  468
+ ],
+ "products/mill-miel-honey-range-cut-400.webp": [
+  400,
+  234
+ ],
+ "products/rollio-tomato-range-cut.webp": [
+  800,
+  476
+ ],
+ "products/rollio-tomato-range-cut-400.webp": [
+  400,
+  238
  ]
 }

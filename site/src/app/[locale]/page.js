@@ -3,7 +3,8 @@ import Icon from "@/components/Icon";
 import Ornament from "@/components/Ornament";
 import Reveal from "@/components/Reveal";
 import SectionHead from "@/components/SectionHead";
-import { ArchImage, BrandCard, CtaBand, HeroArc, ServiceIcon, TeaCard } from "@/components/Blocks";
+import { ArchImage, BrandCard, CtaBand, ServiceIcon, TeaCard } from "@/components/Blocks";
+import { site } from "@/lib/site";
 import { getDict } from "@/dict";
 import { href, pick } from "@/lib/i18n";
 import { img } from "@/lib/img";
@@ -11,12 +12,22 @@ import { teas } from "@/content/teas";
 import { brands } from "@/content/brands";
 import { pantry } from "@/content/pantry";
 
+// Packs lined up in the hero, as in the client's mock-up; icons of the feature strip below it.
+const heroPacks = [
+  "products/brand-401-atay-cut.webp",
+  "products/dkhmiss-41022-edition-hd-cut.webp",
+  "products/brand-711-cut.webp",
+  "products/brand-511-diamant-cut.webp",
+];
+const featureIcons = ["leaf", "globe", "handshake"];
+
 // The four product lines shown right under the hero; their text lives in dict.home.categories.
+// `contain`: white-background visuals (cut-out packs, M / L / XL bag line-up) shown whole instead of cropped.
 const categories = [
-  { id: "chunmee", image: "products/dkhmiss-41022.webp", path: "/teas", hash: "chunmee" },
-  { id: "gunpowder", image: "products/gold-511-3505.webp", path: "/teas", hash: "gunpowder" },
-  { id: "food", image: "products/bondelice-tomato-square.webp", path: "/conserves", hash: "canned" },
-  { id: "bags", image: "products/custom-bag.webp", path: "/contact" },
+  { id: "chunmee", image: "products/dkhmiss-41022-edition-hd-cut.webp", path: "/teas", hash: "chunmee", contain: true },
+  { id: "gunpowder", image: "products/brand-511-diamant-cut.webp", path: "/teas", hash: "gunpowder", contain: true },
+  { id: "food", image: "products/bondelice-tomato-cut.webp", path: "/conserves", hash: "canned", contain: true },
+  { id: "bags", image: "products/custom-bag.webp", path: "/contact", contain: true },
 ];
 
 export default async function HomePage({ params }) {
@@ -24,8 +35,6 @@ export default async function HomePage({ params }) {
   const dict = getDict(locale);
   const h = dict.home;
   const heroBg = img("tea-gardens.webp");
-  const packA = img("products/al-mousafir-4011-cut.webp");
-  const packB = img("products/dkhmiss-41022-edition-cut.webp");
   const ritualBg = img("mint-tea-dark.webp");
 
   return (
@@ -34,32 +43,30 @@ export default async function HomePage({ params }) {
       <section className="hero">
         <img className="hero__bg" src={heroBg.src} srcSet={heroBg.srcSet} sizes="100vw" width={heroBg.width} height={heroBg.height} alt="" fetchPriority="high" />
         <div className="container hero__inner">
-          <div className="hero__copy">
-            <p className="eyebrow eyebrow--light">{h.hero.eyebrow}</p>
-            <h1 className="hero__title">
-              {h.hero.title} <em>{h.hero.titleAccent}</em>
-            </h1>
-            <Ornament className="ornament--light ornament--start" />
-            <p className="hero__text">{h.hero.text}</p>
-            <div className="btn-row">
-              <Link className="btn btn--gold btn--lg" href={href(locale, "/teas")}>
-                {h.hero.cta} <Icon name="arrow" size={18} />
-              </Link>
-              <Link className="btn btn--ghost-light btn--lg" href={href(locale, "/contact")}>
-                {h.hero.cta2}
-              </Link>
-            </div>
-          </div>
-          <div className="hero__showcase" aria-hidden="true">
-            <div className="hero__halo" />
-            <img className="hero__pack hero__pack--back" src={packB.src} srcSet={packB.srcSet} sizes="(max-width: 900px) 220px, 290px" width={packB.width} height={packB.height} alt="" />
-            <img className="hero__pack hero__pack--front" src={packA.src} srcSet={packA.srcSet} sizes="(max-width: 900px) 240px, 320px" width={packA.width} height={packA.height} alt="" />
-            <p className="hero__badge">
-              <Icon name="leaf" size={18} /> {h.hero.badge}
-            </p>
-          </div>
+          <p className="eyebrow hero__eyebrow">{h.hero.eyebrow}</p>
+          <h1 className="hero__title">{h.hero.title}</h1>
+          <p className="hero__text">{h.hero.text}</p>
+          <Link className="btn btn--green btn--lg" href={href(locale, "/teas")}>
+            {h.hero.cta} <Icon name="arrow" size={18} />
+          </Link>
         </div>
-        <HeroArc />
+        <div className="container hero__packs" aria-hidden="true">
+          {heroPacks.map((file) => {
+            const p = img(file);
+            return <img key={file} src={p.src} srcSet={p.srcSet} sizes="(max-width: 640px) 45vw, 280px" width={p.width} height={p.height} alt="" fetchPriority="high" />;
+          })}
+        </div>
+      </section>
+
+      <section className="hero-features" aria-label={h.hero.featuresLabel}>
+        <div className="container hero-features__inner">
+          {h.hero.features.map((f, i) => (
+            <p key={f} className="hero-features__item">
+              <Icon name={featureIcons[i]} size={34} strokeWidth={1.3} /> {f}
+            </p>
+          ))}
+          <p className="hero-features__tag">{site.name}</p>
+        </div>
       </section>
 
       {/* ——— Product categories ——— */}
@@ -73,7 +80,7 @@ export default async function HomePage({ params }) {
               return (
                 <Reveal key={c.id} className="cat-card" delay={i * 80}>
                   <Link className="cat-card__link" href={href(locale, c.path) + (c.hash ? `#${c.hash}` : "")}>
-                    <div className="cat-card__visual">
+                    <div className={c.contain ? "cat-card__visual cat-card__visual--contain" : "cat-card__visual"}>
                       <img src={pic.src} srcSet={pic.srcSet} sizes="(max-width: 560px) 45vw, 280px" width={pic.width} height={pic.height} alt="" loading="lazy" />
                     </div>
                     <div className="cat-card__body">
@@ -148,7 +155,7 @@ export default async function HomePage({ params }) {
       {/* ——— Brands ——— */}
       <section className="section section--dark">
         <div className="container">
-          <SectionHead eyebrow={h.brands.eyebrow} title={h.brands.title} text={h.brands.text} light />
+          <SectionHead eyebrow={h.brands.eyebrow} title={h.brands.title} text={h.brands.text} />
           <div className="brand-grid">
             {brands.map((b, i) => (
               <Reveal key={b.slug} delay={i * 80}>
