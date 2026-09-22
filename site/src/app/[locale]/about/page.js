@@ -1,11 +1,9 @@
-import Icon from "@/components/Icon";
 import Reveal from "@/components/Reveal";
 import SectionHead from "@/components/SectionHead";
 import { ArchImage, CtaBand, PageHero } from "@/components/Blocks";
 import { getDict } from "@/dict";
-import { href, pick } from "@/lib/i18n";
+import { href } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/seo";
-import { site } from "@/lib/site";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
@@ -41,6 +39,9 @@ export default async function AboutPage({ params }) {
                 {p}
               </p>
             ))}
+            <p className="prose">
+              <strong>{d.diversTitle}</strong> {d.diversText}
+            </p>
           </Reveal>
         </div>
       </section>
@@ -54,25 +55,6 @@ export default async function AboutPage({ params }) {
                 <span className="value__num">{String(i + 1).padStart(2, "0")}</span>
                 <h3>{v.title}</h3>
                 <p>{v.text}</p>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section section--pattern">
-        <div className="container">
-          <SectionHead title={d.officesTitle} />
-          <div className="office-grid">
-            {site.offices.map((o, i) => (
-              <Reveal key={o.id} className="office" delay={i * 100}>
-                <Icon name="pin" size={28} />
-                <h3>{pick(o.label, locale)}</h3>
-                <address>
-                  {o.lines.map((l) => (
-                    <span key={l}>{l}</span>
-                  ))}
-                </address>
               </Reveal>
             ))}
           </div>

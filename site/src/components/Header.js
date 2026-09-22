@@ -10,8 +10,8 @@ import { site, whatsappLink } from "@/lib/site";
 const NAV = [
   ["teas", "/teas"],
   ["brands", "/brands"],
-  ["services", "/services"],
   ["pantry", "/conserves"],
+  ["services", "/services"],
   ["about", "/about"],
 ];
 
@@ -37,7 +37,7 @@ export default function Header({ locale, dict }) {
   }, [open]);
 
   // Same page in another language: swap the first path segment.
-  const switchTo = (l) => pathname.replace(/^\/(fr|en|es)(?=\/|$)/, `/${l}`);
+  const switchTo = (l) => pathname.replace(new RegExp(`^/(${locales.join("|")})(?=/|$)`), `/${l}`);
   const isActive = (path) => pathname.startsWith(href(locale, path));
 
   return (

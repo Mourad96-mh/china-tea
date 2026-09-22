@@ -11,6 +11,18 @@
   800,
   533
  ],
+ "packaging-formats.webp": [
+  1200,
+  1500
+ ],
+ "packaging-formats-1280.webp": [
+  1200,
+  1500
+ ],
+ "packaging-formats-800.webp": [
+  800,
+  1000
+ ],
  "mint-tea-dark.webp": [
   1920,
   1278
@@ -71,18 +83,6 @@
   800,
   531
  ],
- "teapot.webp": [
-  1920,
-  1440
- ],
- "teapot-1280.webp": [
-  1280,
-  960
- ],
- "teapot-800.webp": [
-  800,
-  600
- ],
  "withering.webp": [
   1920,
   1081
@@ -117,14 +117,6 @@
  ],
  "products/al-mousafir-sadjar-450.webp": [
   450,
-  550
- ],
- "products/amghar-41022.webp": [
-  736,
-  1095
- ],
- "products/amghar-41022-450.webp": [
-  370,
   550
  ],
  "products/assila-honey-square.webp": [
@@ -334,14 +326,6 @@
  "products/brand-401-box-450.webp": [
   450,
   150
- ],
- "products/brand-777-cut.webp": [
-  792,
-  766
- ],
- "products/brand-777-cut-400.webp": [
-  400,
-  387
  ],
  "products/brand-401-3d-cut.webp": [
   800,
@@ -554,5 +538,13 @@
  "products/rollio-tomato-range-cut-400.webp": [
   400,
   238
+ ],
+ "products/dkhmiss-41022-special.webp": [
+  900,
+  784
+ ],
+ "products/dkhmiss-41022-special-450.webp": [
+  450,
+  392
  ]
 }

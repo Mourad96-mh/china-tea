@@ -101,7 +101,7 @@ const en = {
     },
     stats: [
       { value: "4", label: "core tea grades" },
-      { value: "9", label: "house brands" },
+      { value: "8", label: "house brands" },
       { value: "2", label: "offices: Zhejiang & Hong Kong" },
       { value: "OEM", label: "tailor-made private label" },
     ],
@@ -225,9 +225,9 @@ const en = {
     ctaText: "Tell us your market and estimated volumes.",
   },
   brandsPage: {
-    metaTitle: "Our 9 Chunmee and Gunpowder green tea brands",
+    metaTitle: "Our 8 Chunmee and Gunpowder green tea brands",
     metaDescription:
-      "Chunmee: Dkhmiss, Amghar, Al Mousafir, 4111, 401, 711 and 9371. Gunpowder: 511 and 777. China Tea Group’s 9 green tea brands, ready for distribution.",
+      "Chunmee: Dkhmiss, Amghar, Al Mousafir, 4111, 401, 711 and 9371. Gunpowder: 511. China Tea Group’s 8 green tea brands, ready for distribution.",
     eyebrow: "Our brands",
     title: "Brands that speak to your customers",
     intro:
@@ -358,6 +358,9 @@ const en = {
       "What we do: find the right lots, blend them to each market’s taste, pack them under our brands or our customers’ brands, and ship them fully compliant.",
       "We work for importers, wholesalers, packers and retail chains who sell tea to mint-tea lovers, from the Maghreb to the Sahel and on to Europe.",
     ],
+    diversTitle: "Why canned food, honey and bags too?",
+    diversText:
+      "Our importers rarely buy tea alone. So that they can fill a container through a single contact, we have widened our range to canned food (tomato paste, sweetcorn, peas), honey, peanut butter and custom travel bags printed with their brand. We apply the same methods as for tea: factory selection, quality control, made-to-measure packaging and export logistics.",
     valuesTitle: "Our commitments",
     values: [
       { title: "Consistent taste", text: "A reference sample approved with you, and every lot checked against that standard." },
@@ -365,7 +368,6 @@ const en = {
       { title: "Closeness", text: "A dedicated contact, reachable directly on WhatsApp." },
       { title: "Brands that sell", text: "Packaging designed for the shoppers and shelves of your country." },
     ],
-    officesTitle: "Our offices",
   },
   contactPage: {
     metaTitle: "Quote for Chinese green tea by container",

@@ -37,8 +37,10 @@ export default function Icon({ name, size = 24, className, strokeWidth = 1.6 }) 
       </svg>
     );
   }
+  // Directional icons are mirrored on right-to-left pages (see .icon--flip in globals.css).
+  const flip = name === "arrow" ? "icon--flip" : "";
   return (
-    <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg className={[className, flip].filter(Boolean).join(" ") || undefined} width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       {paths[name]}
     </svg>
   );

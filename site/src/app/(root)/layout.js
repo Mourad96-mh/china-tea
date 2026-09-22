@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootRedirectLayout({ children }) {
   return (
     <html lang="fr" className={`${display.variable} ${sans.variable}`}>
-      <body>{children}</body>
+      <body suppressHydrationWarning>{children}</body>
     </html>
   );
 }

@@ -1,13 +1,13 @@
 import { notFound } from "next/navigation";
 import "../globals.css";
-import { display, sans } from "../fonts";
+import { arabicDisplay, arabicSans, display, sans } from "../fonts";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
 import { WhatsAppFloat } from "@/components/Blocks";
 import WeChatFloat from "@/components/WeChatFloat";
 import { getDict } from "@/dict";
-import { isLocale, locales } from "@/lib/i18n";
+import { dir, isLocale, locales } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/seo";
 import { site } from "@/lib/site";
 
@@ -56,14 +56,19 @@ export default async function LocaleLayout({ children, params }) {
       "@type": "ContactPoint",
       telephone: site.phoneE164,
       contactType: "sales",
-      availableLanguage: ["French", "English", "Spanish"],
+      availableLanguage: ["French", "English", "Spanish", "Arabic"],
     },
     knowsAbout: ["Chinese green tea", "Chunmee tea", "Gunpowder tea", "Private label tea", "Tea export"],
   };
 
   return (
-    <html lang={locale} className={`${display.variable} ${sans.variable}`}>
-      <body>
+    <html
+      lang={locale}
+      dir={dir(locale)}
+      className={`${display.variable} ${sans.variable}${dir(locale) === "rtl" ? ` ${arabicDisplay.variable} ${arabicSans.variable}` : ""}`}
+    >
+      {/* Extensions such as ColorZilla add attributes to <body> before React loads. */}
+      <body suppressHydrationWarning>
         <Header locale={locale} dict={dict} />
         <main id="main">{children}</main>
         <Footer locale={locale} dict={dict} />

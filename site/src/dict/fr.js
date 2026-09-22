@@ -101,7 +101,7 @@ const fr = {
     },
     stats: [
       { value: "4", label: "grades de référence" },
-      { value: "9", label: "marques maison" },
+      { value: "8", label: "marques maison" },
       { value: "2", label: "bureaux : Zhejiang & Hong Kong" },
       { value: "OEM", label: "marque privée sur mesure" },
     ],
@@ -225,9 +225,9 @@ const fr = {
     ctaText: "Indiquez-nous votre marché et les volumes estimés.",
   },
   brandsPage: {
-    metaTitle: "Nos 9 marques de thé vert Chunmee et Gunpowder",
+    metaTitle: "Nos 8 marques de thé vert Chunmee et Gunpowder",
     metaDescription:
-      "Chunmee : Dkhmiss, Amghar, Al Mousafir, 4111, 401, 711 et 9371. Gunpowder : 511 et 777. Les 9 marques de thé vert de China Tea Group, prêtes à distribuer.",
+      "Chunmee : Dkhmiss, Amghar, Al Mousafir, 4111, 401, 711 et 9371. Gunpowder : 511. Les 8 marques de thé vert de China Tea Group, prêtes à distribuer.",
     eyebrow: "Nos marques",
     title: "Des marques qui parlent à vos clients",
     intro:
@@ -358,6 +358,9 @@ const fr = {
       "Notre métier : trouver les bons lots, les assembler au goût de chaque marché, les conditionner sous nos marques ou sous celles de nos clients, et les expédier en toute conformité.",
       "Nous travaillons pour les importateurs, grossistes, conditionneurs et chaînes de distribution qui vendent du thé aux amateurs de thé à la menthe, du Maghreb au Sahel jusqu’en Europe.",
     ],
+    diversTitle: "Pourquoi aussi des conserves, du miel et des sacs ?",
+    diversText:
+      "Nos clients importateurs achètent rarement du thé seul. Pour qu’ils puissent compléter un conteneur avec un seul interlocuteur, nous avons élargi notre offre aux conserves (concentré de tomate, maïs, petits pois), au miel, à la pâte d’arachide et aux sacs de voyage personnalisés à leur marque. Nous y appliquons les mêmes méthodes que pour le thé : sélection des usines, contrôle qualité, emballage sur mesure et logistique d’export.",
     valuesTitle: "Nos engagements",
     values: [
       { title: "Un goût constant", text: "Un échantillon de référence validé avec vous, et chaque lot comparé à ce standard." },
@@ -365,7 +368,6 @@ const fr = {
       { title: "La proximité", text: "Un interlocuteur dédié, joignable directement sur WhatsApp." },
       { title: "Des marques qui vendent", text: "Des emballages pensés pour les consommateurs et les rayons de vos pays." },
     ],
-    officesTitle: "Nos bureaux",
   },
   contactPage: {
     metaTitle: "Devis thé vert de Chine en conteneur",

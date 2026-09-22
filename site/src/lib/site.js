@@ -15,14 +15,14 @@ export const site = {
   offices: [
     {
       id: "zhejiang",
-      label: { fr: "Siège — Chine", en: "Head office — China", es: "Sede — China" },
+      label: { fr: "Siège — Chine", en: "Head office — China", es: "Sede — China", ar: "المقر الرئيسي — الصين" },
       lines: ["7th floor, Tower A", "88 Financial Business Street", "Zhongfu Plaza", "Zhejiang Province, China"],
       country: "CN",
       region: "Zhejiang",
     },
     {
       id: "hongkong",
-      label: { fr: "Bureau commercial — Hong Kong", en: "Trading office — Hong Kong", es: "Oficina comercial — Hong Kong" },
+      label: { fr: "Bureau commercial — Hong Kong", en: "Trading office — Hong Kong", es: "Oficina comercial — Hong Kong", ar: "المكتب التجاري — هونغ كونغ" },
       lines: ["Room 701, Tower B", "New Mandarin Plaza", "Tsim Sha Tsui, Kowloon", "Hong Kong"],
       country: "HK",
       region: "Kowloon",

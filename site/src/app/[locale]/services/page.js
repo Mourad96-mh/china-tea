@@ -54,7 +54,7 @@ export default async function ServicesPage({ params }) {
       <section className="section section--cream">
         <div className="container split">
           <Reveal className="split__media">
-            <ArchImage file="teapot-800.webp" alt="" />
+            <ArchImage file="packaging-formats-800.webp" alt="" />
           </Reveal>
           <Reveal className="split__copy" delay={100}>
             <SectionHead title={d.packagingTitle} text={d.packagingText} align="start" />

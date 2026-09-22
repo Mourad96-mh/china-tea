@@ -101,7 +101,7 @@ const es = {
     },
     stats: [
       { value: "4", label: "grados de referencia" },
-      { value: "9", label: "marcas propias" },
+      { value: "8", label: "marcas propias" },
       { value: "2", label: "oficinas: Zhejiang y Hong Kong" },
       { value: "OEM", label: "marca blanca a medida" },
     ],
@@ -225,9 +225,9 @@ const es = {
     ctaText: "Indíquenos su mercado y los volúmenes estimados.",
   },
   brandsPage: {
-    metaTitle: "Nuestras 9 marcas de té verde Chunmee y Gunpowder",
+    metaTitle: "Nuestras 8 marcas de té verde Chunmee y Gunpowder",
     metaDescription:
-      "Chunmee: Dkhmiss, Amghar, Al Mousafir, 4111, 401, 711 y 9371. Gunpowder: 511 y 777. Las 9 marcas de té verde de China Tea Group, listas para la distribución.",
+      "Chunmee: Dkhmiss, Amghar, Al Mousafir, 4111, 401, 711 y 9371. Gunpowder: 511. Las 8 marcas de té verde de China Tea Group, listas para la distribución.",
     eyebrow: "Nuestras marcas",
     title: "Marcas que hablan a sus clientes",
     intro:
@@ -358,6 +358,9 @@ const es = {
       "Nuestro oficio: encontrar los lotes adecuados, mezclarlos al gusto de cada mercado, envasarlos con nuestras marcas o las de nuestros clientes y enviarlos cumpliendo todas las normas.",
       "Trabajamos para importadores, mayoristas, envasadores y cadenas de distribución que venden té a los amantes del té con menta, del Magreb al Sahel y hasta Europa.",
     ],
+    diversTitle: "¿Por qué también conservas, miel y bolsas?",
+    diversText:
+      "Nuestros clientes importadores rara vez compran solo té. Para que puedan completar un contenedor con un único interlocutor, hemos ampliado nuestra oferta a las conservas (concentrado de tomate, maíz, guisantes), la miel, la pasta de cacahuete y las bolsas de viaje personalizadas con su marca. Aplicamos los mismos métodos que para el té: selección de fábricas, control de calidad, embalaje a medida y logística de exportación.",
     valuesTitle: "Nuestros compromisos",
     values: [
       { title: "Un sabor constante", text: "Una muestra de referencia validada con usted y cada lote comparado con ese estándar." },
@@ -365,7 +368,6 @@ const es = {
       { title: "Cercanía", text: "Un interlocutor dedicado, disponible directamente por WhatsApp." },
       { title: "Marcas que venden", text: "Envases pensados para los consumidores y los lineales de su país." },
     ],
-    officesTitle: "Nuestras oficinas",
   },
   contactPage: {
     metaTitle: "Presupuesto de té verde chino en contenedor",

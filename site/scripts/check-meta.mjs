@@ -1,4 +1,4 @@
-// Phase 1 check: title/description length, H1 count, canonical, hreflang, OG image, lang — on the built out/ HTML.
+// Phase 1 check: title/description length, H1 count, canonical, hreflang (4 languages + x-default), OG image, lang — on the built out/ HTML.
 import fs from "node:fs";
 import path from "node:path";
 const root = path.resolve("out");
@@ -24,7 +24,7 @@ for (const f of files) {
   if (h1 !== 1 && !rel.includes("404")) p.push(`h1 ${h1}`);
   if (!canon && !noindex) p.push("no canonical");
   if (!lang) p.push("no lang");
-  if (!noindex && hreflang !== 4) p.push(`hreflang ${hreflang}`);
+  if (!noindex && hreflang !== 5) p.push(`hreflang ${hreflang}`);
   if (og) { const local = path.join("public", new URL(og).pathname); if (!fs.existsSync(local) && !fs.existsSync(path.join("out", new URL(og).pathname))) p.push(`og missing ${new URL(og).pathname}`); } else if (!noindex) p.push("no og:image");
   if (!noindex) { titles.set(title, [...(titles.get(title) || []), rel]); descs.set(desc, [...(descs.get(desc) || []), rel]); }
   if (p.length) { issues++; console.log(rel.padEnd(42), p.join(" | "), "\n   ", title); }

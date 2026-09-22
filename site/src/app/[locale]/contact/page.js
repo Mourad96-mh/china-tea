@@ -3,7 +3,7 @@ import Ornament from "@/components/Ornament";
 import ContactForm from "@/components/ContactForm";
 import { PageHero } from "@/components/Blocks";
 import { getDict } from "@/dict";
-import { href, pick } from "@/lib/i18n";
+import { href } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/seo";
 import { site, whatsappLink } from "@/lib/site";
 
@@ -62,17 +62,6 @@ export default async function ContactPage({ params }) {
                 </span>
               </a>
             )}
-            {site.offices.map((o) => (
-              <div key={o.id} className="contact-line contact-line--static">
-                <Icon name="pin" size={22} />
-                <address>
-                  <small>{pick(o.label, locale)}</small>
-                  {o.lines.map((l) => (
-                    <span key={l}>{l}</span>
-                  ))}
-                </address>
-              </div>
-            ))}
           </aside>
         </div>
       </section>
