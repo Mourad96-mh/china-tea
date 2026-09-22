@@ -1,8 +1,8 @@
 const es = {
   meta: {
-    title: "China Tea Group — Mayorista de té verde de China: Chunmee, Gunpowder",
+    title: "Exportador de té verde de China: Gunpowder y Chunmee",
     description:
-      "Importación y exportación de té verde de China: mayorista y distribuidor de Chunmee y Gunpowder, en contenedor de 20FT o 40FT a Marruecos, África y Europa.",
+      "Productor y exportador de té verde de China: nuestros campos y nuestra fábrica en Anhui, Gunpowder y Chunmee en contenedor para Europa, el Magreb y África.",
   },
   nav: {
     home: "Inicio",
@@ -56,12 +56,12 @@ const es = {
   },
   home: {
     hero: {
-      eyebrow: "Té de China",
-      title: "Tés excepcionales",
-      text: "Una selección auténtica para profesionales de todo el mundo.",
-      cta: "Descubrir nuestros tés",
-      featuresLabel: "Nuestros compromisos",
-      features: ["Calidad seleccionada", "Exportación mundial", "Una colaboración duradera"],
+      eyebrow: "Productor y exportador",
+      title: "Té verde de China para profesionales",
+      text: "Exportación directa en contenedor a Europa, el Magreb y África.",
+      cta: "Pedir presupuesto",
+      featuresLabel: "Nuestras ventajas",
+      features: ["Nuestros propios campos de té", "Fábrica en Anhui", "Exportación en contenedor"],
     },
     categories: {
       eyebrow: "Nuestros productos",

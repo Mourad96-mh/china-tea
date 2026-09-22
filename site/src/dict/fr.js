@@ -1,8 +1,8 @@
 const fr = {
   meta: {
-    title: "China Tea Group — Grossiste thé vert de Chine : Chunmee, Gunpowder",
+    title: "Fournisseur de thé vert de Chine : Gunpowder et Chunmee",
     description:
-      "Import-export de thé vert de Chine : grossiste et distributeur de Chunmee et Gunpowder, en conteneur 20FT ou 40FT vers le Maroc, l’Afrique et l’Europe.",
+      "Producteur et exportateur de thé vert de Chine : nos champs et notre usine dans l’Anhui, Gunpowder et Chunmee en conteneur pour l’Europe, le Maghreb et l’Afrique.",
   },
   nav: {
     home: "Accueil",
@@ -56,12 +56,12 @@ const fr = {
   },
   home: {
     hero: {
-      eyebrow: "Thé de Chine",
-      title: "Des thés d’exception",
-      text: "Une sélection authentique pour les professionnels du monde entier.",
-      cta: "Découvrir nos thés",
-      featuresLabel: "Nos engagements",
-      features: ["Qualité sélectionnée", "Export mondial", "Un partenariat durable"],
+      eyebrow: "Producteur & exportateur",
+      title: "Thé vert de Chine pour les professionnels",
+      text: "Export direct par conteneur vers l’Europe, le Maghreb et l’Afrique.",
+      cta: "Demander un devis",
+      featuresLabel: "Nos atouts",
+      features: ["Nos propres champs de thé", "Usine dans l’Anhui", "Export par conteneur"],
     },
     categories: {
       eyebrow: "Nos produits",

@@ -19,7 +19,7 @@ const heroPacks = [
   "products/brand-711-cut.webp",
   "products/brand-511-diamant-cut.webp",
 ];
-const featureIcons = ["leaf", "globe", "handshake"];
+const featureIcons = ["leaf", "box", "ship"];
 
 // The four product lines shown right under the hero; their text lives in dict.home.categories.
 // `contain`: white-background visuals (cut-out packs, M / L / XL bag line-up) shown whole instead of cropped.
@@ -46,7 +46,7 @@ export default async function HomePage({ params }) {
           <p className="eyebrow hero__eyebrow">{h.hero.eyebrow}</p>
           <h1 className="hero__title">{h.hero.title}</h1>
           <p className="hero__text">{h.hero.text}</p>
-          <Link className="btn btn--green btn--lg" href={href(locale, "/teas")}>
+          <Link className="btn btn--green btn--lg" href={href(locale, "/contact")}>
             {h.hero.cta} <Icon name="arrow" size={18} />
           </Link>
         </div>

@@ -1,8 +1,8 @@
 const en = {
   meta: {
-    title: "China Tea Group — Chinese green tea wholesaler: Chunmee, Gunpowder",
+    title: "China Green Tea Manufacturer & Exporter | Gunpowder & Chunmee",
     description:
-      "Chinese green tea import-export: wholesaler and distributor of Chunmee and Gunpowder, shipped in 20FT or 40FT containers to Morocco, Africa and Europe.",
+      "Green tea manufacturer and exporter in China: our own tea fields and factory in Anhui, Gunpowder and Chunmee by container to Europe, the Maghreb and Africa.",
   },
   nav: {
     home: "Home",
@@ -56,12 +56,12 @@ const en = {
   },
   home: {
     hero: {
-      eyebrow: "Chinese tea",
-      title: "Exceptional teas",
-      text: "An authentic selection for professionals around the world.",
-      cta: "Discover our teas",
-      featuresLabel: "Our commitments",
-      features: ["Selected quality", "Worldwide export", "A lasting partnership"],
+      eyebrow: "Manufacturer & exporter",
+      title: "Chinese green tea for professionals",
+      text: "Direct container export to Europe, the Maghreb and Africa.",
+      cta: "Request a quote",
+      featuresLabel: "Our strengths",
+      features: ["Our own tea fields", "Factory in Anhui", "Container export"],
     },
     categories: {
       eyebrow: "Our products",
