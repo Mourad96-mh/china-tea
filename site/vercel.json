@@ -3,7 +3,6 @@
   "framework": "nextjs",
   "buildCommand": "next build",
   "redirects": [
-    { "source": "/:locale(fr|en|es)/brands/711/", "destination": "/:locale/brands/777/", "permanent": true },
     { "source": "/:locale(fr|en|es)/tea-ritual/", "destination": "/:locale/", "permanent": true },
     { "source": "/:locale(fr|en|es)/pantry/", "destination": "/:locale/conserves/", "permanent": true }
   ]
