@@ -19,7 +19,7 @@ const es = {
     skip: "Ir al contenido",
   },
   topbar: {
-    text: "Exportador de té verde de China · Zhejiang — Hong Kong",
+    text: "Exportador de té verde de China · Anhui — Yiwu — Hong Kong",
   },
   common: {
     learnMore: "Saber más",
@@ -46,6 +46,7 @@ const es = {
     brandTeas: "Grado utilizado",
     packs: "La gama en caja",
     family: { chunmee: "Chunmee", gunpowder: "Gunpowder" },
+    allTeas: "Todos nuestros tés",
     phone: "Teléfono / WhatsApp",
     email: "Correo electrónico",
     offices: "Nuestras oficinas",
@@ -92,17 +93,17 @@ const es = {
     },
     intro: {
       eyebrow: "China Tea Group",
-      title: "Un puente entre Zhejiang y las mesas del té con menta",
+      title: "Un puente entre China y las mesas del té con menta",
       paras: [
         "Gran parte del té verde que se sirve en Marruecos, Mauritania o Senegal procede de China. Entre el jardín y el vaso hay decisiones clave: el grado, la selección, la mezcla, el envase y la logística.",
-        "China Tea Group reúne todas esas etapas. Desde nuestra sede en Zhejiang, la gran provincia del té verde de exportación, y nuestra oficina de Hong Kong, preparamos tés al gusto de sus clientes y los entregamos listos para vender, con nuestras marcas o con la suya.",
+        "China Tea Group reúne todas esas etapas. Desde nuestra fábrica y plantaciones de Anhui, nuestra oficina comercial de Yiwu (Zhejiang) y nuestra oficina administrativa y financiera de Hong Kong, preparamos tés al gusto de sus clientes y los entregamos listos para vender, con nuestras marcas o con la suya.",
       ],
       cta: "Quiénes somos",
     },
     stats: [
       { value: "4", label: "grados de referencia" },
       { value: "8", label: "marcas propias" },
-      { value: "2", label: "oficinas: Zhejiang y Hong Kong" },
+      { value: "2", label: "oficinas: Yiwu y Hong Kong" },
       { value: "OEM", label: "marca blanca a medida" },
     ],
     teas: {
@@ -131,12 +132,12 @@ const es = {
     services: {
       eyebrow: "Nuestros servicios",
       title: "Mucho más que un proveedor de té",
-      text: "De la elección del grado a la llegada a puerto, un único interlocutor y una distribución exclusiva para su región.",
+      text: "De la elección del grado a la llegada a puerto, un único interlocutor y una posible exclusividad de distribución para su región.",
       items: [
         { icon: "leaf", title: "Selección y mezcla", text: "Lotes elegidos y mezclados para mantener el mismo sabor de un pedido a otro." },
         { icon: "box", title: "Marca blanca (OEM)", text: "Su marca, su caja, sus textos en árabe y francés: lo producimos todo." },
-        { icon: "check", title: "Control de calidad", text: "Certificados sanitarios según las normas internacionales, bajo nivel de pesticidas y muestras antes del envío." },
-        { icon: "ship", title: "Exportación y logística", text: "Maersk, CMA CGM, HMM: entregamos en el puerto de su país, en contenedores completos o grupajes." },
+        { icon: "check", title: "Control de calidad", text: "Certificados según el producto y el país de destino, análisis de residuos de pesticidas disponibles y muestras antes del envío." },
+        { icon: "ship", title: "Exportación y logística", text: "Envíos posibles con las principales navieras, entre ellas Maersk, CMA CGM y HMM, hasta el puerto de su país, en contenedores completos o grupajes." },
       ],
       cta: "Todos nuestros servicios",
     },
@@ -279,20 +280,20 @@ const es = {
       {
         icon: "check",
         title: "Control de calidad",
-        text: "Antes de la salida, cada lote se compara con la muestra validada y sale con los certificados sanitarios que exigen las normas internacionales. También puede designar la empresa de inspección que prefiera.",
-        points: ["Certificados sanitarios según las normas internacionales", "Bajo nivel de pesticidas", "Cata, control visual y muestra antes del envío", "Inspección independiente bajo petición"],
+        text: "Antes de la salida, cada lote se compara con la muestra validada y sale con los documentos y certificados que exige el país de destino. También puede designar la empresa de inspección que prefiera.",
+        points: ["Documentos de exportación y certificados según el producto y las exigencias del país de destino", "Análisis de residuos de pesticidas disponibles según las exigencias reglamentarias del mercado de destino", "Cata, control visual y muestra antes del envío", "Inspección independiente bajo petición"],
       },
       {
         icon: "ship",
         title: "Exportación y logística",
-        text: "Trabajamos con las grandes navieras — Maersk, CMA CGM, HMM — para cargar en los puertos del este de China y entregar en el puerto de su país, con los documentos que necesita su transitario.",
-        points: ["Contenedores de 20FT y 40FT, completos o grupajes", "Acuerdos con Maersk, CMA CGM y HMM", "Incoterms FOB, CFR o CIF", "Factura, lista de embalaje, certificados de origen, sanitario y fitosanitario"],
+        text: "Los envíos son posibles con las principales navieras, entre ellas Maersk, CMA CGM y HMM, para cargar en los puertos del este de China y entregar en el puerto de su país, con los documentos que necesita su transitario.",
+        points: ["Contenedores de 20FT y 40FT, completos o grupajes", "Envíos posibles con las principales navieras, entre ellas Maersk, CMA CGM y HMM", "Incoterms FOB, CFR o CIF", "Documentos de exportación y certificados según el producto y las exigencias del país de destino"],
       },
       {
         icon: "globe",
         title: "Exclusividad por región",
-        text: "Podemos reservarle la distribución de nuestras marcas en su país o en su región: usted invierte en implantar la marca sin encontrarla al día siguiente en el lineal de enfrente.",
-        points: ["Exclusividad por país o por región", "Marcas propias reservadas a su red", "Condiciones acordadas con usted"],
+        text: "Posibilidad de exclusividad por país o región, sujeta a volumen y a un acuerdo comercial: usted invierte en implantar la marca sin encontrarla al día siguiente en el lineal de enfrente.",
+        points: ["Posibilidad de exclusividad por país o región, sujeta a volumen y a un acuerdo comercial", "Marcas propias reservadas a su red", "Condiciones acordadas con usted"],
       },
     ],
     packagingTitle: "Formatos de envasado",
@@ -327,15 +328,15 @@ const es = {
       },
       {
         q: "¿Qué documentos acompañan el envío?",
-        a: "Factura comercial, lista de embalaje, conocimiento de embarque, certificado de origen, certificado sanitario y certificado fitosanitario. Se pueden aportar otros documentos según las exigencias de su país.",
+        a: "Factura comercial, lista de embalaje, conocimiento de embarque, certificado de origen, certificado sanitario y certificado fitosanitario. Los documentos de exportación y certificados se entregan según el producto y las exigencias del país de destino.",
       },
       {
         q: "¿Sus tés están certificados?",
-        a: "Sí. Nuestros tés salen con los certificados sanitarios que exigen las normas internacionales y con un bajo nivel de pesticidas. Los certificados se incluyen en el expediente de envío.",
+        a: "Los documentos de exportación y certificados se entregan según el producto y las exigencias del país de destino. Hay análisis de residuos de pesticidas disponibles según las exigencias reglamentarias del mercado de destino.",
       },
       {
         q: "¿Ofrecen exclusividad de distribución?",
-        a: "Sí, por país o por región. Si desarrolla nuestras marcas en su mercado, podemos reservarle la distribución: hablemos de ello desde el primer pedido.",
+        a: "Existe la posibilidad de exclusividad por país o región, sujeta a volumen y a un acuerdo comercial. Hablemos de ello desde el primer pedido.",
       },
       {
         q: "¿Cuáles son los plazos?",
@@ -348,13 +349,13 @@ const es = {
     ],
   },
   aboutPage: {
-    metaTitle: "Exportador de té verde, Zhejiang–Hong Kong",
+    metaTitle: "Exportador de té verde, Anhui–Yiwu–Hong Kong",
     metaDescription:
-      "China Tea Group selecciona, envasa y exporta té verde de China desde Zhejiang y Hong Kong para los mercados del té con menta.",
+      "China Tea Group selecciona, envasa y exporta té verde de China desde Anhui, Yiwu y Hong Kong para los mercados del té con menta.",
     eyebrow: "Quiénes somos",
     title: "Té verde de China, preparado para sus mercados",
     paras: [
-      "China Tea Group es una empresa exportadora de té verde con sede en la provincia de Zhejiang, una de las grandes regiones productoras de té verde de China, y una oficina comercial en Hong Kong.",
+      "China Tea Group es un productor y exportador de té verde de China. Fábrica y plantaciones: Anhui, China. Oficina comercial: Yiwu, Zhejiang, China. Oficina administrativa y financiera: Hong Kong.",
       "Nuestro oficio: encontrar los lotes adecuados, mezclarlos al gusto de cada mercado, envasarlos con nuestras marcas o las de nuestros clientes y enviarlos cumpliendo todas las normas.",
       "Trabajamos para importadores, mayoristas, envasadores y cadenas de distribución que venden té a los amantes del té con menta, del Magreb al Sahel y hasta Europa.",
     ],
@@ -372,7 +373,7 @@ const es = {
   contactPage: {
     metaTitle: "Presupuesto de té verde chino en contenedor",
     metaDescription:
-      "Solicite un presupuesto o muestras de té verde de China. WhatsApp +86 180 5797 8014, oficinas en Zhejiang y Hong Kong.",
+      "Solicite un presupuesto o muestras de té verde de China. WhatsApp +86 180 5797 8014, oficinas en Yiwu (Zhejiang) y Hong Kong.",
     eyebrow: "Contacto",
     title: "Pedir presupuesto o muestras",
     intro: "Rellene el formulario: su mensaje se abre directamente en WhatsApp, listo para enviarlo a nuestro equipo comercial.",

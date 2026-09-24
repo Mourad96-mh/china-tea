@@ -66,21 +66,22 @@ export function CtaBand({ title, text, button, buttonHref, whatsappLabel }) {
   );
 }
 
-export function TeaCard({ tea, locale, dict }) {
-  const visual = tea.image ? img(tea.image) : null;
+export function TeaCard({ tea, locale, dict, image, title, url }) {
+  // `image`, `title`, `url`: one brand's pack of this grade instead of the grade itself
+  const visual = image || tea.image ? img(image || tea.image) : null;
   // Second photo, shown on hover like a shop listing
   const hover = tea.gallery?.[0] ? img(tea.gallery[0].image) : null;
   return (
     <article className="tea-card">
-      <Link href={href(locale, `/teas/${tea.slug}`)} className="tea-card__link">
-        <div className={`tea-card__visual${visual ? "" : " tea-card__visual--leaf"}${tea.imageScene ? " tea-card__visual--scene" : ""}${tea.imageWhite ? " tea-card__visual--white" : ""}${hover ? " has-hover" : ""}`}>
+      <Link href={url || href(locale, `/teas/${tea.slug}`)} className="tea-card__link">
+        <div className={`tea-card__visual${visual ? "" : " tea-card__visual--leaf"}${!image && tea.imageScene ? " tea-card__visual--scene" : ""}${!image && tea.imageWhite ? " tea-card__visual--white" : ""}${hover ? " has-hover" : ""}`}>
           {visual && <img src={visual.src} srcSet={visual.srcSet} sizes="(max-width: 560px) 80vw, 260px" width={visual.width} height={visual.height} alt="" loading="lazy" />}
           {hover && <img className="tea-card__hover" src={hover.src} srcSet={hover.srcSet} sizes="(max-width: 560px) 80vw, 260px" width={hover.width} height={hover.height} alt="" loading="lazy" />}
           <span className="tea-card__code">{tea.code}</span>
         </div>
         <div className="tea-card__body">
           <p className="tea-card__family">{dict.common.family[tea.family]}</p>
-          <h3 className="tea-card__title">{pick(tea.name, locale)}</h3>
+          <h3 className="tea-card__title">{title || pick(tea.name, locale)}</h3>
           <p className="tea-card__tagline">{pick(tea.tagline, locale)}</p>
           <dl className="tea-card__specs">
             <div>

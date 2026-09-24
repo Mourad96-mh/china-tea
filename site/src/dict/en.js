@@ -19,7 +19,7 @@ const en = {
     skip: "Skip to content",
   },
   topbar: {
-    text: "Chinese green tea exporter · Zhejiang — Hong Kong",
+    text: "Chinese green tea exporter · Anhui — Yiwu — Hong Kong",
   },
   common: {
     learnMore: "Learn more",
@@ -46,6 +46,7 @@ const en = {
     brandTeas: "Grade used",
     packs: "The boxed range",
     family: { chunmee: "Chunmee", gunpowder: "Gunpowder" },
+    allTeas: "All our teas",
     phone: "Phone / WhatsApp",
     email: "E-mail",
     offices: "Our offices",
@@ -92,17 +93,17 @@ const en = {
     },
     intro: {
       eyebrow: "China Tea Group",
-      title: "A bridge between Zhejiang and the world’s mint-tea tables",
+      title: "A bridge between China and the world’s mint-tea tables",
       paras: [
         "Much of the green tea poured in Morocco, Mauritania or Senegal comes from China. Between the garden and the glass lie decisive choices: the grade, the sorting, the blend, the packaging and the logistics.",
-        "China Tea Group brings these steps together. From our head office in Zhejiang, China’s leading export green-tea province, and our Hong Kong office, we prepare teas that suit your customers’ taste and deliver them ready to sell, under our brands or yours.",
+        "China Tea Group brings these steps together. From our factory and plantations in Anhui, our sales office in Yiwu (Zhejiang) and our administrative and finance office in Hong Kong, we prepare teas that suit your customers’ taste and deliver them ready to sell, under our brands or yours.",
       ],
       cta: "About us",
     },
     stats: [
       { value: "4", label: "core tea grades" },
       { value: "8", label: "house brands" },
-      { value: "2", label: "offices: Zhejiang & Hong Kong" },
+      { value: "2", label: "offices: Yiwu & Hong Kong" },
       { value: "OEM", label: "tailor-made private label" },
     ],
     teas: {
@@ -131,12 +132,12 @@ const en = {
     services: {
       eyebrow: "Our services",
       title: "Much more than a tea supplier",
-      text: "From choosing the grade to arrival at port, one single contact — and exclusive distribution for your region.",
+      text: "From choosing the grade to arrival at port, one single contact — and possible distribution exclusivity for your region.",
       items: [
         { icon: "leaf", title: "Selection & blending", text: "Lots chosen and blended to keep the same taste from one order to the next." },
         { icon: "box", title: "Private label (OEM)", text: "Your brand, your box, your Arabic and French copy: we produce it all." },
-        { icon: "check", title: "Quality control", text: "Sanitary certificates to international standards, low pesticide levels, pre-shipment samples." },
-        { icon: "ship", title: "Export & logistics", text: "Maersk, CMA CGM, HMM: we deliver to the port in your country, in full or shared containers." },
+        { icon: "check", title: "Quality control", text: "Certificates according to the product and destination country, pesticide residue analyses available, pre-shipment samples." },
+        { icon: "ship", title: "Export & logistics", text: "Shipments possible via the main shipping lines, including Maersk, CMA CGM and HMM, to the port in your country, in full or shared containers." },
       ],
       cta: "All our services",
     },
@@ -279,20 +280,20 @@ const en = {
       {
         icon: "check",
         title: "Quality control",
-        text: "Before departure, every lot is checked against the approved sample and ships with the sanitary certificates required by international standards. You can also appoint the inspection company of your choice.",
-        points: ["Sanitary certificates to international standards", "Low pesticide levels", "Tasting, visual check and pre-shipment sample", "Independent inspection on request"],
+        text: "Before departure, every lot is checked against the approved sample and ships with the documents and certificates required by the destination country. You can also appoint the inspection company of your choice.",
+        points: ["Export documents and certificates supplied according to the product and the destination country’s requirements", "Pesticide residue analyses available according to the regulatory requirements of the destination market", "Tasting, visual check and pre-shipment sample", "Independent inspection on request"],
       },
       {
         icon: "ship",
         title: "Export & logistics",
-        text: "We work with the major shipping lines — Maersk, CMA CGM, HMM — to load at East China ports and deliver to the port in your own country, with the documents your forwarder needs.",
-        points: ["20FT and 40FT containers, full or shared", "Maersk, CMA CGM and HMM partnerships", "FOB, CFR or CIF Incoterms", "Invoice, packing list, certificates of origin, sanitary and phytosanitary"],
+        text: "Shipments are possible via the main shipping lines, including Maersk, CMA CGM and HMM, to load at East China ports and deliver to the port in your own country, with the documents your forwarder needs.",
+        points: ["20FT and 40FT containers, full or shared", "Shipments possible via the main shipping lines, including Maersk, CMA CGM and HMM", "FOB, CFR or CIF Incoterms", "Export documents and certificates supplied according to the product and the destination country’s requirements"],
       },
       {
         icon: "globe",
         title: "Regional exclusivity",
-        text: "We can reserve the distribution of our brands for your country or your region: you spend to build the brand without finding it the next day on the shelf opposite.",
-        points: ["Exclusivity by country or region", "House brands reserved for your network", "Terms agreed with you"],
+        text: "Exclusivity possible by country or region, subject to volume and a commercial agreement: you spend to build the brand without finding it the next day on the shelf opposite.",
+        points: ["Exclusivity possible by country or region, subject to volume and a commercial agreement", "House brands reserved for your network", "Terms agreed with you"],
       },
     ],
     packagingTitle: "Packing formats",
@@ -327,15 +328,15 @@ const en = {
       },
       {
         q: "Which documents come with the shipment?",
-        a: "Commercial invoice, packing list, bill of lading, certificate of origin, sanitary certificate and phytosanitary certificate. Other documents can be supplied depending on your country’s requirements.",
+        a: "Commercial invoice, packing list, bill of lading, certificate of origin, sanitary certificate and phytosanitary certificate. Export documents and certificates are supplied according to the product and the destination country’s requirements.",
       },
       {
         q: "Are your teas certified?",
-        a: "Yes. Our teas ship with the sanitary certificates required by international standards, with low pesticide levels. The certificates are included in the shipping file.",
+        a: "Export documents and certificates are supplied according to the product and the destination country’s requirements. Pesticide residue analyses are available according to the regulatory requirements of the destination market.",
       },
       {
         q: "Do you offer distribution exclusivity?",
-        a: "Yes, by country or by region. If you build our brands on your market, we can reserve their distribution for you: let’s discuss it from the first order.",
+        a: "Exclusivity is possible by country or region, subject to volume and a commercial agreement. Let’s discuss it from the first order.",
       },
       {
         q: "What are the lead times?",
@@ -348,13 +349,13 @@ const en = {
     ],
   },
   aboutPage: {
-    metaTitle: "Green tea exporter, Zhejiang–Hong Kong",
+    metaTitle: "Green tea exporter, Anhui–Yiwu–Hong Kong",
     metaDescription:
-      "China Tea Group selects, packs and exports Chinese green tea from Zhejiang and Hong Kong for the world’s mint-tea markets.",
+      "China Tea Group selects, packs and exports Chinese green tea from Anhui, Yiwu and Hong Kong for the world’s mint-tea markets.",
     eyebrow: "About us",
     title: "Chinese green tea, prepared for your markets",
     paras: [
-      "China Tea Group is a green tea export company based in Zhejiang province, one of China’s major green-tea producing regions, with a trading office in Hong Kong.",
+      "China Tea Group is a producer and exporter of Chinese green tea. Factory and plantations: Anhui, China. Sales office: Yiwu, Zhejiang, China. Administrative and finance office: Hong Kong.",
       "What we do: find the right lots, blend them to each market’s taste, pack them under our brands or our customers’ brands, and ship them fully compliant.",
       "We work for importers, wholesalers, packers and retail chains who sell tea to mint-tea lovers, from the Maghreb to the Sahel and on to Europe.",
     ],
@@ -372,7 +373,7 @@ const en = {
   contactPage: {
     metaTitle: "Quote for Chinese green tea by container",
     metaDescription:
-      "Request a quote or samples of Chinese green tea. WhatsApp +86 180 5797 8014, offices in Zhejiang and Hong Kong.",
+      "Request a quote or samples of Chinese green tea. WhatsApp +86 180 5797 8014, offices in Yiwu (Zhejiang) and Hong Kong.",
     eyebrow: "Contact",
     title: "Request a quote or samples",
     intro: "Fill in the form: your message opens directly in WhatsApp, ready to send to our sales team.",

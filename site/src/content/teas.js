@@ -110,10 +110,10 @@ export const teas = [
     gallery: [{ image: "products/leaf-9371.webp", kind: "leaf" }],
     name: { fr: "Chunmee 9371", en: "Chunmee 9371", es: "Chunmee 9371", ar: "Chunmee 9371" },
     tagline: {
-      fr: "La référence des tables marocaines",
-      en: "A staple of Moroccan tables",
-      es: "Una referencia en las mesas marroquíes",
-      ar: "مرجع على الموائد المغربية",
+      fr: "Un Chunmee corsé apprécié pour la préparation traditionnelle du thé à la menthe",
+      en: "A bold Chunmee valued for traditional mint-tea brewing",
+      es: "Un Chunmee intenso apreciado para la preparación tradicional del té con menta",
+      ar: "Chunmee قوي يُقدَّر لتحضير شاي النعناع التقليدي",
     },
     summary: {
       fr: "Feuille moyenne bien roulée, liqueur ambrée et tasse puissante. Le 9371 offre un excellent rapport qualité-prix pour la consommation quotidienne et la grande distribution.",

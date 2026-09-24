@@ -19,7 +19,7 @@ const fr = {
     skip: "Aller au contenu",
   },
   topbar: {
-    text: "Exportateur de thé vert de Chine · Zhejiang — Hong Kong",
+    text: "Exportateur de thé vert de Chine · Anhui — Yiwu — Hong Kong",
   },
   common: {
     learnMore: "En savoir plus",
@@ -46,6 +46,7 @@ const fr = {
     brandTeas: "Grade utilisé",
     packs: "La gamme en boîte",
     family: { chunmee: "Chunmee", gunpowder: "Gunpowder" },
+    allTeas: "Tous nos thés",
     phone: "Téléphone / WhatsApp",
     email: "E-mail",
     offices: "Nos bureaux",
@@ -61,7 +62,7 @@ const fr = {
       text: "Export direct par conteneur vers l’Europe, le Maghreb et l’Afrique.",
       cta: "Demander un devis",
       featuresLabel: "Nos atouts",
-      features: ["Nos propres champs de thé", "Usine dans l’Anhui", "Export par conteneur"],
+      features: ["Nos propres champs de thé", "Usine dans Anhui", "Export par conteneur"],
     },
     categories: {
       eyebrow: "Nos produits",
@@ -92,17 +93,17 @@ const fr = {
     },
     intro: {
       eyebrow: "China Tea Group",
-      title: "Un pont entre le Zhejiang et les tables du thé à la menthe",
+      title: "Un pont entre la Chine et les tables du thé à la menthe",
       paras: [
         "Le thé vert que l’on sert au Maroc, en Mauritanie ou au Sénégal vient en grande partie de Chine. Entre le jardin et le verre, il y a des choix décisifs : le grade, le tri, l’assemblage, l’emballage et la logistique.",
-        "China Tea Group réunit ces étapes. Depuis notre siège du Zhejiang, la grande province du thé vert d’exportation, et notre bureau de Hong Kong, nous préparons des thés au goût de vos clients et les livrons prêts à vendre, sous nos marques ou sous la vôtre.",
+        "China Tea Group réunit ces étapes. Depuis notre usine et nos plantations de l’Anhui, notre bureau commercial de Yiwu (Zhejiang) et notre bureau administratif et financier de Hong Kong, nous préparons des thés au goût de vos clients et les livrons prêts à vendre, sous nos marques ou sous la vôtre.",
       ],
       cta: "Qui sommes-nous",
     },
     stats: [
       { value: "4", label: "grades de référence" },
       { value: "8", label: "marques maison" },
-      { value: "2", label: "bureaux : Zhejiang & Hong Kong" },
+      { value: "2", label: "bureaux : Yiwu & Hong Kong" },
       { value: "OEM", label: "marque privée sur mesure" },
     ],
     teas: {
@@ -131,12 +132,12 @@ const fr = {
     services: {
       eyebrow: "Nos services",
       title: "Bien plus qu’un fournisseur de thé",
-      text: "Du choix du grade à l’arrivée au port, un seul interlocuteur — et, sur votre région, une distribution exclusive.",
+      text: "Du choix du grade à l’arrivée au port, un seul interlocuteur — et, sur votre région, une possible exclusivité de distribution.",
       items: [
         { icon: "leaf", title: "Sélection & assemblage", text: "Des lots choisis et assemblés pour garder le même goût d’une commande à l’autre." },
         { icon: "box", title: "Marque privée (OEM)", text: "Votre marque, votre boîte, vos textes en arabe et en français : nous produisons tout." },
-        { icon: "check", title: "Contrôle qualité", text: "Certificats sanitaires aux normes internationales, faible taux de pesticides, échantillons avant expédition." },
-        { icon: "ship", title: "Export & logistique", text: "Maersk, CMA CGM, HMM : nous livrons au port de votre pays, en conteneurs complets ou groupés." },
+        { icon: "check", title: "Contrôle qualité", text: "Certificats selon le produit et le pays de destination, analyses de résidus de pesticides disponibles, échantillons avant expédition." },
+        { icon: "ship", title: "Export & logistique", text: "Expéditions possibles via les principales compagnies maritimes, notamment Maersk, CMA CGM et HMM, jusqu’au port de votre pays, en conteneurs complets ou groupés." },
       ],
       cta: "Tous nos services",
     },
@@ -279,20 +280,20 @@ const fr = {
       {
         icon: "check",
         title: "Contrôle qualité",
-        text: "Avant le départ, chaque lot est comparé à l’échantillon validé et part avec les certificats sanitaires exigés par les normes internationales. Vous pouvez aussi mandater l’organisme d’inspection de votre choix.",
-        points: ["Certificats sanitaires aux normes internationales", "Faible taux de pesticides", "Dégustation, contrôle visuel et échantillon avant expédition", "Inspection indépendante sur demande"],
+        text: "Avant le départ, chaque lot est comparé à l’échantillon validé et part avec les documents et certificats exigés par le pays de destination. Vous pouvez aussi mandater l’organisme d’inspection de votre choix.",
+        points: ["Documents d’exportation et certificats fournis selon le produit et les exigences du pays de destination", "Analyses de résidus de pesticides disponibles selon les exigences réglementaires du marché de destination", "Dégustation, contrôle visuel et échantillon avant expédition", "Inspection indépendante sur demande"],
       },
       {
         icon: "ship",
         title: "Export & logistique",
-        text: "Nous travaillons avec les grandes compagnies maritimes — Maersk, CMA CGM, HMM — pour charger depuis les ports de Chine de l’Est et livrer au port de votre pays, avec les documents dont votre transitaire a besoin.",
-        points: ["Conteneurs 20FT et 40FT, complets ou groupés", "Partenariats Maersk, CMA CGM et HMM", "Incoterms FOB, CFR ou CIF", "Facture, liste de colisage, certificats d’origine, sanitaire et phytosanitaire"],
+        text: "Les expéditions sont possibles via les principales compagnies maritimes, notamment Maersk, CMA CGM et HMM, pour charger depuis les ports de Chine de l’Est et livrer au port de votre pays, avec les documents dont votre transitaire a besoin.",
+        points: ["Conteneurs 20FT et 40FT, complets ou groupés", "Expéditions possibles via les principales compagnies maritimes, notamment Maersk, CMA CGM et HMM", "Incoterms FOB, CFR ou CIF", "Documents d’exportation et certificats fournis selon le produit et les exigences du pays de destination"],
       },
       {
         icon: "globe",
         title: "Exclusivité par région",
-        text: "Nous pouvons vous réserver la distribution de nos marques sur votre pays ou votre région : vous investissez pour installer la marque sans la retrouver le lendemain chez le concurrent d’en face.",
-        points: ["Exclusivité par pays ou par région", "Marques maison réservées à votre réseau", "Conditions définies avec vous"],
+        text: "Possibilité d’exclusivité par pays ou région, sous conditions de volume et d’accord commercial : vous investissez pour installer la marque sans la retrouver le lendemain chez le concurrent d’en face.",
+        points: ["Possibilité d’exclusivité par pays ou région, sous conditions de volume et d’accord commercial", "Marques maison réservées à votre réseau", "Conditions définies avec vous"],
       },
     ],
     packagingTitle: "Formats de conditionnement",
@@ -327,15 +328,15 @@ const fr = {
       },
       {
         q: "Quels documents accompagnent l’expédition ?",
-        a: "Facture commerciale, liste de colisage, connaissement, certificat d’origine, certificat sanitaire et certificat phytosanitaire. D’autres documents peuvent être fournis selon les exigences de votre pays.",
+        a: "Facture commerciale, liste de colisage, connaissement, certificat d’origine, certificat sanitaire et certificat phytosanitaire. Documents d’exportation et certificats fournis selon le produit et les exigences du pays de destination.",
       },
       {
         q: "Vos thés sont-ils certifiés ?",
-        a: "Oui. Nos thés partent avec les certificats sanitaires exigés par les normes internationales, avec un faible taux de pesticides. Les certificats sont joints au dossier d’expédition.",
+        a: "Documents d’exportation et certificats fournis selon le produit et les exigences du pays de destination. Analyses de résidus de pesticides disponibles selon les exigences réglementaires du marché de destination.",
       },
       {
         q: "Proposez-vous une exclusivité de distribution ?",
-        a: "Oui, par pays ou par région. Si vous développez nos marques sur votre marché, nous pouvons vous en réserver la distribution : parlons-en dès la première commande.",
+        a: "Possibilité d’exclusivité par pays ou région, sous conditions de volume et d’accord commercial. Parlons-en dès la première commande.",
       },
       {
         q: "Quels sont les délais ?",
@@ -348,13 +349,13 @@ const fr = {
     ],
   },
   aboutPage: {
-    metaTitle: "Exportateur de thé vert, Zhejiang–Hong Kong",
+    metaTitle: "Exportateur de thé vert, Anhui–Yiwu–Hong Kong",
     metaDescription:
-      "China Tea Group sélectionne, conditionne et exporte du thé vert de Chine depuis le Zhejiang et Hong Kong pour les marchés du thé à la menthe.",
+      "China Tea Group sélectionne, conditionne et exporte du thé vert de Chine depuis l’Anhui, Yiwu et Hong Kong pour les marchés du thé à la menthe.",
     eyebrow: "Qui sommes-nous",
     title: "Le thé vert de Chine, préparé pour vos marchés",
     paras: [
-      "China Tea Group est une société d’export de thé vert basée dans la province du Zhejiang, l’une des grandes régions productrices de thé vert en Chine, avec un bureau commercial à Hong Kong.",
+      "China Tea Group est un producteur et exportateur de thé vert de Chine. Usine et plantations : Anhui, Chine. Bureau commercial : Yiwu, Zhejiang, Chine. Bureau administratif et financier : Hong Kong.",
       "Notre métier : trouver les bons lots, les assembler au goût de chaque marché, les conditionner sous nos marques ou sous celles de nos clients, et les expédier en toute conformité.",
       "Nous travaillons pour les importateurs, grossistes, conditionneurs et chaînes de distribution qui vendent du thé aux amateurs de thé à la menthe, du Maghreb au Sahel jusqu’en Europe.",
     ],
@@ -372,7 +373,7 @@ const fr = {
   contactPage: {
     metaTitle: "Devis thé vert de Chine en conteneur",
     metaDescription:
-      "Demandez un devis ou des échantillons de thé vert de Chine. Contact WhatsApp +86 180 5797 8014, bureaux dans le Zhejiang et à Hong Kong.",
+      "Demandez un devis ou des échantillons de thé vert de Chine. Contact WhatsApp +86 180 5797 8014, bureaux à Yiwu (Zhejiang) et à Hong Kong.",
     eyebrow: "Contact",
     title: "Demander un devis ou des échantillons",
     intro:

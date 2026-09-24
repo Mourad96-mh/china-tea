@@ -1337,6 +1337,33 @@ a:hover .link-arrow svg {
   --cols: 4;
 }
 
+/* Teas page: the three Chunmee grades on one row, the Gunpowder packs (511, 711) on the next */
+.tea-grid--three {
+  --cols: 3;
+}
+
+/* Family filter above the teas grid (#chunmee / #gunpowder) */
+.tea-filter {
+  margin-bottom: 32px;
+}
+
+.tea-filter .chip {
+  background: none;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tea-filter .chip[aria-pressed="true"] {
+  background: var(--green-900);
+  color: var(--gold-300);
+}
+
+.tea-grid[data-filter="chunmee"] > :not([data-family="chunmee"]),
+.tea-grid[data-filter="gunpowder"] > :not([data-family="gunpowder"]) {
+  display: none;
+}
+
 @media (max-width: 900px) {
   .tea-grid {
     --cols: 2;

@@ -1,5 +1,6 @@
 import Reveal from "@/components/Reveal";
 import SectionHead from "@/components/SectionHead";
+import TeaFilter from "@/components/TeaFilter";
 import { CtaBand, PageHero, TeaCard } from "@/components/Blocks";
 import JsonLd from "@/components/JsonLd";
 import Link from "@/components/Link";
@@ -7,6 +8,7 @@ import { getDict } from "@/dict";
 import { href, pick } from "@/lib/i18n";
 import { absoluteUrl, pageMetadata } from "@/lib/seo";
 import { teas } from "@/content/teas";
+import { brands, getBrand } from "@/content/brands";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
@@ -19,6 +21,22 @@ export default async function TeasPage({ params }) {
   const dict = getDict(locale);
   const d = dict.teasPage;
   const c = dict.common;
+
+  // One card per real product (brand pack): Gunpowder is sold as 511 and 711, every other brand is Chunmee.
+  const gunpowder = teas.find((t) => t.family === "gunpowder");
+  const brandCard = (b, tea) => ({
+    key: b.slug,
+    tea,
+    image: b.cover,
+    title: `${b.name} · ${pick(tea.name, locale)}`,
+    url: href(locale, `/brands/${b.slug}`),
+  });
+  const gridCards = [
+    ...brands
+      .filter((b) => !gunpowder.brands.includes(b.slug))
+      .map((b) => brandCard(b, teas.find((t) => t.family === "chunmee" && b.teas.includes(t.slug)))),
+    ...gunpowder.brands.map((slug) => brandCard(getBrand(slug), gunpowder)),
+  ];
 
   const itemList = {
     "@context": "https://schema.org",
@@ -69,13 +87,13 @@ export default async function TeasPage({ params }) {
 
       <section className="section section--cream">
         <div className="container">
-          <div className="tea-grid">
-            {teas.map((t, i) => (
-              <Reveal key={t.slug} delay={i * 70}>
-                <TeaCard tea={t} locale={locale} dict={dict} />
+          <TeaFilter families={d.families.map((f) => ({ id: f.id, label: c.family[f.id] }))} allLabel={c.allTeas}>
+            {gridCards.map((card, i) => (
+              <Reveal key={card.key} delay={i * 70} data-family={card.tea.family}>
+                <TeaCard locale={locale} dict={dict} {...card} />
               </Reveal>
             ))}
-          </div>
+          </TeaFilter>
         </div>
       </section>
 
